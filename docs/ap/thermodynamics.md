@@ -34,6 +34,16 @@ Thermodynamics studies energy transformations and predicts reaction spontaneity.
 **Calculating \(\Delta S°\)**:
 \[\Delta S° = \sum S°_{\text{products}} - \sum S°_{\text{reactants}}\]
 
+```mermaid
+graph LR
+    A[Solid<br/>Low Entropy<br/>Fixed positions] --> B[Liquid<br/>Medium Entropy<br/>Sliding motion]
+    B --> C[Gas<br/>High Entropy<br/>Free movement]
+
+    style A fill:#e3f2fd
+    style B fill:#fff9c4
+    style C fill:#ffccbc
+```
+
 **Second Law**: Spontaneous processes increase universal entropy (\(\Delta S_{\text{univ}} > 0\))
 
 **Third Law**: Perfect crystal at 0 K has \(S = 0\)
@@ -46,6 +56,18 @@ Thermodynamics studies energy transformations and predicts reaction spontaneity.
 - \(\Delta G > 0\): Non-spontaneous (thermodynamically unfavored)
 - \(\Delta G = 0\): At equilibrium
 
+```mermaid
+flowchart TD
+    Start([Calculate ΔG = ΔH - TΔS]) --> Compare{Compare ΔG to 0}
+    Compare -->|ΔG < 0| Spont[✓ Spontaneous<br/>Reaction proceeds forward<br/>Products favored]
+    Compare -->|ΔG > 0| NonSpont[✗ Non-spontaneous<br/>Reaction proceeds reverse<br/>Reactants favored]
+    Compare -->|ΔG = 0| Equil[⚖ At Equilibrium<br/>No net reaction<br/>Q = K]
+
+    style Spont fill:#c8e6c9
+    style NonSpont fill:#ffcdd2
+    style Equil fill:#fff9c4
+```
+
 **Temperature Dependence**:
 
 | \(\Delta H\) | \(\Delta S\) | \(\Delta G\) | Spontaneity |
@@ -55,6 +77,25 @@ Thermodynamics studies energy transformations and predicts reaction spontaneity.
 | - (exo)    | - (decrease) | - at low T | Spontaneous at low T |
 | + (endo)   | + (increase) | - at high T | Spontaneous at high T |
 
+```mermaid
+flowchart TD
+    Start([Given ΔH and ΔS]) --> H{What is<br/>sign of ΔH?}
+
+    H -->|Negative<br/>Exothermic| S1{What is<br/>sign of ΔS?}
+    H -->|Positive<br/>Endothermic| S2{What is<br/>sign of ΔS?}
+
+    S1 -->|Positive<br/>Entropy increases| R1[Both favor spontaneity<br/>✓ Spontaneous at ALL T<br/>Example: Combustion]
+    S1 -->|Negative<br/>Entropy decreases| R2[Enthalpy favors<br/>Entropy opposes<br/>✓ Spontaneous at LOW T<br/>Example: Freezing water]
+
+    S2 -->|Positive<br/>Entropy increases| R3[Entropy favors<br/>Enthalpy opposes<br/>✓ Spontaneous at HIGH T<br/>Example: Melting ice]
+    S2 -->|Negative<br/>Entropy decreases| R4[Both oppose spontaneity<br/>✗ NEVER spontaneous<br/>Example: Reverse combustion]
+
+    style R1 fill:#a5d6a7
+    style R2 fill:#90caf9
+    style R3 fill:#ffab91
+    style R4 fill:#ef9a9a
+```
+
 **Standard Free Energy**:
 \[\Delta G° = \sum \Delta G_f°(\text{products}) - \sum \Delta G_f°(\text{reactants})\]
 \[\Delta G° = -RT\ln K\]
@@ -63,6 +104,54 @@ Thermodynamics studies energy transformations and predicts reaction spontaneity.
 
 **Relationship to Equilibrium**:
 \[\Delta G = \Delta G° + RT\ln Q\]
+
+```mermaid
+graph TB
+    subgraph "Gibbs Free Energy Relationships"
+        DG["ΔG<br/>(actual conditions)"]
+        DG0["ΔG°<br/>(standard conditions)"]
+        DH["ΔH<br/>(enthalpy change)"]
+        DS["ΔS<br/>(entropy change)"]
+        K["K<br/>(equilibrium constant)"]
+        Q["Q<br/>(reaction quotient)"]
+    end
+
+    DH -->|"ΔG = ΔH - TΔS"| DG
+    DS -->|"ΔG = ΔH - TΔS"| DG
+    DH -->|"ΔG° = ΔH° - TΔS°"| DG0
+    DS -->|"ΔG° = ΔH° - TΔS°"| DG0
+
+    DG0 -->|"ΔG° = -RT ln K"| K
+    DG0 -->|"ΔG = ΔG° + RT ln Q"| DG
+    Q -->|"ΔG = ΔG° + RT ln Q"| DG
+
+    style DG fill:#ffeb3b
+    style DG0 fill:#81c784
+    style K fill:#64b5f6
+    style Q fill:#ba68c8
+```
+
+```mermaid
+flowchart TD
+    subgraph "Predicting Reaction Direction Using Q and K"
+        Start([Calculate Q and K]) --> Compare{Compare Q to K}
+
+        Compare -->|Q < K| Left["Q < K<br/>Not enough products<br/>ΔG < 0"]
+        Compare -->|Q = K| Center["Q = K<br/>At equilibrium<br/>ΔG = 0"]
+        Compare -->|Q > K| Right["Q > K<br/>Too many products<br/>ΔG > 0"]
+
+        Left --> Forward["Reaction shifts RIGHT<br/>→ Forward reaction<br/>Products increase"]
+        Center --> NoShift["No net reaction<br/>⚖ Equilibrium<br/>Rates equal"]
+        Right --> Reverse["Reaction shifts LEFT<br/>← Reverse reaction<br/>Reactants increase"]
+    end
+
+    style Left fill:#c8e6c9
+    style Center fill:#fff9c4
+    style Right fill:#ffcdd2
+    style Forward fill:#a5d6a7
+    style NoShift fill:#fff59d
+    style Reverse fill:#ef9a9a
+```
 
 ---
 
@@ -97,6 +186,28 @@ Entropy (\(S\)) measures the number of possible microscopic arrangements (micros
 - Reactants: 4 moles of gas (1 + 3)
 - Products: 2 moles of gas
 - \(\Delta S° < 0\) (entropy decreases) because we have fewer moles of gas
+
+```mermaid
+graph LR
+    subgraph Reactants
+        N2["N₂(g)<br/>1 mol"]
+        H2["3 H₂(g)<br/>3 mol"]
+    end
+
+    subgraph Products
+        NH3["2 NH₃(g)<br/>2 mol"]
+    end
+
+    N2 --> NH3
+    H2 --> NH3
+
+    note["4 moles gas → 2 moles gas<br/>ΔS < 0<br/>Entropy DECREASES"]
+
+    style note fill:#ffccbc
+    style NH3 fill:#e1bee7
+    style N2 fill:#b3e5fc
+    style H2 fill:#b3e5fc
+```
 
 ### Understanding Gibbs Free Energy Step-by-Step
 
@@ -160,10 +271,105 @@ The equation \(\Delta G = \Delta H - T\Delta S\) shows that temperature can chan
    - At low T: \(\Delta H > T\Delta S\), so \(\Delta G > 0\)
    - At high T: \(T\Delta S > \Delta H\), so \(\Delta G < 0\)
 
+```mermaid
+graph LR
+    subgraph "Scenario 1: ΔH < 0, ΔS > 0"
+        S1["Both terms favor spontaneity<br/>ΔG = (-) - T(+) = always negative"]
+        S1 --> R1["✓ Spontaneous at ALL temperatures<br/>Example: 2H₂ + O₂ → 2H₂O"]
+    end
+
+    subgraph "Scenario 2: ΔH < 0, ΔS < 0"
+        S2["Enthalpy favors, entropy opposes<br/>ΔG = (-) - T(-)"]
+        S2 --> R2a["Low T: |ΔH| dominates → ΔG < 0<br/>✓ Spontaneous"]
+        S2 --> R2b["High T: T|ΔS| dominates → ΔG > 0<br/>✗ Non-spontaneous"]
+        R2a -.->|"Example"| Ex2["H₂O(l) → H₂O(s) freezing"]
+        R2b -.-> Ex2
+    end
+
+    subgraph "Scenario 3: ΔH > 0, ΔS > 0"
+        S3["Entropy favors, enthalpy opposes<br/>ΔG = (+) - T(+)"]
+        S3 --> R3a["Low T: ΔH dominates → ΔG > 0<br/>✗ Non-spontaneous"]
+        S3 --> R3b["High T: TΔS dominates → ΔG < 0<br/>✓ Spontaneous"]
+        R3a -.->|"Example"| Ex3["H₂O(s) → H₂O(l) melting"]
+        R3b -.-> Ex3
+    end
+
+    subgraph "Scenario 4: ΔH > 0, ΔS < 0"
+        S4["Both terms oppose spontaneity<br/>ΔG = (+) - T(-) = always positive"]
+        S4 --> R4["✗ NEVER spontaneous<br/>Example: Reverse combustion"]
+    end
+
+    style R1 fill:#a5d6a7
+    style R2a fill:#81d4fa
+    style R2b fill:#ffab91
+    style R3a fill:#ffab91
+    style R3b fill:#ffcc80
+    style R4 fill:#ef9a9a
+```
+
 **Finding the Crossover Temperature:**
 Set \(\Delta G = 0\) and solve for T:
 \[T = \frac{\Delta H}{\Delta S}\]
 This is the temperature where the reaction transitions between spontaneous and non-spontaneous.
+
+```mermaid
+graph TD
+    subgraph "Temperature Effect on ΔG = ΔH - TΔS"
+        direction TB
+        scenario["Given: ΔH = +50 kJ, ΔS = +100 J/K"]
+
+        lowT["Low Temperature<br/>T = 300 K<br/>TΔS = 30 kJ<br/>ΔG = 50 - 30 = +20 kJ<br/>NON-SPONTANEOUS"]
+
+        crossT["Crossover Temperature<br/>T = ΔH/ΔS = 500 K<br/>TΔS = 50 kJ<br/>ΔG = 50 - 50 = 0<br/>EQUILIBRIUM"]
+
+        highT["High Temperature<br/>T = 700 K<br/>TΔS = 70 kJ<br/>ΔG = 50 - 70 = -20 kJ<br/>SPONTANEOUS"]
+
+        scenario --> lowT
+        lowT --> crossT
+        crossT --> highT
+    end
+
+    style lowT fill:#ffcdd2
+    style crossT fill:#fff9c4
+    style highT fill:#c8e6c9
+```
+
+---
+
+## Thermodynamic Cycles
+
+Understanding how thermodynamic properties relate in cyclic processes helps visualize the complete picture of energy transformations.
+
+```mermaid
+graph TB
+    subgraph "Thermodynamic Cycle for a Chemical Reaction"
+        R["REACTANTS<br/>Standard State<br/>25°C, 1 atm"]
+        P["PRODUCTS<br/>Standard State<br/>25°C, 1 atm"]
+
+        R -->|"Direct Path<br/>ΔG° = ?"| P
+        R -->|"ΔH°<br/>Enthalpy change"| I1["Intermediate State"]
+        I1 -->|"-TΔS°<br/>Entropy term"| P
+
+        P -->|"Reverse: -ΔG°"| R
+    end
+
+    subgraph "Key Relationships"
+        rel1["ΔG° = ΔH° - TΔS°"]
+        rel2["ΔG° = -RT ln K"]
+        rel3["ΔG = ΔG° + RT ln Q"]
+    end
+
+    subgraph "State Functions"
+        note["All thermodynamic quantities<br/>are STATE FUNCTIONS<br/>Path independent<br/>Only initial & final matter"]
+    end
+
+    style R fill:#bbdefb
+    style P fill:#c8e6c9
+    style I1 fill:#fff9c4
+    style rel1 fill:#f3e5f5
+    style rel2 fill:#f3e5f5
+    style rel3 fill:#f3e5f5
+```
 
 ---
 
@@ -248,6 +454,71 @@ even at temperatures other than 25°C.
 
 **How to Avoid**: Remember that spontaneity only indicates the final equilibrium position, not the path or speed to get there.
 
+```mermaid
+graph LR
+    subgraph "Thermodynamics vs Kinetics"
+        thermo["THERMODYNAMICS<br/>ΔG tells us:<br/>• IF reaction occurs<br/>• Direction<br/>• Equilibrium position"]
+
+        kinetics["KINETICS<br/>Ea tells us:<br/>• HOW FAST reaction occurs<br/>• Reaction rate<br/>• Mechanism"]
+    end
+
+    example1["Diamond → Graphite<br/>ΔG < 0 (spontaneous)<br/>Ea = very high<br/>Essentially no reaction"]
+
+    example2["H₂ + O₂ → H₂O<br/>ΔG << 0 (very spontaneous)<br/>Ea = high<br/>Needs spark to start"]
+
+    thermo -.->|different<br/>concepts| kinetics
+    thermo --> example1
+    kinetics --> example1
+    thermo --> example2
+    kinetics --> example2
+
+    style thermo fill:#e1f5fe
+    style kinetics fill:#f3e5f5
+    style example1 fill:#fff9c4
+    style example2 fill:#fff9c4
+```
+
+---
+
+## Complete Thermodynamics Problem-Solving Flowchart
+
+```mermaid
+flowchart TD
+    Start([Thermodynamics Problem]) --> Type{What are you<br/>asked to find?}
+
+    Type -->|Predict spontaneity| Branch1["Need: ΔH, ΔS, T"]
+    Type -->|Calculate ΔG| Branch2["Use: ΔG = ΔH - TΔS<br/>or ΔG° = -RT ln K"]
+    Type -->|Find K| Branch3["Use: K from ΔG° = -RT ln K"]
+    Type -->|Predict ΔS sign| Branch4["Count gas moles<br/>Consider phase changes"]
+    Type -->|Find crossover T| Branch5["Set ΔG = 0<br/>Solve: T = ΔH/ΔS"]
+
+    Branch1 --> Calc1["Calculate ΔG = ΔH - TΔS"]
+    Calc1 --> Check1{ΔG < 0?}
+    Check1 -->|Yes| Result1[Spontaneous]
+    Check1 -->|No| Result2[Non-spontaneous]
+    Check1 -->|ΔG = 0| Result3[At equilibrium]
+
+    Branch2 --> Units["CHECK UNITS!<br/>Convert ΔS from J/K to kJ/K"]
+    Units --> Calc2["Substitute into equation"]
+    Calc2 --> Result4[Calculate ΔG value]
+
+    Branch3 --> Rearrange["Rearrange: ln K = -ΔG°/RT"]
+    Rearrange --> Solve["K = e^(-ΔG°/RT)"]
+
+    Branch4 --> Compare["Compare initial & final states"]
+    Compare --> Decision{More gas moles<br/>in products?}
+    Decision -->|Yes| Result5["ΔS > 0"]
+    Decision -->|No| Result6["ΔS < 0"]
+
+    Branch5 --> Isolate["T = ΔH/ΔS<br/>Both in same units!"]
+
+    style Start fill:#e1f5fe
+    style Result1 fill:#c8e6c9
+    style Result2 fill:#ffcdd2
+    style Result3 fill:#fff9c4
+    style Units fill:#ffeb3b
+```
+
 ---
 
 ## Worked Examples
@@ -264,6 +535,20 @@ even at temperatures other than 25°C.
 5. Since \(\Delta G° < 0\), reaction is spontaneous at 298 K
 
 **Answer**: \(\Delta G° = -65.4 \text{ kJ}\), spontaneous at 298 K
+
+```mermaid
+sequenceDiagram
+    participant Given as Given Values
+    participant Convert as Unit Conversion
+    participant Calc as Calculation
+    participant Interp as Interpretation
+
+    Given->>Convert: ΔH° = -125 kJ<br/>ΔS° = -200 J/K<br/>T = 298 K
+    Convert->>Calc: ΔH° = -125 kJ<br/>ΔS° = -0.200 kJ/K<br/>T = 298 K
+    Calc->>Calc: ΔG° = ΔH° - TΔS°<br/>= -125 - (298)(-0.200)<br/>= -125 + 59.6
+    Calc->>Interp: ΔG° = -65.4 kJ
+    Interp->>Interp: ΔG° < 0<br/>✓ SPONTANEOUS
+```
 
 #### Step-by-Step Checker for \(\Delta G\) Calculations
 
@@ -329,6 +614,21 @@ Use this checklist to verify your work on Gibbs free energy calculations:
 
 **Answer**: The reaction becomes spontaneous above 600 K (or 327°C)
 
+```mermaid
+graph TD
+    A["Given: ΔH° = +150 kJ endothermic<br/>ΔS° = +250 J/K entropy increases"] --> B["Find crossover: Set ΔG = 0"]
+    B --> C["0 = ΔH° - TΔS°<br/>T = ΔH°/ΔS°"]
+    C --> D["T = 150,000 J / 250 J/K<br/>T = 600 K"]
+
+    D --> E["Below 600 K:<br/>ΔG > 0<br/>NON-SPONTANEOUS"]
+    D --> F["At 600 K:<br/>ΔG = 0<br/>EQUILIBRIUM"]
+    D --> G["Above 600 K:<br/>ΔG < 0<br/>SPONTANEOUS"]
+
+    style E fill:#ffcdd2
+    style F fill:#fff9c4
+    style G fill:#c8e6c9
+```
+
 ---
 
 ### Example 3: Relating \(\Delta G°\) and \(K\)
@@ -344,6 +644,32 @@ Use this checklist to verify your work on Gibbs free energy calculations:
 6. \(\Delta G° = (2477.6)(11.108) = 27,520 \text{ J} = 27.5 \text{ kJ}\)
 
 **Answer**: \(\Delta G° = +27.5 \text{ kJ}\) (positive, so reactants favored at equilibrium)
+
+```mermaid
+graph TB
+    subgraph "Connecting ΔG° and K"
+        dgk["ΔG° = -RT ln K"]
+
+        case1["If K >> 1<br/>Products favored<br/>ln K is positive<br/>ΔG° is NEGATIVE"]
+
+        case2["If K = 1<br/>Equal amounts<br/>ln K = 0<br/>ΔG° = 0"]
+
+        case3["If K << 1<br/>Reactants favored<br/>ln K is negative<br/>ΔG° is POSITIVE"]
+
+        dgk --> case1
+        dgk --> case2
+        dgk --> case3
+
+        example["Example:<br/>K = 1.5 × 10⁻⁵<br/>ln K = -11.1<br/>ΔG° = +27.5 kJ<br/>Reactants favored"]
+
+        case3 --> example
+    end
+
+    style case1 fill:#c8e6c9
+    style case2 fill:#fff9c4
+    style case3 fill:#ffcdd2
+    style example fill:#e1bee7
+```
 
 ---
 

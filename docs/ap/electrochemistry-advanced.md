@@ -13,12 +13,85 @@ Advanced electrochemistry extends redox concepts to quantitative calculations in
 - \(E°_{\text{cell}} < 0\): Non-spontaneous (requires energy input)
 - Standard conditions: 25°C, 1 M, 1 atm
 
+```mermaid
+graph TD
+    subgraph "Electrochemical Series - Standard Reduction Potentials"
+        A["F₂ + 2e⁻ → 2F⁻<br/>E° = +2.87 V"]
+        B["Au³⁺ + 3e⁻ → Au<br/>E° = +1.50 V"]
+        C["Cl₂ + 2e⁻ → 2Cl⁻<br/>E° = +1.36 V"]
+        D["O₂ + 4H⁺ + 4e⁻ → 2H₂O<br/>E° = +1.23 V"]
+        E["Br₂ + 2e⁻ → 2Br⁻<br/>E° = +1.07 V"]
+        F["Ag⁺ + e⁻ → Ag<br/>E° = +0.80 V"]
+        G["Fe³⁺ + e⁻ → Fe²⁺<br/>E° = +0.77 V"]
+        H["I₂ + 2e⁻ → 2I⁻<br/>E° = +0.54 V"]
+        I["Cu²⁺ + 2e⁻ → Cu<br/>E° = +0.34 V"]
+        J["2H⁺ + 2e⁻ → H₂<br/>E° = 0.00 V"]
+        K["Pb²⁺ + 2e⁻ → Pb<br/>E° = -0.13 V"]
+        L["Ni²⁺ + 2e⁻ → Ni<br/>E° = -0.26 V"]
+        M["Fe²⁺ + 2e⁻ → Fe<br/>E° = -0.45 V"]
+        N["Zn²⁺ + 2e⁻ → Zn<br/>E° = -0.76 V"]
+        O["Al³⁺ + 3e⁻ → Al<br/>E° = -1.66 V"]
+        P["Mg²⁺ + 2e⁻ → Mg<br/>E° = -2.37 V"]
+        Q["Na⁺ + e⁻ → Na<br/>E° = -2.71 V"]
+        R["Li⁺ + e⁻ → Li<br/>E° = -3.04 V"]
+    end
+
+    style A fill:#ff6b6b
+    style B fill:#ff8787
+    style C fill:#ffa3a3
+    style D fill:#ffbfbf
+    style E fill:#ffd4d4
+    style F fill:#ffe0e0
+    style G fill:#ffecec
+    style H fill:#fff0f0
+    style I fill:#fff5f5
+    style J fill:#ffff99
+    style K fill:#d4f4dd
+    style L fill:#b8e6c9
+    style M fill:#9cd9b5
+    style N fill:#80cba1
+    style O fill:#64be8d
+    style P fill:#48b079
+    style Q fill:#2ca365
+    style R fill:#109551
+```
+
 **Relationship to Free Energy**:
 \[\Delta G° = -nFE°_{\text{cell}}\]
 
 - \(n\) = moles of electrons transferred
 - \(F\) = Faraday constant = \(96,485 \text{ C/mol } e^-\) (or 96,500 C/mol)
 - More positive \(E°_{\text{cell}}\) = more negative \(\Delta G°\) = more spontaneous
+
+```mermaid
+graph TD
+    subgraph "Thermodynamics-Electrochemistry Relationships"
+        A["E°cell > 0<br/>Positive"] --> B["ΔG° < 0<br/>Negative"]
+        B --> C["K > 1<br/>Products favored"]
+        C --> D["Spontaneous<br/>Galvanic Cell"]
+
+        E["E°cell < 0<br/>Negative"] --> F["ΔG° > 0<br/>Positive"]
+        F --> G["K < 1<br/>Reactants favored"]
+        G --> H["Non-spontaneous<br/>Electrolytic Cell"]
+
+        I["E°cell = 0<br/>Zero"] --> J["ΔG° = 0<br/>Zero"]
+        J --> K["K = 1<br/>Equilibrium"]
+        K --> L["At Equilibrium<br/>No net reaction"]
+    end
+
+    subgraph "Key Equations"
+        M["ΔG° = -nFE°cell"]
+        N["E°cell = 0.0592/n × log K<br/>at 25°C"]
+        O["Ecell = E° - 0.0592/n × log Q<br/>at 25°C"]
+    end
+
+    style D fill:#90ee90
+    style H fill:#ffcccb
+    style L fill:#ffff99
+    style M fill:#e1f5ff
+    style N fill:#ffe1f5
+    style O fill:#fff5e1
+```
 
 **Understanding the \(\Delta G°\) and \(E°\) Relationship**:
 
@@ -52,6 +125,29 @@ The Nernst equation calculates cell potential under non-standard conditions:
 
 At 25°C:
 \[E_{\text{cell}} = E°_{\text{cell}} - \frac{0.0592}{n}\log Q\]
+
+```mermaid
+flowchart TD
+    A[Start: Need to calculate E_cell] --> B{Are conditions standard?<br/>25°C, 1M, 1 atm}
+    B -->|Yes| C[Use E°_cell from table]
+    B -->|No| D[Use Nernst Equation]
+    D --> E[Identify n = electrons transferred]
+    E --> F[Write balanced cell reaction]
+    F --> G[Calculate Q = products/reactants]
+    G --> H[Apply: E_cell = E° - 0.0592/n × log Q]
+    H --> I{Is Q < 1?}
+    I -->|Yes| J[Reactants dominate<br/>E_cell > E°]
+    I -->|No| K{Is Q > 1?}
+    K -->|Yes| L[Products dominate<br/>E_cell < E°]
+    K -->|No| M[Q = 1<br/>E_cell = E°]
+    J --> N[Final E_cell value]
+    L --> N
+    M --> N
+    C --> N
+    N --> O{Is E_cell > 0?}
+    O -->|Yes| P[Reaction is spontaneous]
+    O -->|No| Q[Reaction is non-spontaneous]
+```
 
 **Understanding the Nernst Equation**:
 
@@ -109,6 +205,31 @@ The amount of substance produced or consumed at an electrode is directly proport
 
 4. **Mass or volume**: Convert moles to grams (using molar mass) or liters (using 22.4 L/mol at STP for gases)
 
+```mermaid
+flowchart TD
+    A[Start: Electrolysis Problem] --> B[Given: Current I and Time t]
+    B --> C{Is time in seconds?}
+    C -->|No| D[Convert to seconds<br/>× 60 for min<br/>× 3600 for hr]
+    C -->|Yes| E[Calculate Charge<br/>Q = I × t coulombs]
+    D --> E
+    E --> F[Calculate moles of electrons<br/>mol e⁻ = Q / F<br/>F = 96,500 C/mol]
+    F --> G[Write balanced half-reaction]
+    G --> H[Identify electron stoichiometry]
+    H --> I{What to find?}
+    I -->|Mass| J[mol substance = mol e⁻ / n<br/>n = electrons per formula unit]
+    I -->|Volume of gas| K[mol gas = mol e⁻ / n]
+    J --> L[mass = mol × molar mass]
+    K --> M[V = mol × 22.4 L/mol at STP]
+    L --> N[Final Answer]
+    M --> N
+
+    style A fill:#e1f5ff
+    style E fill:#ffe1e1
+    style F fill:#fff5e1
+    style G fill:#e1ffe1
+    style N fill:#f0e1ff
+```
+
 **Common Electrolysis Reactions**:
 - **Water**: \(2H_2O \rightarrow 2H_2 + O_2\) (requires 4 \(e^-\) per \(O_2\), 2 \(e^-\) per \(H_2\))
 - **Molten NaCl**: Cathode: \(Na^+ + e^- \rightarrow Na\); Anode: \(2Cl^- \rightarrow Cl_2 + 2e^-\)
@@ -139,6 +260,31 @@ Given \(E°_{Cu^{2+}/Cu} = +0.34 \text{ V}\) and \(E°_{Zn^{2+}/Zn} = -0.76 \tex
 - Calculate: \(E°_{\text{cell}} = E°_{\text{cathode}} - E°_{\text{anode}} = 0.34 - (-0.76) = +1.10 \text{ V}\)
 
 **Key reminder**: The more positive (or less negative) reduction potential becomes the cathode. The anode value is subtracted as-is from the table of reduction potentials.
+
+```mermaid
+graph LR
+    subgraph "Standard Reduction Potential Comparison"
+        A["Reduction Potential Table<br/>All as reductions"] --> B{Compare E° values}
+        B --> C["More positive E°<br/>Better oxidizing agent<br/>CATHODE reduction"]
+        B --> D["Less positive E°<br/>Better reducing agent<br/>ANODE oxidation"]
+    end
+
+    subgraph "Example: Zn-Cu Cell"
+        E["Cu²⁺ + 2e⁻ → Cu<br/>E° = +0.34 V"]
+        F["Zn²⁺ + 2e⁻ → Zn<br/>E° = -0.76 V"]
+        E -->|More positive| G["Cu²⁺ is REDUCED<br/>at CATHODE"]
+        F -->|Less positive| H["Zn is OXIDIZED<br/>at ANODE"]
+        G --> I["E°cell = E°cathode - E°anode<br/>= +0.34 - -0.76<br/>= +1.10 V"]
+        H --> I
+        I --> J["Positive E° = Spontaneous"]
+    end
+
+    style C fill:#90ee90
+    style D fill:#ffcccb
+    style G fill:#90ee90
+    style H fill:#ffcccb
+    style J fill:#87ceeb
+```
 
 ---
 

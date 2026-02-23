@@ -33,6 +33,22 @@ The periodic table organizes all known elements by atomic number and groups elem
   - Atomic number determines element identity
   - Atomic number = number of protons = number of electrons (in neutral atoms)
 
+```mermaid
+graph LR
+    A[Periodic Table Structure] --> B[Periods: Horizontal Rows]
+    A --> C[Groups: Vertical Columns]
+    B --> D[Period Number = <br/>Number of Electron Shells]
+    C --> E[Same Group = <br/>Same Valence Electrons]
+    C --> F[Similar Chemical Properties]
+
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#ffe1f5
+    style D fill:#fff4e1
+    style E fill:#ffe1f5
+    style F fill:#ffe1f5
+```
+
 **Important Groups**:
 - **Group 1**: Alkali metals (Li, Na, K, Rb, Cs, Fr) - highly reactive metals, 1 valence electron
   - Reactivity increases down the group (Fr is most reactive)
@@ -55,6 +71,30 @@ The periodic table organizes all known elements by atomic number and groups elem
   - Extremely stable and unreactive due to complete outer shell
   - Rarely form compounds under normal conditions
 
+```mermaid
+graph TD
+    subgraph "Important Groups"
+        G1[Group 1: Alkali Metals<br/>Li, Na, K, Rb, Cs, Fr]
+        G2[Group 2: Alkaline Earth<br/>Be, Mg, Ca, Sr, Ba, Ra]
+        G17[Group 17: Halogens<br/>F, Cl, Br, I, At]
+        G18[Group 18: Noble Gases<br/>He, Ne, Ar, Kr, Xe, Rn]
+    end
+
+    G1 --> V1[1 valence electron<br/>Forms +1 ions<br/>Highly reactive]
+    G2 --> V2[2 valence electrons<br/>Forms +2 ions<br/>Reactive]
+    G17 --> V17[7 valence electrons<br/>Forms -1 ions<br/>Highly reactive]
+    G18 --> V18[8 valence electrons full<br/>No ions<br/>Unreactive]
+
+    style G1 fill:#ffcccc
+    style G2 fill:#ffd9cc
+    style G17 fill:#ccffcc
+    style G18 fill:#cce5ff
+    style V1 fill:#ffe6e6
+    style V2 fill:#ffede6
+    style V17 fill:#e6ffe6
+    style V18 fill:#e6f2ff
+```
+
 **Metals, Nonmetals, and Metalloids**:
 - **Metals**: Left and center of periodic table - shiny, conductive, malleable
   - Good conductors of heat and electricity
@@ -71,9 +111,75 @@ The periodic table organizes all known elements by atomic number and groups elem
   - Have properties of both metals and nonmetals
   - Semiconductors - useful in electronics
 
+```mermaid
+graph LR
+    subgraph "Periodic Table Classification"
+        M[Metals<br/>Left & Center]
+        ML[Metalloids<br/>Staircase Line]
+        NM[Nonmetals<br/>Upper Right]
+    end
+
+    M --> MP1[Shiny, conductive<br/>malleable]
+    M --> MP2[Lose electrons<br/>Form cations +]
+    M --> MP3[Solid at room temp<br/>except Hg]
+
+    ML --> MLP1[Intermediate properties]
+    ML --> MLP2[Semiconductors]
+    ML --> MLP3[B, Si, Ge, As, Sb, Te, At]
+
+    NM --> NMP1[Dull, poor conductors<br/>brittle]
+    NM --> NMP2[Gain electrons<br/>Form anions -]
+    NM --> NMP3[Solid, liquid, or gas]
+
+    style M fill:#ffd699
+    style ML fill:#d9b3ff
+    style NM fill:#99d6ff
+    style MP1 fill:#ffe6cc
+    style MP2 fill:#ffe6cc
+    style MP3 fill:#ffe6cc
+    style MLP1 fill:#e6ccff
+    style MLP2 fill:#e6ccff
+    style MLP3 fill:#e6ccff
+    style NMP1 fill:#cce9ff
+    style NMP2 fill:#cce9ff
+    style NMP3 fill:#cce9ff
+```
+
 **Periodic Trends**:
 
 Understanding these trends requires thinking about the forces between electrons and the nucleus.
+
+```mermaid
+graph TB
+    subgraph "Periodic Trends Overview"
+        direction LR
+        AR[Atomic Radius]
+        IE[Ionization Energy]
+        EN[Electronegativity]
+    end
+
+    AR --> AR1[Decreases →<br/>across period]
+    AR --> AR2[Increases ↓<br/>down group]
+
+    IE --> IE1[Increases →<br/>across period]
+    IE --> IE2[Decreases ↓<br/>down group]
+
+    EN --> EN1[Increases →<br/>across period]
+    EN --> EN2[Decreases ↓<br/>down group]
+
+    AR1 -.inverse.- IE1
+    AR2 -.inverse.- IE2
+
+    style AR fill:#ffcccc
+    style IE fill:#ccffcc
+    style EN fill:#ccccff
+    style AR1 fill:#ffe6e6
+    style AR2 fill:#ffe6e6
+    style IE1 fill:#e6ffe6
+    style IE2 fill:#e6ffe6
+    style EN1 fill:#e6e6ff
+    style EN2 fill:#e6e6ff
+```
 
 - **Atomic radius**: The distance from the nucleus to the outermost electrons
   - **Decreases left to right across a period**: More protons pull electrons closer
@@ -86,6 +192,46 @@ Understanding these trends requires thinking about the forces between electrons 
     - Inner shells shield outer electrons from nuclear charge
     - Visual: Like adding rings to a target - each ring makes it larger
 
+```mermaid
+graph TD
+    subgraph "Atomic Radius Trend"
+        direction TB
+        P1[Period 1: H, He<br/>SMALLEST]
+        P2[Period 2: Li → Ne]
+        P3[Period 3: Na → Ar]
+        P4[Period 4: K → Kr<br/>LARGEST]
+    end
+
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+
+    subgraph "Within Each Period"
+        direction LR
+        LEFT[Left Side<br/>Groups 1-2<br/>LARGEST<br/>●●●]
+        MID[Middle<br/>Groups 13-14<br/>MEDIUM<br/>●●]
+        RIGHT[Right Side<br/>Groups 15-18<br/>SMALLEST<br/>●]
+    end
+
+    LEFT --> MID
+    MID --> RIGHT
+
+    subgraph "Explanation"
+        E1[More shells = Larger radius ↓]
+        E2[More protons = Smaller radius →]
+    end
+
+    style P1 fill:#e6f3ff
+    style P2 fill:#cce7ff
+    style P3 fill:#99d1ff
+    style P4 fill:#66bbff
+    style LEFT fill:#ffb3b3
+    style MID fill:#ffcccc
+    style RIGHT fill:#ffe6e6
+    style E1 fill:#ffffcc
+    style E2 fill:#ffffcc
+```
+
 - **Ionization energy**: Energy required to remove an electron from a gaseous atom
   - **Increases left to right across a period**: Electrons held more tightly
     - Smaller atomic radius means electrons are closer to nucleus
@@ -96,6 +242,81 @@ Understanding these trends requires thinking about the forces between electrons 
     - Increased distance weakens the attraction
     - Shielding by inner electrons reduces effective nuclear charge
     - Easier to remove electrons from larger atoms
+
+**Understanding Shielding Effect**:
+
+```mermaid
+graph TB
+    subgraph "Shielding Effect Explanation"
+        direction TB
+        N[Nucleus<br/>+ Positive Charge]
+    end
+
+    N --> IS[Inner Shell Electrons<br/>Shield outer electrons<br/>from nuclear charge]
+    IS --> OS[Outer Shell Electrons<br/>Experience weaker<br/>effective nuclear charge]
+
+    subgraph "Example: Sodium vs Lithium"
+        Li[Li: 2, 1<br/>1 inner shell<br/>Less shielding<br/>Higher IE]
+        Na[Na: 2, 8, 1<br/>2 inner shells<br/>More shielding<br/>Lower IE]
+    end
+
+    Li --> Comp[Same valence e⁻ 1<br/>but different IE<br/>due to shielding]
+    Na --> Comp
+
+    subgraph "Key Concept"
+        K1[More inner shells =<br/>More shielding =<br/>Easier to remove<br/>outer electrons]
+    end
+
+    style N fill:#ff9999
+    style IS fill:#ffcccc
+    style OS fill:#ffe6e6
+    style Li fill:#cce6ff
+    style Na fill:#99ccff
+    style Comp fill:#fff4cc
+    style K1 fill:#ccffcc
+```
+
+```mermaid
+graph LR
+    subgraph "Ionization Energy Trend"
+        direction TB
+        T1[Top: Period 1-2<br/>HIGHEST Energy<br/>He, Ne, F]
+        T2[Middle: Period 3-4<br/>MEDIUM Energy]
+        T3[Bottom: Period 5-7<br/>LOWEST Energy<br/>Cs, Fr]
+    end
+
+    T1 -.decreasing.- T2
+    T2 -.decreasing.- T3
+
+    subgraph "Across Period 2"
+        direction LR
+        Li[Li<br/>520 kJ/mol<br/>EASIEST]
+        C[C<br/>1090 kJ/mol]
+        F[F<br/>1680 kJ/mol<br/>HARDEST]
+    end
+
+    Li -->|increasing| C
+    C -->|increasing| F
+
+    subgraph "Why?"
+        W1[Smaller atoms =<br/>Electrons closer<br/>to nucleus]
+        W2[Stronger nuclear<br/>attraction =<br/>More energy needed]
+        W3[Larger atoms =<br/>Electrons farther,<br/>more shielded]
+    end
+
+    W1 --> W2
+    W3 -.opposite.- W2
+
+    style T1 fill:#ff6666
+    style T2 fill:#ff9999
+    style T3 fill:#ffcccc
+    style Li fill:#ccffcc
+    style C fill:#99ff99
+    style F fill:#66ff66
+    style W1 fill:#fff4cc
+    style W2 fill:#ffe699
+    style W3 fill:#fff4cc
+```
 
 - **Electronegativity**: Attraction for electrons in a chemical bond
   - **Increases left to right across a period**: Smaller atoms attract electrons more strongly
@@ -108,6 +329,53 @@ Understanding these trends requires thinking about the forces between electrons 
     - Shielding reduces effective nuclear pull on bonding electrons
     - Upper right corner (F, O, N, Cl) are most electronegative
 
+```mermaid
+graph TB
+    subgraph "Electronegativity Map"
+        direction TB
+        UR[Upper Right<br/>F, O, N, Cl<br/>HIGHEST<br/>3.0-4.0]
+        MR[Middle Right<br/>S, Br, C<br/>MEDIUM-HIGH<br/>2.0-3.0]
+        MC[Middle Center<br/>H, P<br/>MEDIUM<br/>2.0-2.5]
+        ML[Middle Left<br/>B, Si<br/>LOW-MEDIUM<br/>1.5-2.0]
+        BL[Bottom Left<br/>Na, K, Ca, Cs<br/>LOWEST<br/>0.7-1.0]
+    end
+
+    UR -.decreasing.- MR
+    MR -.decreasing.- MC
+    MC -.decreasing.- ML
+    ML -.decreasing.- BL
+
+    subgraph "Most Electronegative Elements"
+        F[Fluorine F<br/>4.0<br/>HIGHEST]
+        O[Oxygen O<br/>3.5]
+        N[Nitrogen N<br/>3.0]
+        Cl[Chlorine Cl<br/>3.0]
+    end
+
+    F --> O
+    O --> N
+    N --> Cl
+
+    subgraph "Key Facts"
+        K1[Nonmetals = High EN<br/>Pull electrons toward them]
+        K2[Metals = Low EN<br/>Give up electrons easily]
+        K3[Noble gases = Not defined<br/>Don't form bonds]
+    end
+
+    style UR fill:#ff3333
+    style MR fill:#ff6666
+    style MC fill:#ff9999
+    style ML fill:#ffcccc
+    style BL fill:#ffe6e6
+    style F fill:#cc0000
+    style O fill:#ff0000
+    style N fill:#ff3333
+    style Cl fill:#ff3333
+    style K1 fill:#ccf5ff
+    style K2 fill:#ffe6cc
+    style K3 fill:#e6e6ff
+```
+
 **Visual Thinking Process for Trends**:
 
 When comparing any two elements:
@@ -115,6 +383,79 @@ When comparing any two elements:
 2. If in the same period, the one on the right has: smaller radius, higher ionization energy, higher electronegativity
 3. If in the same group, the one lower down has: larger radius, lower ionization energy, lower electronegativity
 4. If diagonal, combine both rules: horizontal effect usually dominates for radius and ionization energy
+
+```mermaid
+flowchart TD
+    Start[Comparing Two Elements] --> Locate[Locate both on<br/>periodic table]
+    Locate --> Check{Same Period<br/>or Same Group?}
+
+    Check -->|Same Period| Period[Moving RIGHT →]
+    Check -->|Same Group| Group[Moving DOWN ↓]
+    Check -->|Diagonal| Diag[Combine Both Rules]
+
+    Period --> PR[Atomic Radius: DECREASES<br/>Ionization Energy: INCREASES<br/>Electronegativity: INCREASES]
+
+    Group --> GR[Atomic Radius: INCREASES<br/>Ionization Energy: DECREASES<br/>Electronegativity: DECREASES]
+
+    Diag --> DR[Horizontal effect<br/>usually dominates<br/>Compare step by step]
+
+    PR --> End[Apply trends<br/>to solve problem]
+    GR --> End
+    DR --> End
+
+    style Start fill:#e1f5ff
+    style Locate fill:#fff4e1
+    style Check fill:#ffe1f5
+    style Period fill:#ffcccc
+    style Group fill:#ccffcc
+    style Diag fill:#ffffcc
+    style PR fill:#ffe6e6
+    style GR fill:#e6ffe6
+    style DR fill:#ffffe6
+    style End fill:#e1f5ff
+```
+
+```mermaid
+graph TB
+    subgraph "Complete Periodic Table Summary"
+        direction TB
+        PT[PERIODIC TABLE]
+    end
+
+    PT --> Structure
+    PT --> Trends
+    PT --> Groups
+
+    subgraph Structure
+        S1[Periods = Rows<br/>Period # = # of shells]
+        S2[Groups = Columns<br/>Same valence e⁻]
+        S3[Metals | Metalloids | Nonmetals]
+    end
+
+    subgraph Trends
+        direction LR
+        T1[Across Period →<br/>Radius ↓<br/>IE ↑<br/>EN ↑]
+        T2[Down Group ↓<br/>Radius ↑<br/>IE ↓<br/>EN ↓]
+    end
+
+    subgraph Groups
+        G1[Group 1: Alkali<br/>1 valence e⁻<br/>+1 ions<br/>Very reactive]
+        G2[Group 2: Alkaline Earth<br/>2 valence e⁻<br/>+2 ions<br/>Reactive]
+        G17[Group 17: Halogens<br/>7 valence e⁻<br/>-1 ions<br/>Very reactive]
+        G18[Group 18: Noble<br/>8 valence e⁻<br/>No ions<br/>Unreactive]
+    end
+
+    style PT fill:#ff9999
+    style S1 fill:#cce6ff
+    style S2 fill:#cce6ff
+    style S3 fill:#cce6ff
+    style T1 fill:#ccffcc
+    style T2 fill:#ccffcc
+    style G1 fill:#ffcccc
+    style G2 fill:#ffd9cc
+    style G17 fill:#ccffcc
+    style G18 fill:#cce5ff
+```
 
 ---
 
@@ -146,6 +487,29 @@ When comparing any two elements:
 - Shell distribution: 2 electrons in shell 1, 8 in shell 2, 5 in shell 3
 - Configuration notation: 2, 8, 5
 - This confirms 3 shells and 5 valence electrons
+
+```mermaid
+graph LR
+    subgraph "Element X: Period 3, Group 15"
+        P[Phosphorus P<br/>Atomic Number: 15]
+    end
+
+    P --> S[3 Electron Shells<br/>from Period 3]
+    P --> V[5 Valence Electrons<br/>from Group 15]
+    P --> E[Electron Config:<br/>2, 8, 5]
+
+    S --> C1[Shell 1: 2 e⁻]
+    S --> C2[Shell 2: 8 e⁻]
+    S --> C3[Shell 3: 5 e⁻ valence]
+
+    style P fill:#ff9999
+    style S fill:#99ccff
+    style V fill:#99ff99
+    style E fill:#ffcc99
+    style C1 fill:#cce6ff
+    style C2 fill:#cce6ff
+    style C3 fill:#ccffcc
+```
 
 **Answer**: 3 electron shells, 5 valence electrons, element is phosphorus (P).
 
@@ -186,6 +550,31 @@ Period 3:  Na    Mg    Al    Si    P    S    Cl    Ar
 - Na: 11 protons pulling on 3 shells
 - Mg: 12 protons pulling on 3 shells (pulls tighter)
 - Cl: 17 protons pulling on 3 shells (pulls even tighter)
+
+```mermaid
+graph LR
+    subgraph "Period 3 Atomic Radius Comparison"
+        Na[Na Sodium<br/>Group 1<br/>11 protons<br/>●●● LARGEST]
+        Mg[Mg Magnesium<br/>Group 2<br/>12 protons<br/>●● MEDIUM]
+        Cl[Cl Chlorine<br/>Group 17<br/>17 protons<br/>● SMALLEST]
+    end
+
+    Na -->|stronger<br/>nuclear pull| Mg
+    Mg -->|even stronger<br/>nuclear pull| Cl
+
+    subgraph "Order"
+        O[Increasing Radius:<br/>Cl < Mg < Na]
+    end
+
+    Cl -.smallest.- O
+    Mg -.medium.- O
+    Na -.largest.- O
+
+    style Na fill:#ffb3b3
+    style Mg fill:#ffcccc
+    style Cl fill:#ffe6e6
+    style O fill:#e6f3ff
+```
 
 **Answer**: Cl < Mg < Na (increasing atomic radius). Sodium has the largest radius because it's furthest left in Period 3, with the weakest nuclear pull on its outer electrons.
 
@@ -230,6 +619,35 @@ Property 3: **Physical properties**
 - Both are shiny and silvery in appearance
 
 **Visual thinking**: The single valence electron is like a loose thread - easy to pull away, making these elements reactive.
+
+```mermaid
+graph TD
+    subgraph "Group 1: Alkali Metals"
+        Na[Sodium Na<br/>Config: 2,8,1]
+        K[Potassium K<br/>Config: 2,8,8,1]
+    end
+
+    Na --> Same[Same Group = Same Properties]
+    K --> Same
+
+    Same --> V[Both have<br/>1 valence electron]
+    Same --> I[Both form<br/>+1 ions]
+    Same --> R[Both highly<br/>reactive metals]
+
+    V --> B1[Easy to lose<br/>single electron]
+    I --> B2[Na → Na⁺ + e⁻<br/>K → K⁺ + e⁻]
+    R --> B3[React with water<br/>2Na + 2H₂O → 2NaOH + H₂<br/>2K + 2H₂O → 2KOH + H₂]
+
+    style Na fill:#ffcccc
+    style K fill:#ffcccc
+    style Same fill:#cce5ff
+    style V fill:#e6ffe6
+    style I fill:#e6ffe6
+    style R fill:#e6ffe6
+    style B1 fill:#f0ffe6
+    style B2 fill:#f0ffe6
+    style B3 fill:#f0ffe6
+```
 
 **Answer**: K and Na both (1) have 1 valence electron and form +1 ions, and (2) are highly reactive metals that react vigorously with water to produce hydrogen gas and hydroxide compounds.
 
@@ -289,6 +707,32 @@ Period 2:  Li    Be    B    C    N    O    F    Ne
   - C: ~1090 kJ/mol
   - F: ~1680 kJ/mol
 
+```mermaid
+graph LR
+    subgraph "Period 2 Ionization Energy"
+        Li[Li Lithium<br/>3 protons<br/>520 kJ/mol<br/>EASIEST]
+        C[C Carbon<br/>6 protons<br/>1090 kJ/mol<br/>MEDIUM]
+        F[F Fluorine<br/>9 protons<br/>1680 kJ/mol<br/>HARDEST]
+    end
+
+    Li -->|increasing IE| C
+    C -->|increasing IE| F
+
+    subgraph "Explanation"
+        E1[More protons →<br/>Stronger pull →<br/>Higher IE]
+        E2[Smaller radius →<br/>Electrons closer →<br/>Higher IE]
+    end
+
+    F --> Winner[F has HIGHEST<br/>ionization energy]
+
+    style Li fill:#ccffcc
+    style C fill:#99ff99
+    style F fill:#66ff66
+    style E1 fill:#fff4cc
+    style E2 fill:#fff4cc
+    style Winner fill:#66ff66
+```
+
 **Answer**: Fluorine (F) has the highest ionization energy. It's furthest right in Period 2, meaning it has the most protons (9) pulling on the same electron shell, creating the strongest attraction that requires the most energy to overcome.
 
 ---
@@ -335,6 +779,39 @@ Ionization Energy:    ↑ across period, ↓ down group
                       ↑ opposite ↑
 ```
 
+```mermaid
+graph TB
+    subgraph "Inverse Relationship"
+        AR[Atomic Radius]
+        IE[Ionization Energy]
+    end
+
+    AR -->|INVERSE| IE
+    IE -->|INVERSE| AR
+
+    subgraph "Small Atoms"
+        S[Small Radius<br/>Electrons CLOSE<br/>to nucleus]
+        SIE[HIGH Ionization<br/>Energy to remove]
+    end
+
+    subgraph "Large Atoms"
+        L[Large Radius<br/>Electrons FAR<br/>from nucleus]
+        LIE[LOW Ionization<br/>Energy to remove]
+    end
+
+    S --> SIE
+    L --> LIE
+    S -.opposite.- L
+    SIE -.opposite.- LIE
+
+    style AR fill:#ffb3b3
+    style IE fill:#b3d9ff
+    style S fill:#ff9999
+    style SIE fill:#99ccff
+    style L fill:#ffcccc
+    style LIE fill:#cce6ff
+```
+
 **Example**:
 - WRONG: "Na has a smaller radius than Cl, so Na has higher ionization energy"
 - RIGHT: "Na has a larger radius than Cl, so Na has lower ionization energy (easier to remove electron)"
@@ -375,6 +852,28 @@ Ionization Energy:    ↑ across period, ↓ down group
 - WRONG: "Chlorine has atomic number 17, so it has 17 valence electrons"
 - RIGHT: "Chlorine is in Group 17, so it has 7 valence electrons (ones digit). Atomic number 17 means 17 total electrons, distributed as 2, 8, 7"
 
+```mermaid
+graph TD
+    Cl[Chlorine Cl]
+
+    Cl --> AN[Atomic Number: 17<br/>= Total electrons]
+    Cl --> G[Group: 17<br/>= Valence info]
+
+    AN --> Total[17 total electrons<br/>distributed across ALL shells]
+    G --> Valence[Ones digit = 7<br/>= 7 valence electrons<br/>in outermost shell only]
+
+    Total --> Config[Configuration:<br/>Shell 1: 2 e⁻<br/>Shell 2: 8 e⁻<br/>Shell 3: 7 e⁻ valence]
+
+    Valence --> Config
+
+    style Cl fill:#ff9999
+    style AN fill:#cce6ff
+    style G fill:#ccffcc
+    style Total fill:#e6f2ff
+    style Valence fill:#e6ffe6
+    style Config fill:#fff4cc
+```
+
 ---
 
 ### Mistake 5: Comparing Elements in Different Periods AND Groups Without a Strategy
@@ -406,6 +905,82 @@ Li → Na → Mg → ... → Cl
 - Li to Na (down): radius increases
 - Na to Cl (right): radius decreases strongly
 - Net result: Cl smaller than Li, but not by as much as if they were in the same period
+
+```mermaid
+graph LR
+    subgraph "Diagonal Comparison: Li vs Cl"
+        Li[Li<br/>Period 2, Group 1]
+        Cl[Cl<br/>Period 3, Group 17]
+    end
+
+    Li -->|DOWN 1 period| Effect1[Radius INCREASES]
+    Li -->|RIGHT 16 groups| Effect2[Radius DECREASES<br/>STRONGLY]
+
+    Effect1 --> Compare{Which effect<br/>dominates?}
+    Effect2 --> Compare
+
+    Compare -->|Horizontal<br/>effect stronger| Result[Cl has SMALLER<br/>radius than Li]
+
+    subgraph "Strategy"
+        S1[Compare through<br/>intermediate element]
+        S2[Li → Na → Cl<br/>down, then across]
+    end
+
+    style Li fill:#cce6ff
+    style Cl fill:#ccffcc
+    style Effect1 fill:#ffe6cc
+    style Effect2 fill:#ffcccc
+    style Compare fill:#fff4cc
+    style Result fill:#e6ffe6
+    style S1 fill:#f0e6ff
+    style S2 fill:#f0e6ff
+```
+
+```mermaid
+graph TB
+    subgraph "Simplified Periodic Table Layout"
+        direction TB
+        R1[Period 1: H ..................... He]
+        R2[Period 2: Li Be .......... B C N O F Ne]
+        R3[Period 3: Na Mg ......... Al Si P S Cl Ar]
+        R4[Period 4: K Ca ... transition ... Ga Ge As Se Br Kr]
+    end
+
+    R1 -.Period 1.- R2
+    R2 -.Period 2.- R3
+    R3 -.Period 3.- R4
+
+    subgraph "Key Positions"
+        UL[Upper Left<br/>Alkali Metals<br/>Li, Na, K<br/>Large radius<br/>Low IE, Low EN]
+        UR[Upper Right<br/>Halogens, Noble<br/>F, O, Ne, Cl<br/>Small radius<br/>High IE, High EN]
+        ML[Middle Left<br/>Alkaline Earth<br/>Be, Mg, Ca<br/>Medium properties]
+        BR[Bottom Right<br/>Heavier Nonmetals<br/>S, Se, Br<br/>Medium properties]
+    end
+
+    subgraph "Trend Arrows"
+        ARR1[→ Radius decreases →]
+        ARR2[→ IE increases →]
+        ARR3[→ EN increases →]
+        ARR4[↓ Radius increases ↓]
+        ARR5[↓ IE decreases ↓]
+        ARR6[↓ EN decreases ↓]
+    end
+
+    style R1 fill:#e6f3ff
+    style R2 fill:#cce7ff
+    style R3 fill:#99d1ff
+    style R4 fill:#66bbff
+    style UL fill:#ffcccc
+    style UR fill:#ccffcc
+    style ML fill:#ffd9cc
+    style BR fill:#ccffcc
+    style ARR1 fill:#ffe6e6
+    style ARR2 fill:#e6ffe6
+    style ARR3 fill:#e6e6ff
+    style ARR4 fill:#ffe6e6
+    style ARR5 fill:#e6ffe6
+    style ARR6 fill:#e6e6ff
+```
 
 ---
 
@@ -482,6 +1057,49 @@ a) Explain why ionization energy generally increases from Li to Ne.
 
 b) Explain the small decrease between Be and B, and between N and O.
 
+```mermaid
+graph LR
+    subgraph "Period 2 Ionization Energy Pattern"
+        Li[Li<br/>520]
+        Be[Be<br/>900]
+        B[B<br/>800<br/>drop]
+        C[C<br/>1090]
+        N[N<br/>1400]
+        O[O<br/>1310<br/>drop]
+        F[F<br/>1680]
+        Ne[Ne<br/>2080]
+    end
+
+    Li -->|increase| Be
+    Be -->|small drop| B
+    B -->|increase| C
+    C -->|increase| N
+    N -->|small drop| O
+    O -->|increase| F
+    F -->|increase| Ne
+
+    subgraph "General Trend"
+        GT[Overall increases<br/>left to right<br/>due to stronger<br/>nuclear charge]
+    end
+
+    subgraph "Exceptions"
+        E1[Be→B: s to p<br/>subshell transition]
+        E2[N→O: half-filled<br/>stability effect]
+    end
+
+    style Li fill:#e6ffe6
+    style Be fill:#ccffcc
+    style B fill:#fff4cc
+    style C fill:#ccffcc
+    style N fill:#99ff99
+    style O fill:#fff4cc
+    style F fill:#66ff66
+    style Ne fill:#33ff33
+    style GT fill:#cce6ff
+    style E1 fill:#ffcccc
+    style E2 fill:#ffcccc
+```
+
 **Question 10**: Use the periodic table to answer this multi-step problem:
 
 An unknown element Q has the following properties:
@@ -554,6 +1172,49 @@ Let's work through comparing atomic radius for three elements using an interacti
     More shells = larger radius. Our answer Li < Na < K is confirmed!
 
     **Additional insight**: All three have only 1 valence electron (Group 1), but that valence electron is in increasingly distant shells, making the atoms progressively larger.
+
+```mermaid
+graph TD
+    subgraph "Electron Configuration Patterns"
+        direction TB
+        P1[Period 1: Max 2 electrons<br/>H: 1 | He: 2]
+        P2[Period 2: Max 8 electrons<br/>Li: 2,1 → Ne: 2,8]
+        P3[Period 3: Max 8 electrons<br/>Na: 2,8,1 → Ar: 2,8,8]
+        P4[Period 4: Max 18 electrons<br/>K: 2,8,8,1 → Kr: 2,8,18,8]
+    end
+
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+
+    subgraph "Pattern Rules"
+        R1[Shell 1: Holds max 2 e⁻]
+        R2[Shell 2: Holds max 8 e⁻]
+        R3[Shell 3: Holds max 18 e⁻<br/>but fills to 8, then returns]
+        R4[Valence electrons<br/>always in outermost shell]
+    end
+
+    subgraph "Group 1 Example: Down the Group"
+        G1[Li: 2, 1<br/>1 valence e⁻<br/>SMALLEST]
+        G2[Na: 2, 8, 1<br/>1 valence e⁻<br/>LARGER]
+        G3[K: 2, 8, 8, 1<br/>1 valence e⁻<br/>LARGEST]
+    end
+
+    G1 --> G2
+    G2 --> G3
+
+    style P1 fill:#e6f3ff
+    style P2 fill:#cce7ff
+    style P3 fill:#99d1ff
+    style P4 fill:#66bbff
+    style R1 fill:#fff4cc
+    style R2 fill:#fff4cc
+    style R3 fill:#fff4cc
+    style R4 fill:#ffcccc
+    style G1 fill:#ffe6e6
+    style G2 fill:#ffcccc
+    style G3 fill:#ffb3b3
+```
 
 **Practice this method**: Use these same steps for any periodic trend problem!
 

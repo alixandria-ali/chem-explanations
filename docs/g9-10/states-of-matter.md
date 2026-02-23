@@ -17,6 +17,24 @@ Matter exists in different physical states based on the arrangement and energy o
 - When kinetic energy ≈ intermolecular forces → particles slide past each other (liquid)
 - When kinetic energy < intermolecular forces → particles are fixed in position (solid)
 
+```mermaid
+graph TD
+    subgraph "Kinetic Molecular Theory: Energy vs Forces"
+        A[Kinetic Energy vs<br/>Intermolecular Forces]
+        A --> B[KE > IMF<br/>GAS]
+        A --> C[KE ≈ IMF<br/>LIQUID]
+        A --> D[KE < IMF<br/>SOLID]
+
+        B --> B1[Particles move freely<br/>High speed, random motion]
+        C --> C1[Particles slide past<br/>Moderate motion]
+        D --> D1[Particles fixed<br/>Vibrate in place]
+    end
+
+    style B fill:#e3f2fd
+    style C fill:#fff3e0
+    style D fill:#fce4ec
+```
+
 **Step 2: Comparing the Three States**
 
 | Property | Solid | Liquid | Gas |
@@ -28,6 +46,52 @@ Matter exists in different physical states based on the arrangement and energy o
 | **Volume** | Definite | Definite | Fills container |
 | **Compressibility** | Incompressible | Incompressible | Highly compressible |
 | **Density** | High | High | Low |
+
+```mermaid
+graph LR
+    subgraph "SOLID"
+        S1[●] --- S2[●]
+        S2 --- S3[●]
+        S3 --- S4[●]
+        S4 --- S5[●]
+        S5 --- S6[●]
+        S6 --- S7[●]
+        S7 --- S8[●]
+        S8 --- S9[●]
+        S1 --- S4
+        S4 --- S7
+        S2 --- S5
+        S5 --- S8
+        S3 --- S6
+        S6 --- S9
+    end
+
+    subgraph "LIQUID"
+        L1[●] -.-> L2[●]
+        L2 -.-> L3[●]
+        L4[●] -.-> L5[●]
+        L6[●] -.-> L7[●]
+        L8[●] -.-> L9[●]
+        L3 -.-> L6
+    end
+
+    subgraph "GAS"
+        G1[●]
+        G2[●]
+        G3[●]
+        G4[●]
+        G5[●]
+    end
+
+    SOLID -->|Melting<br/>+Energy| LIQUID
+    LIQUID -->|Vaporization<br/>+Energy| GAS
+    GAS -->|Condensation<br/>-Energy| LIQUID
+    LIQUID -->|Freezing<br/>-Energy| SOLID
+
+    style SOLID fill:#fce4ec
+    style LIQUID fill:#fff3e0
+    style GAS fill:#e3f2fd
+```
 
 **Step 3: Understanding Phase Changes**
 
@@ -42,6 +106,27 @@ Phase changes occur when energy is added or removed, changing the balance betwee
 1. **Freezing** (Liquid → Solid): Particles slow down and form ordered arrangement, releasing energy
 2. **Condensation** (Gas → Liquid): Intermolecular forces pull particles together, releasing energy
 3. **Deposition** (Gas → Solid): Particles go directly to ordered solid state, releasing energy (e.g., frost formation)
+
+```mermaid
+graph TD
+    subgraph "Phase Diagram: All Transitions"
+        S[SOLID<br/>❄️<br/>Fixed position<br/>Definite shape & volume]
+        L[LIQUID<br/>💧<br/>Particles slide<br/>Definite volume only]
+        G[GAS<br/>☁️<br/>Particles separate<br/>No definite shape/volume]
+
+        S -->|Melting<br/>ENDOTHERMIC<br/>+Energy| L
+        L -->|Vaporization/Boiling<br/>ENDOTHERMIC<br/>+Energy| G
+        S -->|Sublimation<br/>ENDOTHERMIC<br/>+Energy| G
+
+        G -->|Condensation<br/>EXOTHERMIC<br/>-Energy| L
+        L -->|Freezing<br/>EXOTHERMIC<br/>-Energy| S
+        G -->|Deposition<br/>EXOTHERMIC<br/>-Energy| S
+    end
+
+    style S fill:#fce4ec,stroke:#c2185b,stroke-width:3px
+    style L fill:#fff3e0,stroke:#f57c00,stroke-width:3px
+    style G fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+```
 
 **Step 4: Interpreting Heating and Cooling Curves**
 
@@ -62,6 +147,47 @@ A heating curve shows temperature changes as heat is added to a substance:
    - First flat region = melting/freezing point
    - Second flat region = boiling/condensation point
 
+```mermaid
+graph LR
+    subgraph "Heating Curve for Water"
+        Start[Ice<br/>-20°C] -->|q = mcΔT<br/>Heating ice| A[0°C]
+        A -->|q = mΔHfus<br/>MELTING<br/>Temperature constant| B[0°C]
+        B -->|q = mcΔT<br/>Heating water| C[100°C]
+        C -->|q = mΔHvap<br/>BOILING<br/>Temperature constant| D[100°C]
+        D -->|q = mcΔT<br/>Heating steam| End[Steam<br/>120°C]
+    end
+
+    style A fill:#e1f5fe
+    style B fill:#fff9c4
+    style C fill:#ffe0b2
+    style D fill:#ffccbc
+```
+
+```mermaid
+graph TD
+    Title["Temperature vs Heat Added: Heating Curve"]
+
+    subgraph "Visual Representation"
+        direction LR
+        Phase1["SOLID<br/>❄️<br/>Temperature rises<br/>q = mcΔT"]
+        Melt["MELTING<br/>🔄<br/>Temperature = 0°C<br/>q = mΔHfus"]
+        Phase2["LIQUID<br/>💧<br/>Temperature rises<br/>q = mcΔT"]
+        Boil["BOILING<br/>🔄<br/>Temperature = 100°C<br/>q = mΔHvap"]
+        Phase3["GAS<br/>☁️<br/>Temperature rises<br/>q = mcΔT"]
+
+        Phase1 --> Melt
+        Melt --> Phase2
+        Phase2 --> Boil
+        Boil --> Phase3
+    end
+
+    style Phase1 fill:#bbdefb
+    style Melt fill:#fff59d
+    style Phase2 fill:#ffccbc
+    style Boil fill:#ffab91
+    style Phase3 fill:#e1f5fe
+```
+
 **Step 5: Calculating Energy in Phase Changes**
 
 For heating/cooling calculations:
@@ -81,6 +207,39 @@ For heating/cooling calculations:
 ### Key Concepts
 
 **Three States of Matter**:
+
+```mermaid
+graph TD
+    subgraph "Particle Arrangement Comparison"
+        direction TB
+
+        S[SOLID STATE<br/>❄️]
+        L[LIQUID STATE<br/>💧]
+        G[GAS STATE<br/>☁️]
+
+        S --> S1[Arrangement: Ordered,<br/>fixed positions]
+        S --> S2[Motion: Vibrate<br/>in place]
+        S --> S3[Distance: Very close,<br/>touching]
+        S --> S4[Shape/Volume:<br/>Both definite]
+        S --> S5[Density: HIGH]
+
+        L --> L1[Arrangement: Random,<br/>not fixed]
+        L --> L2[Motion: Slide past<br/>each other]
+        L --> L3[Distance: Close,<br/>touching]
+        L --> L4[Shape: Container<br/>Volume: Definite]
+        L --> L5[Density: HIGH]
+
+        G --> G1[Arrangement: Random,<br/>far apart]
+        G --> G2[Motion: Rapid,<br/>random movement]
+        G --> G3[Distance: Very far,<br/>lots of space]
+        G --> G4[Shape/Volume:<br/>Both fill container]
+        G --> G5[Density: LOW]
+    end
+
+    style S fill:#fce4ec,stroke:#c2185b,stroke-width:3px
+    style L fill:#fff3e0,stroke:#f57c00,stroke-width:3px
+    style G fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+```
 
 **Solid**:
 - Particles closely packed in fixed positions
@@ -103,11 +262,82 @@ For heating/cooling calculations:
 - Compressible
 - Examples: air, helium, water vapor
 
+```mermaid
+graph TD
+    subgraph "Gas Properties and Relationships"
+        A[GAS PARTICLES]
+
+        A --> B[Large Spaces<br/>Between Particles]
+        A --> C[Random, Rapid<br/>Motion]
+        A --> D[Weak Intermolecular<br/>Forces]
+
+        B --> B1[Compressible]
+        B --> B2[Low Density]
+        C --> C1[Fills Container]
+        C --> C2[High KE]
+        D --> D1[No Fixed Shape]
+        D --> D2[No Fixed Volume]
+    end
+
+    subgraph "Key Gas Relationships"
+        P[Pressure P]
+        V[Volume V]
+        T[Temperature T]
+        N[Moles n]
+
+        P -.->|Increase P<br/>Decrease V| V
+        P -.->|Increase P<br/>Increase T| T
+        V -.->|Increase V<br/>Decrease P| P
+        T -.->|Increase T<br/>Increase P| P
+        T -.->|Increase T<br/>Increase V| V
+        N -.->|Increase n<br/>Increase P| P
+    end
+
+    subgraph "Gas Behavior"
+        G1[More Collisions<br/>→ Higher Pressure]
+        G2[Higher Temperature<br/>→ Faster Motion]
+        G3[Larger Volume<br/>→ Fewer Collisions]
+    end
+
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style P fill:#ffebee
+    style V fill:#fff3e0
+    style T fill:#e8f5e9
+    style N fill:#f3e5f5
+```
+
 **Kinetic Molecular Theory**:
 - All matter is made of particles in constant motion
 - Temperature is a measure of average kinetic energy
 - Higher temperature = faster particle motion
 - Explains properties of each state
+
+```mermaid
+graph TD
+    subgraph "Kinetic Molecular Theory Principles"
+        A[Kinetic Molecular Theory]
+
+        A --> B[Particles in<br/>Constant Motion]
+        A --> C[Temperature ∝<br/>Average KE]
+        A --> D[Energy Determines<br/>State]
+        A --> E[Intermolecular Forces<br/>Affect Properties]
+
+        B --> B1[Even in solids,<br/>particles vibrate]
+        C --> C1[Higher T =<br/>Faster motion]
+        C --> C2[KE = 3/2 kT]
+        D --> D1[High KE: Gas<br/>Medium KE: Liquid<br/>Low KE: Solid]
+        E --> E1[Weak IMF: Gas<br/>Strong IMF: Solid]
+    end
+
+    subgraph "Temperature Effects on Motion"
+        T1[Low Temperature<br/>❄️<br/>Slow motion] --> T2[Medium Temperature<br/>🌡️<br/>Moderate motion] --> T3[High Temperature<br/>🔥<br/>Fast motion]
+    end
+
+    style A fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style T1 fill:#e3f2fd
+    style T2 fill:#fff3e0
+    style T3 fill:#ffebee
+```
 
 **Phase Changes**:
 - **Melting**: solid → liquid (requires energy)
@@ -117,10 +347,75 @@ For heating/cooling calculations:
 - **Sublimation**: solid → gas (requires energy)
 - **Deposition**: gas → solid (releases energy)
 
+```mermaid
+graph TD
+    subgraph "Complete Phase Diagram Concept"
+        Start[Phase Diagram<br/>Pressure vs Temperature]
+
+        Start --> Regions
+        Start --> Lines
+        Start --> Point
+
+        Regions[Three Regions]
+        Lines[Boundary Lines]
+        Point[Triple Point]
+
+        Regions --> R1[Solid Region<br/>High P, Low T]
+        Regions --> R2[Liquid Region<br/>Medium P & T]
+        Regions --> R3[Gas Region<br/>Low P, High T]
+
+        Lines --> L1[Solid-Liquid<br/>Melting/Freezing]
+        Lines --> L2[Liquid-Gas<br/>Vaporization/Condensation]
+        Lines --> L3[Solid-Gas<br/>Sublimation/Deposition]
+
+        Point --> P1[All 3 phases<br/>coexist]
+    end
+
+    subgraph "Phase Transitions Summary"
+        direction LR
+        S2[SOLID] -->|+Heat| L2[LIQUID] -->|+Heat| G2[GAS]
+        G2 -->|-Heat| L2
+        L2 -->|-Heat| S2
+        S2 -->|+Heat<br/>Low P| G2
+        G2 -->|-Heat<br/>Low P| S2
+    end
+
+    style R1 fill:#fce4ec
+    style R2 fill:#fff3e0
+    style R3 fill:#e3f2fd
+    style S2 fill:#fce4ec
+    style L2 fill:#fff3e0
+    style G2 fill:#e3f2fd
+```
+
 **Energy and Phase Changes**:
 - Endothermic: absorbs heat (melting, vaporization, sublimation)
 - Exothermic: releases heat (freezing, condensation, deposition)
 - During a phase change, temperature remains constant while energy goes into changing state
+
+```mermaid
+graph TD
+    subgraph "Energy Flow in Phase Changes"
+        direction TB
+
+        Endo[ENDOTHERMIC PROCESSES<br/>Energy INPUT Required<br/>⚡ +Energy]
+        Exo[EXOTHERMIC PROCESSES<br/>Energy RELEASED<br/>💨 -Energy]
+
+        Endo --> E1[Melting<br/>Solid → Liquid<br/>q = mΔHfus]
+        Endo --> E2[Vaporization<br/>Liquid → Gas<br/>q = mΔHvap]
+        Endo --> E3[Sublimation<br/>Solid → Gas<br/>q = mΔHsub]
+
+        Exo --> X1[Freezing<br/>Liquid → Solid<br/>q = -mΔHfus]
+        Exo --> X2[Condensation<br/>Gas → Liquid<br/>q = -mΔHvap]
+        Exo --> X3[Deposition<br/>Gas → Solid<br/>q = -mΔHsub]
+
+        Note[During Phase Change:<br/>Temperature CONSTANT<br/>Energy changes potential energy,<br/>not kinetic energy]
+    end
+
+    style Endo fill:#ffebee,stroke:#c62828,stroke-width:3px
+    style Exo fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style Note fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+```
 
 **Heating Curve**: Graph showing temperature vs. heat added:
 - Diagonal sections: temperature increases (kinetic energy increases)

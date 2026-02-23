@@ -84,7 +84,6 @@ extra_javascript:
 nav:
   - Home: index.md
   - 📅 Schedule Coaching: schedule.md
-  - 🧮 Calculators & Tools: widgets.md
   - Atomic Structure: g9-10/atomic-structure.md
   - Periodic Table: g9-10/periodic-table.md
   - Chemical Bonding: g9-10/chemical-bonding.md

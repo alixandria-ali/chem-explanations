@@ -13,6 +13,30 @@ Thermochemistry studies energy changes during chemical reactions. Understanding 
 - **Enthalpy change (\(\Delta H\))**: Heat absorbed or released in a reaction
   - \(\Delta H = H_{\text{products}} - H_{\text{reactants}}\)
 
+```mermaid
+graph TB
+    subgraph Universe["Universe = System + Surroundings"]
+        subgraph System["SYSTEM<br/>(Chemical Reaction)"]
+            R[Reactants] -.->|Reaction Progress| P[Products]
+            style R fill:#ffcccc
+            style P fill:#ccffcc
+        end
+
+        subgraph Surr["SURROUNDINGS<br/>(Everything Else)"]
+            E[Environment]
+            style E fill:#e6f3ff
+        end
+    end
+
+    System <-->|Heat Exchange| Surr
+
+    Note["Enthalpy Change:<br/>ΔH = H_products - H_reactants"]
+    style Note fill:#ffffcc,stroke:#333,stroke-width:3px
+    style Universe fill:#f9f9f9,stroke:#666,stroke-width:2px
+    style System fill:#ffe6e6,stroke:#cc0000,stroke-width:2px
+    style Surr fill:#e6f3ff,stroke:#0066cc,stroke-width:2px
+```
+
 **Exothermic vs. Endothermic**:
 - **Exothermic**: Releases heat to surroundings, \(\Delta H < 0\) (negative)
   - Example: \(CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O \quad \Delta H = -890 \text{ kJ}\)
@@ -20,6 +44,48 @@ Thermochemistry studies energy changes during chemical reactions. Understanding 
 - **Endothermic**: Absorbs heat from surroundings, \(\Delta H > 0\) (positive)
   - Example: \(N_2 + O_2 \rightarrow 2NO \quad \Delta H = +181 \text{ kJ}\)
   - Products have more energy than reactants
+
+```mermaid
+graph TD
+    subgraph Exothermic["Exothermic Reaction (ΔH < 0)"]
+        A1[Reactants<br/>Higher Energy] -->|Energy Released| B1[Products<br/>Lower Energy]
+        A1 -.->|Heat flows OUT| C1[Surroundings<br/>Temperature Increases]
+        style A1 fill:#ffcccc
+        style B1 fill:#ccffcc
+        style C1 fill:#ffffcc
+    end
+
+    subgraph Endothermic["Endothermic Reaction (ΔH > 0)"]
+        A2[Reactants<br/>Lower Energy] -->|Energy Absorbed| B2[Products<br/>Higher Energy]
+        C2[Surroundings<br/>Temperature Decreases] -.->|Heat flows IN| A2
+        style A2 fill:#ccffcc
+        style B2 fill:#ffcccc
+        style C2 fill:#ccddff
+    end
+```
+
+**Energy Diagrams:**
+
+```mermaid
+graph LR
+    subgraph Exo["Exothermic: ΔH = -890 kJ"]
+        direction TB
+        R1["Reactants<br/>CH₄ + 2O₂"]
+        P1["Products<br/>CO₂ + 2H₂O"]
+        R1 -->|890 kJ<br/>released| P1
+        style R1 fill:#ff9999,stroke:#333,stroke-width:2px
+        style P1 fill:#99ff99,stroke:#333,stroke-width:2px
+    end
+
+    subgraph Endo["Endothermic: ΔH = +181 kJ"]
+        direction TB
+        R2["Reactants<br/>N₂ + O₂"]
+        P2["Products<br/>2NO"]
+        R2 -->|181 kJ<br/>absorbed| P2
+        style R2 fill:#99ff99,stroke:#333,stroke-width:2px
+        style P2 fill:#ff9999,stroke:#333,stroke-width:2px
+    end
+```
 
 **Standard Enthalpy of Formation (\(\Delta H_f°\))**:
 - Heat change when 1 mole of compound forms from elements in standard states
@@ -31,6 +97,22 @@ Thermochemistry studies energy changes during chemical reactions. Understanding 
 - \(\Delta H_{\text{reaction}} = \sum \Delta H_f°(\text{products}) - \sum \Delta H_f°(\text{reactants})\)
 - Can add equations and their \(\Delta H\) values to find overall \(\Delta H\)
 
+```mermaid
+graph TD
+    A["Reactants<br/>(Initial State)"] -->|"Direct Path<br/>ΔH = ?"| D["Products<br/>(Final State)"]
+    A -->|"Step 1<br/>ΔH₁"| B["Intermediate 1"]
+    B -->|"Step 2<br/>ΔH₂"| C["Intermediate 2"]
+    C -->|"Step 3<br/>ΔH₃"| D
+
+    E["Hess's Law:<br/>ΔH = ΔH₁ + ΔH₂ + ΔH₃<br/><br/>Total enthalpy change is<br/>independent of pathway"]
+
+    style A fill:#ffcccc,stroke:#333,stroke-width:2px
+    style D fill:#ccffcc,stroke:#333,stroke-width:2px
+    style B fill:#ffffcc,stroke:#333,stroke-width:1px
+    style C fill:#ffffcc,stroke:#333,stroke-width:1px
+    style E fill:#e6f3ff,stroke:#0066cc,stroke-width:3px
+```
+
 **Calorimetry**:
 - Measuring heat transfer using a calorimeter
 - \(q = mc\Delta T\)
@@ -39,6 +121,31 @@ Thermochemistry studies energy changes during chemical reactions. Understanding 
   - \(c\) = specific heat capacity (J/g·°C)
   - \(\Delta T\) = temperature change (°C)
 - Specific heat of water: \(c = 4.18 \text{ J/g·°C}\)
+
+```mermaid
+graph TB
+    subgraph Calorimeter["Simple Calorimeter Setup"]
+        A[Thermometer<br/>Measures ΔT]
+        B[Stirrer<br/>Ensures uniform<br/>temperature]
+        C[Insulated Container<br/>Minimizes heat loss<br/>to surroundings]
+        D[Water<br/>mass = m<br/>c = 4.18 J/g·°C]
+        E[Reaction Vessel<br/>or Sample<br/>Heat source/sink]
+
+        A --> D
+        B --> D
+        E --> D
+        D --> C
+
+        style A fill:#ffcccc
+        style B fill:#ccffcc
+        style C fill:#ccccff
+        style D fill:#cce5ff
+        style E fill:#ffccff
+    end
+
+    F["Heat Exchange:<br/>q = mc×ΔT"] -.->|Calculate heat| Calorimeter
+    style F fill:#ffffcc,stroke:#333,stroke-width:3px
+```
 
 ---
 
@@ -53,6 +160,26 @@ Thermochemistry studies energy changes during chemical reactions. Understanding 
 2. **Determine the direction of heat flow**:
    - Heat flows INTO the system = endothermic (\(\Delta H > 0\))
    - Heat flows OUT OF the system = exothermic (\(\Delta H < 0\))
+
+```mermaid
+flowchart LR
+    subgraph System["SYSTEM (Reaction)"]
+        R[Reactants] --> P[Products]
+    end
+
+    subgraph Surroundings["SURROUNDINGS"]
+        S1[Environment]
+    end
+
+    System -->|"EXOTHERMIC<br/>Heat Released<br/>ΔH < 0<br/>🔥"| Surroundings
+    Surroundings -->|"ENDOTHERMIC<br/>Heat Absorbed<br/>ΔH > 0<br/>❄️"| System
+
+    style System fill:#ffe6e6,stroke:#cc0000,stroke-width:3px
+    style Surroundings fill:#e6f3ff,stroke:#0066cc,stroke-width:3px
+    style R fill:#ffcccc
+    style P fill:#ccffcc
+    style S1 fill:#cce5ff
+```
 
 3. **Apply the correct formula**:
    - For reactions: \(\Delta H = \sum n\Delta H_f°(\text{products}) - \sum n\Delta H_f°(\text{reactants})\)
@@ -97,6 +224,27 @@ Calculate the heat when 150 g of aluminum (c = 0.90 J/g·°C) is heated from 25�
 - **Step 3**: \(q = (150 \text{ g})(0.90 \text{ J/g·°C})(50°\text{C}) = 6,750 \text{ J}\)
 - **Step 4**: Positive q means aluminum absorbed 6,750 J of heat
 - **Step 5**: \(q = 6.75 \text{ kJ}\)
+
+```mermaid
+sequenceDiagram
+    participant H as Heat Source
+    participant A as Aluminum (150g)
+    participant T as Temperature
+
+    Note over A: Initial: 25°C
+    Note over A: c = 0.90 J/g·°C
+
+    H->>A: Supply Heat Energy
+    A->>A: q = mcΔT
+    Note over A: q = (150)(0.90)(50)
+    Note over A: q = 6,750 J = 6.75 kJ
+
+    A->>T: Temperature Increases
+    Note over T: Final: 75°C
+    Note over T: ΔT = +50°C
+
+    Note over H,T: Positive q = Heat Absorbed
+```
 
 ### Solving Hess's Law Problems
 
@@ -146,6 +294,34 @@ Result: \(2C_{(s)} + H_{2(g)} \rightarrow C_2H_{2(g)}\)
 
 **Step 5**: \(\Delta H = 1300 - 788 - 286 = +226 \text{ kJ}\)
 
+```mermaid
+graph TB
+    subgraph Target["Target: 2C + H₂ → C₂H₂"]
+        style Target fill:#e6f3ff,stroke:#0066cc,stroke-width:3px
+    end
+
+    subgraph Manipulation["Equation Manipulation"]
+        E1["Equation 1 (Reversed):<br/>2CO₂ + H₂O → C₂H₂ + 5/2 O₂<br/>ΔH = +1300 kJ"]
+        E2["Equation 2 (×2):<br/>2C + 2O₂ → 2CO₂<br/>ΔH = -788 kJ"]
+        E3["Equation 3 (Keep):<br/>H₂ + 1/2 O₂ → H₂O<br/>ΔH = -286 kJ"]
+
+        style E1 fill:#ffe6e6
+        style E2 fill:#e6ffe6
+        style E3 fill:#ffffcc
+    end
+
+    subgraph Result["Add Equations"]
+        R1["Cancel: 2CO₂, H₂O, O₂"]
+        R2["Final: 2C + H₂ → C₂H₂<br/>ΔH = +1300 - 788 - 286 = +226 kJ"]
+
+        style R1 fill:#ffcccc
+        style R2 fill:#ccffcc,stroke:#333,stroke-width:2px
+    end
+
+    Target --> Manipulation
+    Manipulation --> Result
+```
+
 ---
 
 ## Common Mistakes and How to Avoid Them
@@ -164,6 +340,23 @@ Result: \(2C_{(s)} + H_{2(g)} \rightarrow C_2H_{2(g)}\)
 **Example**:
 - Given: \(2H_2O \rightarrow 2H_2 + O_2 \quad \Delta H = +572 \text{ kJ}\)
 - Reversed: \(2H_2 + O_2 \rightarrow 2H_2O \quad \Delta H = -572 \text{ kJ}\)
+
+```mermaid
+graph LR
+    subgraph Forward["Forward (Endothermic)"]
+        A1["2H₂O<br/>Lower Energy"] -->|"+572 kJ<br/>Absorbed"| B1["2H₂ + O₂<br/>Higher Energy"]
+        style A1 fill:#99ff99
+        style B1 fill:#ff9999
+    end
+
+    subgraph Reverse["Reverse (Exothermic)"]
+        A2["2H₂ + O₂<br/>Higher Energy"] -->|"-572 kJ<br/>Released"| B2["2H₂O<br/>Lower Energy"]
+        style A2 fill:#ff9999
+        style B2 fill:#99ff99
+    end
+
+    Forward -.->|"Reverse Reaction<br/>Change Sign"| Reverse
+```
 
 ### 2. Unit Conversion Mistakes
 
@@ -195,6 +388,24 @@ If q = 5,430 J and the answer choices are in kJ, convert: 5,430 J ÷ 1000 = 5.43
 - Water cools from 80°C to 30°C
 - Correct: \(\Delta T = 30 - 80 = -50°\text{C}\)
 - Incorrect: \(\Delta T = 80 - 30 = +50°\text{C}\) (This would indicate heating!)
+
+```mermaid
+graph LR
+    subgraph Heating["Heating Process"]
+        H1["Initial<br/>20°C"] -->|"ΔT = +60°C<br/>q = positive<br/>Heat Absorbed"| H2["Final<br/>80°C"]
+        style H1 fill:#cce5ff
+        style H2 fill:#ff9999
+    end
+
+    subgraph Cooling["Cooling Process"]
+        C1["Initial<br/>80°C"] -->|"ΔT = -50°C<br/>q = negative<br/>Heat Released"| C2["Final<br/>30°C"]
+        style C1 fill:#ff9999
+        style C2 fill:#cce5ff
+    end
+
+    Note["Remember: ΔT = T_final - T_initial"]
+    style Note fill:#ffffcc,stroke:#333,stroke-width:2px
+```
 
 ### 4. Forgetting Stoichiometric Coefficients
 
@@ -241,6 +452,26 @@ For \(2H_2O\) with \(\Delta H_f° = -286 \text{ kJ/mol}\), use \(2 \times (-286)
 
 **Answer**: 62.7 kJ of heat is required
 
+```mermaid
+flowchart TD
+    Start([Given Values]) --> A["m = 250 g<br/>c = 4.18 J/g·°C<br/>T_i = 20°C<br/>T_f = 80°C"]
+    A --> B["Calculate ΔT<br/>ΔT = T_f - T_i<br/>ΔT = 80 - 20 = 60°C"]
+    B --> C["Apply Formula<br/>q = mc×ΔT"]
+    C --> D["Substitute Values<br/>q = (250)(4.18)(60)"]
+    D --> E["Calculate<br/>q = 62,700 J"]
+    E --> F["Convert Units<br/>q = 62.7 kJ"]
+    F --> End([Heat Required: 62.7 kJ])
+
+    style Start fill:#e6f3ff
+    style End fill:#ccffcc,stroke:#333,stroke-width:3px
+    style A fill:#ffffcc
+    style B fill:#ffe6cc
+    style C fill:#ffe6e6
+    style D fill:#e6ffe6
+    style E fill:#f0e6ff
+    style F fill:#ffe6f0
+```
+
 ---
 
 ### Example 2: Using Hess's Law
@@ -262,6 +493,39 @@ Calculate \(\Delta H\) for: \(C_{(s)} + \frac{1}{2}O_{2(g)} \rightarrow CO_{(g)}
 
 **Answer**: \(\Delta H = -111 \text{ kJ}\)
 
+```mermaid
+graph TB
+    subgraph Given["Given Equations"]
+        G1["(1) C + O₂ → CO₂<br/>ΔH = -394 kJ"]
+        G2["(2) CO + 1/2 O₂ → CO₂<br/>ΔH = -283 kJ"]
+        style G1 fill:#e6f3ff
+        style G2 fill:#e6f3ff
+    end
+
+    subgraph Target["Target Equation"]
+        T1["C + 1/2 O₂ → CO<br/>ΔH = ?"]
+        style T1 fill:#ffffcc,stroke:#cc0000,stroke-width:3px
+    end
+
+    subgraph Steps["Solution Steps"]
+        S1["Keep equation (1):<br/>C + O₂ → CO₂<br/>ΔH = -394 kJ"]
+        S2["Reverse equation (2):<br/>CO₂ → CO + 1/2 O₂<br/>ΔH = +283 kJ"]
+        S3["Add equations:<br/>CO₂ cancels"]
+        S4["Final: C + 1/2 O₂ → CO<br/>ΔH = -394 + 283 = -111 kJ"]
+
+        style S1 fill:#e6ffe6
+        style S2 fill:#ffe6e6
+        style S3 fill:#ffcccc
+        style S4 fill:#ccffcc,stroke:#333,stroke-width:2px
+    end
+
+    Given --> Target
+    Target --> Steps
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
 ---
 
 ### Example 3: Calculating \(\Delta H\) from Formation Enthalpies
@@ -279,6 +543,57 @@ Given: \(\Delta H_f°(CH_4) = -75 \text{ kJ/mol}\), \(\Delta H_f°(CO_2) = -394 
 5. \(\Delta H = -966 - (-75) = -966 + 75 = -891 \text{ kJ}\)
 
 **Answer**: \(\Delta H = -891 \text{ kJ}\) (exothermic combustion)
+
+```mermaid
+graph TB
+    subgraph Reaction["CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)"]
+        style Reaction fill:#e6f3ff,stroke:#0066cc,stroke-width:3px
+    end
+
+    subgraph Reactants["Reactants"]
+        R1["CH₄: 1 × (-75) = -75 kJ"]
+        R2["O₂: 2 × (0) = 0 kJ<br/>(element in standard state)"]
+        R3["Total: -75 kJ"]
+
+        style R1 fill:#ffe6e6
+        style R2 fill:#f0f0f0
+        style R3 fill:#ffcccc,stroke:#333,stroke-width:2px
+    end
+
+    subgraph Products["Products"]
+        P1["CO₂: 1 × (-394) = -394 kJ"]
+        P2["H₂O: 2 × (-286) = -572 kJ"]
+        P3["Total: -966 kJ"]
+
+        style P1 fill:#e6ffe6
+        style P2 fill:#e6ffe6
+        style P3 fill:#ccffcc,stroke:#333,stroke-width:2px
+    end
+
+    subgraph Calculation["ΔH Calculation"]
+        C1["ΔH = Σ Products - Σ Reactants"]
+        C2["ΔH = (-966) - (-75)"]
+        C3["ΔH = -966 + 75"]
+        C4["ΔH = -891 kJ"]
+
+        style C1 fill:#ffffcc
+        style C2 fill:#ffffcc
+        style C3 fill:#ffffcc
+        style C4 fill:#99ff99,stroke:#333,stroke-width:3px
+    end
+
+    Reaction --> Reactants
+    Reaction --> Products
+    Reactants --> Calculation
+    Products --> Calculation
+    R1 --> R3
+    R2 --> R3
+    P1 --> P3
+    P2 --> P3
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+```
 
 ---
 

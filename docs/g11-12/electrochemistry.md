@@ -12,6 +12,26 @@ Electrochemistry studies the relationship between chemical reactions and electri
 - **OIL RIG**: Oxidation Is Loss, Reduction Is Gain
 - Redox reactions always occur together: one species oxidized, one reduced
 
+```mermaid
+flowchart LR
+    subgraph Oxidation
+        O1[Species A<br/>loses electrons]
+        O2[Oxidation number<br/>increases]
+        O3[A is the<br/>reducing agent]
+    end
+
+    subgraph Reduction
+        R1[Species B<br/>gains electrons]
+        R2[Oxidation number<br/>decreases]
+        R3[B is the<br/>oxidizing agent]
+    end
+
+    O1 -->|e⁻| R1
+
+    style Oxidation fill:#ffcccc
+    style Reduction fill:#ccccff
+```
+
 **Step-by-Step Guide to Identifying Redox Reactions**:
 
 1. **Assign oxidation numbers** to all atoms in reactants and products
@@ -48,6 +68,18 @@ Electrochemistry studies the relationship between chemical reactions and electri
   - Oxidation: \(Zn \rightarrow Zn^{2+} + 2e^-\)
   - Reduction: \(Cu^{2+} + 2e^- \rightarrow Cu\)
 
+```mermaid
+graph LR
+    A[Zn atom<br/>loses electrons] -->|Oxidation| B[Zn²⁺ + 2e⁻]
+    C[Cu²⁺ + 2e⁻] -->|Reduction| D[Cu atom<br/>gains electrons]
+    B -.->|2e⁻ transfer| C
+
+    style A fill:#ffcccc
+    style B fill:#ffcccc
+    style C fill:#ccccff
+    style D fill:#ccccff
+```
+
 **Step-by-Step Guide to Writing Half-Reactions**:
 
 1. **Write the skeleton equation** showing only the species being oxidized or reduced
@@ -64,6 +96,36 @@ Electrochemistry studies the relationship between chemical reactions and electri
 - Electrons flow from anode to cathode through external circuit
 - Salt bridge maintains charge balance
 - Example: batteries
+
+```mermaid
+graph TB
+    subgraph Anode["Anode (-)"]
+        A1[Zn electrode]
+        A2[Zn → Zn²⁺ + 2e⁻]
+        A3[Oxidation]
+    end
+
+    subgraph Cathode["Cathode (+)"]
+        C1[Cu electrode]
+        C2[Cu²⁺ + 2e⁻ → Cu]
+        C3[Reduction]
+    end
+
+    subgraph Bridge[Salt Bridge]
+        SB[K⁺ and NO₃⁻<br/>maintain neutrality]
+    end
+
+    A1 -->|e⁻ flow| Wire[External Wire/Circuit]
+    Wire -->|e⁻ flow| C1
+
+    Bridge -.->|Anions →| Anode
+    Bridge -.->|Cations →| Cathode
+
+    style Anode fill:#ffcccc
+    style Cathode fill:#ccccff
+    style Bridge fill:#ffffcc
+    style Wire fill:#ccffcc
+```
 
 **Standard Reduction Potentials (\(E°\))**:
 - Measure tendency to gain electrons (be reduced)
@@ -89,6 +151,32 @@ Electrochemistry studies the relationship between chemical reactions and electri
 - Used for electroplating, decomposition, refining metals
 - Example: Electrolysis of water: \(2H_2O \rightarrow 2H_2 + O_2\)
 
+```mermaid
+graph TB
+    subgraph Battery[External Power Source]
+        BAT[Battery/Power Supply]
+    end
+
+    subgraph AnodeE["Anode (+)"]
+        AE1[Electrode]
+        AE2[2Cl⁻ → Cl₂ + 2e⁻]
+        AE3[Oxidation]
+    end
+
+    subgraph CathodeE["Cathode (-)"]
+        CE1[Electrode]
+        CE2[Na⁺ + e⁻ → Na]
+        CE3[Reduction]
+    end
+
+    BAT -->|Forces e⁻| CE1
+    AE1 -->|e⁻ drawn| BAT
+
+    style AnodeE fill:#ffcccc
+    style CathodeE fill:#ccccff
+    style Battery fill:#ffddaa
+```
+
 ---
 
 ## Common Mistakes to Avoid
@@ -108,6 +196,29 @@ Electrochemistry studies the relationship between chemical reactions and electri
 - **Electrolytic cell**: Anode is positive (connected to positive terminal of battery)
 
 **Correct approach**: Remember AN-OX and RED-CAT (Anode = Oxidation, Cathode = Reduction) works for BOTH types of cells. The charge depends on cell type.
+
+```mermaid
+graph TB
+    subgraph Galvanic["Galvanic Cell (Spontaneous)"]
+        GA["Anode (-)<br/>Oxidation<br/>Produces e⁻"]
+        GC["Cathode (+)<br/>Reduction<br/>Consumes e⁻"]
+        GA -->|e⁻ flow naturally| GC
+    end
+
+    subgraph Electrolytic["Electrolytic Cell (Non-spontaneous)"]
+        EA["Anode (+)<br/>Oxidation<br/>Forced to lose e⁻"]
+        EC["Cathode (-)<br/>Reduction<br/>Forced to gain e⁻"]
+        PWR[External Power Source]
+        PWR -->|Forces e⁻| EC
+        EA -->|e⁻ drawn| PWR
+    end
+
+    style GA fill:#ffcccc
+    style GC fill:#ccccff
+    style EA fill:#ffcccc
+    style EC fill:#ccccff
+    style PWR fill:#ffddaa
+```
 
 ### Mistake 3: Subtracting Cell Potentials Incorrectly
 **Error**: Calculating \(E°_{\text{cell}} = E°_{\text{oxidation}} - E°_{\text{reduction}}\)
@@ -205,6 +316,44 @@ Which is the anode and which is the cathode?
 5. Since \(E°_{\text{cell}} > 0\), reaction is spontaneous
 
 **Answer**: \(E°_{\text{cell}} = +1.10 \text{ V}\). Cu is cathode (reduction), Zn is anode (oxidation). Reaction is spontaneous.
+
+```mermaid
+flowchart TB
+    subgraph AnodeSide["Anode Half-Cell (-)"]
+        ZnE["Zn Electrode<br/>(loses mass)"]
+        ZnSol["Zn²⁺ solution<br/>(concentration increases)"]
+        ZnRxn["Zn → Zn²⁺ + 2e⁻<br/>OXIDATION"]
+    end
+
+    subgraph SaltBridge["Salt Bridge"]
+        SB1["K⁺ ions →"]
+        SB2["← NO₃⁻ ions"]
+    end
+
+    subgraph CathodeSide["Cathode Half-Cell (+)"]
+        CuE["Cu Electrode<br/>(gains mass)"]
+        CuSol["Cu²⁺ solution<br/>(concentration decreases)"]
+        CuRxn["Cu²⁺ + 2e⁻ → Cu<br/>REDUCTION"]
+    end
+
+    subgraph Circuit["External Circuit"]
+        Wire["Wire/Load<br/>e⁻ flow direction ➜"]
+    end
+
+    ZnE -.->|"Zn atoms oxidized"| ZnSol
+    CuSol -.->|"Cu²⁺ reduced"| CuE
+
+    ZnE -->|"e⁻"| Wire
+    Wire -->|"e⁻"| CuE
+
+    SaltBridge -.->|"K⁺ cations"| CathodeSide
+    AnodeSide -.->|"NO₃⁻ anions"| SaltBridge
+
+    style AnodeSide fill:#ffcccc
+    style CathodeSide fill:#ccccff
+    style SaltBridge fill:#ffffcc
+    style Circuit fill:#ccffcc
+```
 
 ---
 
