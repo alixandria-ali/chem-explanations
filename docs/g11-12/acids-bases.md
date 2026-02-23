@@ -52,25 +52,6 @@ The pH scale is a logarithmic measure of hydrogen ion concentration. The formula
   - A solution with pH 3 has 10 times more \([H^+]\) than pH 4
   - A solution with pH 2 has 100 times more \([H^+]\) than pH 4
 
-```mermaid
-graph LR
-    A[pH Scale 0-14] --> B[Acidic<br/>pH < 7]
-    A --> C[Neutral<br/>pH = 7]
-    A --> D[Basic<br/>pH > 7]
-
-    B --> E["Strong Acids<br/>pH 0-2<br/>(HCl, H₂SO₄)"]
-    B --> F["Weak Acids<br/>pH 3-6<br/>(CH₃COOH)"]
-
-    C --> G["Pure Water<br/>[H⁺] = [OH⁻]<br/>1.0×10⁻⁷ M"]
-
-    D --> H["Weak Bases<br/>pH 8-11<br/>(NH₃)"]
-    D --> I["Strong Bases<br/>pH 12-14<br/>(NaOH, KOH)"]
-
-    style B fill:#ffcccc
-    style C fill:#ccffcc
-    style D fill:#ccccff
-```
-
 **Converting between pH and \([H^+]\)**:
 - **Given pH, find \([H^+]\)**: \([H^+] = 10^{-pH}\)
   - Example: pH = 5 → \([H^+] = 10^{-5} = 1.0 \times 10^{-5}\) M
@@ -92,40 +73,6 @@ Similar to pH, but measures hydroxide ion concentration:
 - If you know pH, you can find pOH: \(pOH = 14 - pH\)
 - If you know \([H^+]\), you can find \([OH^-]\): \([OH^-] = \frac{K_w}{[H^+]} = \frac{1.0 \times 10^{-14}}{[H^+]}\)
 
-```mermaid
-graph TB
-    subgraph " "
-        pH0["pH 0-1<br/>Battery acid<br/>[H⁺] = 1-0.1 M"]
-        pH2["pH 2<br/>Stomach acid, lemon juice<br/>[H⁺] = 0.01 M"]
-        pH3["pH 3<br/>Vinegar, soda<br/>[H⁺] = 0.001 M"]
-        pH5["pH 5<br/>Coffee, rain water<br/>[H⁺] = 10⁻⁵ M"]
-        pH7["pH 7<br/>Pure water<br/>[H⁺] = [OH⁻] = 10⁻⁷ M"]
-        pH8["pH 8<br/>Sea water<br/>[H⁺] = 10⁻⁸ M"]
-        pH10["pH 10<br/>Milk of magnesia<br/>[H⁺] = 10⁻¹⁰ M"]
-        pH13["pH 13<br/>Bleach<br/>[H⁺] = 10⁻¹³ M"]
-        pH14["pH 14<br/>Drain cleaner<br/>[H⁺] = 10⁻¹⁴ M"]
-
-        pH0 --> pH2 --> pH3 --> pH5 --> pH7 --> pH8 --> pH10 --> pH13 --> pH14
-
-        Acidic["ACIDIC<br/>pH < 7<br/>High [H⁺]"] -.-> pH3
-        Neutral["NEUTRAL<br/>pH = 7<br/>[H⁺] = [OH⁻]"] -.-> pH7
-        Basic["BASIC<br/>pH > 7<br/>Low [H⁺], High [OH⁻]"] -.-> pH10
-
-        style pH0 fill:#cc0000,color:#fff
-        style pH2 fill:#ff3333,color:#fff
-        style pH3 fill:#ff6666
-        style pH5 fill:#ffcccc
-        style pH7 fill:#ccffcc
-        style pH8 fill:#66ff66
-        style pH10 fill:#3366ff,color:#fff
-        style pH13 fill:#0033cc,color:#fff
-        style pH14 fill:#001a66,color:#fff
-        style Acidic fill:#ffe0e0
-        style Neutral fill:#e0ffe0
-        style Basic fill:#e0e0ff
-    end
-```
-
 ### Water Ionization and the Ion Product
 
 **Water Ionization**:
@@ -137,35 +84,6 @@ graph TB
 - If \([H^+]\) increases, \([OH^-]\) must decrease (and vice versa)
 - In acidic solutions: \([H^+] > [OH^-]\)
 - In basic solutions: \([OH^-] > [H^+]\)
-
-```mermaid
-graph LR
-    subgraph "Water Ionization Equilibrium"
-        A["2 H₂O"] <-->|"Autoionization"| B["H₃O⁺ + OH⁻"]
-    end
-
-    subgraph "Key Relationship"
-        C["Kw = [H⁺][OH⁻]<br/>= 1.0 × 10⁻¹⁴<br/>(at 25°C)"]
-    end
-
-    subgraph "Three Scenarios"
-        D["Acidic Solution<br/>[H⁺] > 10⁻⁷ M<br/>[OH⁻] < 10⁻⁷ M<br/>pH < 7"]
-        E["Neutral Solution<br/>[H⁺] = 10⁻⁷ M<br/>[OH⁻] = 10⁻⁷ M<br/>pH = 7"]
-        F["Basic Solution<br/>[H⁺] < 10⁻⁷ M<br/>[OH⁻] > 10⁻⁷ M<br/>pH > 7"]
-    end
-
-    B --> C
-    C --> D
-    C --> E
-    C --> F
-
-    style A fill:#ccffff
-    style B fill:#ccffff
-    style C fill:#ffffcc
-    style D fill:#ffcccc
-    style E fill:#ccffcc
-    style F fill:#ccccff
-```
 
 ### Strong vs. Weak Acids and Bases
 
@@ -201,28 +119,6 @@ A buffer solution resists changes in pH when small amounts of acid or base are a
 - Weak acid: \(CH_3COOH\)
 - Conjugate base: \(CH_3COO^-\)
 - Equilibrium: \(CH_3COOH \rightleftharpoons H^+ + CH_3COO^-\)
-
-```mermaid
-graph TD
-    Buffer["Buffer Solution<br/>CH₃COOH + CH₃COO⁻<br/>(Weak acid + Conjugate base)"]
-
-    Buffer --> AddAcid["Add H⁺ (acid)"]
-    Buffer --> AddBase["Add OH⁻ (base)"]
-
-    AddAcid --> AcidReaction["CH₃COO⁻ + H⁺<br/>→ CH₃COOH"]
-    AddBase --> BaseReaction["CH₃COOH + OH⁻<br/>→ CH₃COO⁻ + H₂O"]
-
-    AcidReaction --> Result1["Conjugate base<br/>neutralizes H⁺<br/>pH stays stable"]
-    BaseReaction --> Result2["Weak acid<br/>neutralizes OH⁻<br/>pH stays stable"]
-
-    Result1 --> Stable["Buffer maintains<br/>pH ≈ constant"]
-    Result2 --> Stable
-
-    style Buffer fill:#ccffcc
-    style AddAcid fill:#ffcccc
-    style AddBase fill:#ccccff
-    style Stable fill:#ffffcc
-```
 
 ### Titration: Detailed Step-by-Step Process
 
@@ -271,26 +167,6 @@ For \(H_2SO_4 + 2NaOH \rightarrow Na_2SO_4 + 2H_2O\) (1:2 ratio):
 - **Methyl orange**: Red in acid, yellow in base (pH transition: 3.1-4.4)
 - **Bromothymol blue**: Yellow in acid, blue in base (pH transition: 6.0-7.6)
 
-```mermaid
-graph TD
-    Start["Start: Add base to acid<br/>(pH is low)"] --> Phase1["Beginning of Titration<br/>pH rises slowly<br/>Excess acid present"]
-
-    Phase1 --> Phase2["Approaching Equivalence<br/>pH rises more rapidly<br/>Nearly stoichiometric"]
-
-    Phase2 --> Equiv["Equivalence Point<br/>Moles acid = Moles base<br/>Sharp pH change"]
-
-    Equiv --> Phase3["Past Equivalence<br/>pH rises slowly again<br/>Excess base present"]
-
-    Phase3 --> End["End of Titration<br/>(pH is high)"]
-
-    Equiv --> Note["Strong acid + Strong base:<br/>pH = 7 at equivalence<br/>Weak acid + Strong base:<br/>pH > 7 at equivalence<br/>Strong acid + Weak base:<br/>pH < 7 at equivalence"]
-
-    style Start fill:#ffcccc
-    style Equiv fill:#ffffcc
-    style End fill:#ccccff
-    style Note fill:#e0e0e0
-```
-
 ### Neutralization Reactions
 
 **General form**:
@@ -305,25 +181,6 @@ graph TD
 - Always balance the equation first
 - Pay attention to polyprotic acids (like \(H_2SO_4\)) and polyhydroxy bases (like \(Ca(OH)_2\))
 - The salt formed depends on the cation from the base and anion from the acid
-
-```mermaid
-graph TD
-    A["Acid: HCl<br/>(H⁺ donor)"] --> C["Neutralization<br/>H⁺ + OH⁻ → H₂O"]
-    B["Base: NaOH<br/>(OH⁻ donor)"] --> C
-
-    C --> D["Products"]
-    D --> E["Salt: NaCl<br/>(Na⁺ + Cl⁻)"]
-    D --> F["Water: H₂O<br/>(neutral)"]
-
-    G["Before Reaction:<br/>Acidic (low pH)"] -.-> C
-    C -.-> H["After Reaction:<br/>Neutral (pH ≈ 7)"]
-
-    style A fill:#ffcccc
-    style B fill:#ccccff
-    style C fill:#ffffcc
-    style E fill:#ccffcc
-    style F fill:#ccffcc
-```
 
 ---
 

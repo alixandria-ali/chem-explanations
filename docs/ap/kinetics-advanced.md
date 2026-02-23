@@ -37,21 +37,6 @@ While differential rate laws (Rate = \(k[A]^n\)) relate concentration to reactio
 - Units of \(k\): M\(^{-1}\)s\(^{-1}\) or L/(mol·s)
 - Common examples: Dimerization reactions, reactions between two different molecules
 
-```mermaid
-graph LR
-    subgraph "Integrated Rate Law Graphs"
-        A[Zero-Order] --> A1["[A] vs t<br/>Linear<br/>slope = -k"]
-        B[First-Order] --> B1["ln[A] vs t<br/>Linear<br/>slope = -k"]
-        C[Second-Order] --> C1["1/[A] vs t<br/>Linear<br/>slope = k"]
-    end
-
-    style A fill:#e1f5ff
-    style B fill:#e1f5ff
-    style C fill:#e1f5ff
-    style A1 fill:#fff4e1
-    style B1 fill:#fff4e1
-    style C1 fill:#fff4e1
-```
 
 **Determining Order from Data**:
 Method 1 - Graphical Analysis:
@@ -64,26 +49,6 @@ Method 2 - Half-Life Analysis:
 - First-order: Half-life is constant (independent of [A])
 - Second-order: Half-life increases as reaction progresses (inversely proportional to [A])
 
-```mermaid
-graph TD
-    A[Concentration vs Time Data] --> B{Plot which graph<br/>gives a straight line?}
-    B -->|"[A] vs t<br/>is linear"| C[Zero-Order<br/>Rate = k]
-    B -->|"ln[A] vs t<br/>is linear"| D[First-Order<br/>Rate = k[A]]
-    B -->|"1/[A] vs t<br/>is linear"| E[Second-Order<br/>Rate = k[A]²]
-
-    C --> C1["t₁/₂ = [A]₀/2k<br/>decreases over time"]
-    D --> D1["t₁/₂ = 0.693/k<br/>constant"]
-    E --> E1["t₁/₂ = 1/k[A]₀<br/>increases over time"]
-
-    style A fill:#e8f4f8
-    style B fill:#fff9e6
-    style C fill:#d4edda
-    style D fill:#d4edda
-    style E fill:#d4edda
-    style C1 fill:#cce5ff
-    style D1 fill:#cce5ff
-    style E1 fill:#cce5ff
-```
 
 **Reaction Mechanisms**:
 A reaction mechanism is a series of elementary steps that describe the molecular-level pathway from reactants to products.
@@ -105,44 +70,7 @@ Number of molecules involved in elementary step:
 - Bimolecular: Two molecules (e.g., \(A + B \rightarrow\) products), Rate = \(k[A][B]\)
 - Termolecular: Three molecules (rare, statistically unlikely)
 
-```mermaid
-graph TB
-    subgraph "Reaction Mechanism Components"
-        A[Reactants] -->|Elementary Step 1<br/>Fast| B[Intermediate]
-        B -->|Elementary Step 2<br/>SLOW - RDS<br/>Rate-Determining Step| C[Intermediate 2]
-        C -->|Elementary Step 3<br/>Fast| D[Products]
 
-        E[Catalyst] -.->|Used in step| B
-        B -.->|Regenerated| E
-
-        style B fill:#ffcccc
-        style C fill:#ffcccc
-        style E fill:#ccffcc
-    end
-
-    F["RDS = Bottleneck<br/>Slowest step determines<br/>overall reaction rate"]
-
-    style F fill:#fff4cc
-    style A fill:#e6f3ff
-    style D fill:#e6f3ff
-```
-
-```mermaid
-flowchart LR
-    subgraph "Example: 2NO₂ + F₂ → 2NO₂F"
-        N1[NO₂ + F₂] -->|Step 1: SLOW| I[NO₂F + F]
-        I -->|intermediate F| N2[NO₂]
-        N2 -->|Step 2: FAST| P[2NO₂F]
-
-        style I fill:#ffdddd
-        style N1 fill:#d4edda
-        style P fill:#d4edda
-    end
-
-    R["Rate = k[NO₂][F₂]<br/>from slow step"]
-
-    style R fill:#fff9e6
-```
 
 **Deriving Rate Laws from Mechanisms**:
 
@@ -160,24 +88,6 @@ Case 2 - First step is fast equilibrium followed by slow step:
   - From equilibrium: \([C] = K_{eq}[A][B]\)
   - Substituting: Rate = \(k_2K_{eq}[A][B][D] = k[A][B][D]\)
 
-```mermaid
-flowchart TD
-    subgraph "Deriving Rate Law from Mechanism"
-        S1["Step 1: Fast Equilibrium<br/>A + B ⇌ C<br/>K = [C]/[A][B]"] --> S2["Step 2: Slow RDS<br/>C + D → Products<br/>Rate = k₂[C][D]"]
-
-        S1 --> EQ["Solve for intermediate:<br/>[C] = K[A][B]"]
-        EQ --> SUB["Substitute into<br/>rate law from slow step"]
-        S2 --> SUB
-
-        SUB --> FINAL["Final Rate Law:<br/>Rate = k₂K[A][B][D]<br/>Rate = k[A][B][D]"]
-    end
-
-    style S1 fill:#d1f2eb
-    style S2 fill:#fadbd8
-    style EQ fill:#fef9e7
-    style SUB fill:#e8daef
-    style FINAL fill:#d4edda
-```
 
 **Arrhenius Equation**:
 Relates rate constant to temperature and activation energy, providing quantitative understanding of temperature dependence:
@@ -204,37 +114,6 @@ Variables:
 - \(A\): Accounts for collision frequency and proper molecular orientation
 - As \(T\) increases, \(-E_a/RT\) becomes less negative, so \(k\) increases exponentially
 
-```mermaid
-graph TD
-    subgraph "Energy Profile and Activation Energy"
-        A["Reactants<br/>Lower Energy"] -->|"Ea (activation energy)<br/>Energy barrier to overcome"| B["Transition State<br/>Highest Energy<br/>Activated Complex"]
-        B -->|"Energy Released"| C["Products<br/>Lower Energy"]
-
-        D["ΔH = Energy of Products - Energy of Reactants"] -.-> C
-
-        E["Higher Ea → Slower Reaction<br/>Lower Ea → Faster Reaction"] -.-> B
-
-        F["Catalyst:<br/>Provides alternate pathway<br/>with LOWER Ea"] -.-> B
-    end
-
-    subgraph "Temperature Effect"
-        T1["Low T:<br/>Few molecules<br/>have E ≥ Ea<br/>Slow reaction"]
-        T2["High T:<br/>More molecules<br/>have E ≥ Ea<br/>Fast reaction"]
-
-        T1 --> T3["k = Ae^(-Ea/RT)"]
-        T2 --> T3
-    end
-
-    style A fill:#d4edda
-    style B fill:#fff3cd
-    style C fill:#d4edda
-    style D fill:#cce5ff
-    style E fill:#f8d7da
-    style F fill:#d1ecf1
-    style T1 fill:#e2e3e5
-    style T2 fill:#f8d7da
-    style T3 fill:#fff9e6
-```
 
 **Graphing Arrhenius**:
 - Plot \(\ln k\) vs. \(\frac{1}{T}\) (linear relationship)
@@ -242,50 +121,7 @@ graph TD
 - y-intercept = \(\ln A\), therefore \(A = e^{\text{intercept}}\)
 - Steeper negative slope indicates higher activation energy
 
-```mermaid
-graph TB
-    subgraph "Arrhenius Equation Relationships"
-        A["k = Ae^(-Ea/RT)"] --> B["ln k = ln A - Ea/RT"]
-        B --> C["ln k = -Ea/R × 1/T + ln A"]
 
-        C --> D["y = mx + b form"]
-
-        D --> E["Arrhenius Plot:<br/>ln k vs 1/T"]
-
-        E --> F["Slope = -Ea/R<br/>therefore Ea = -slope × R"]
-        E --> G["y-intercept = ln A<br/>therefore A = e^intercept"]
-    end
-
-    H["Higher Temperature:<br/>T increases<br/>→ 1/T decreases<br/>→ -Ea/RT less negative<br/>→ k increases exponentially"]
-
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
-    style E fill:#ffffcc
-    style F fill:#ffdddd
-    style G fill:#ffdddd
-    style H fill:#e8f4f8
-```
-
-```mermaid
-graph LR
-    subgraph "Two-Temperature Arrhenius Form"
-        T1["k₁ at T₁"] --> EQ["ln(k₂/k₁) = Ea/R × (1/T₁ - 1/T₂)"]
-        T2["k₂ at T₂"] --> EQ
-
-        EQ --> USE1["Find Ea:<br/>know k₁, k₂, T₁, T₂"]
-        EQ --> USE2["Find k at new T:<br/>know Ea, k₁, T₁, T₂"]
-        EQ --> USE3["Find T for target k:<br/>know Ea, k₁, k₂, T₁"]
-    end
-
-    style T1 fill:#cce5ff
-    style T2 fill:#cce5ff
-    style EQ fill:#fff9e6
-    style USE1 fill:#d4edda
-    style USE2 fill:#d4edda
-    style USE3 fill:#d4edda
-```
 
 ---
 
@@ -347,34 +183,6 @@ graph LR
 
 ## Worked Examples
 
-```mermaid
-graph TB
-    subgraph "Comparing Reaction Orders"
-        direction TB
-        Z["Zero-Order<br/>Rate = k<br/>constant rate"] --> Z1["[A] decreases linearly<br/>t₁/₂ ∝ [A]₀<br/>decreases each cycle"]
-        F["First-Order<br/>Rate = k[A]<br/>rate ∝ concentration"] --> F1["[A] decreases exponentially<br/>t₁/₂ = constant<br/>same for each cycle"]
-        S["Second-Order<br/>Rate = k[A]²<br/>rate ∝ [concentration]²"] --> S1["[A] decreases rapidly then slows<br/>t₁/₂ ∝ 1/[A]₀<br/>increases each cycle"]
-    end
-
-    subgraph "Linear Plots for Each Order"
-        ZP["Zero: [A] vs t"] --> ZL["Straight line<br/>slope = -k"]
-        FP["First: ln[A] vs t"] --> FL["Straight line<br/>slope = -k"]
-        SP["Second: 1/[A] vs t"] --> SL["Straight line<br/>slope = +k"]
-    end
-
-    style Z fill:#e3f2fd
-    style F fill:#fff3e0
-    style S fill:#f3e5f5
-    style Z1 fill:#bbdefb
-    style F1 fill:#ffe0b2
-    style S1 fill:#e1bee7
-    style ZP fill:#e8f5e9
-    style FP fill:#e8f5e9
-    style SP fill:#e8f5e9
-    style ZL fill:#c8e6c9
-    style FL fill:#c8e6c9
-    style SL fill:#c8e6c9
-```
 
 ---
 
@@ -421,21 +229,6 @@ Overall: \(2NO + H_2 \rightarrow N_2O + H_2O\)
 
 What is the predicted rate law? Identify the intermediate?
 
-```mermaid
-sequenceDiagram
-    participant R as Reactants<br/>2NO + H₂
-    participant I as Intermediate<br/>N₂O₂
-    participant P as Products<br/>N₂O + H₂O
-
-    Note over R,I: Step 1 (SLOW - RDS)<br/>2NO → N₂O₂<br/>Rate = k₁[NO]²
-    R->>I: Slow step determines rate
-    Note over I: Intermediate formed
-
-    Note over I,P: Step 2 (FAST)<br/>N₂O₂ + H₂ → N₂O + H₂O
-    I->>P: Fast - doesn't affect rate
-
-    Note over R,P: Overall Rate = k[NO]²<br/>H₂ not in rate law!
-```
 
 **Solution**:
 1. Rate-determining step (slow step) determines rate law
@@ -523,30 +316,6 @@ A student studies the rate of a reaction at various temperatures and obtains the
 
 ---
 
-```mermaid
-flowchart TD
-    subgraph "Validating a Reaction Mechanism"
-        M["Proposed Mechanism"] --> C1{"Check 1:<br/>Do elementary steps<br/>sum to overall equation?"}
-        C1 -->|No| X1[Mechanism Invalid]
-        C1 -->|Yes| C2{"Check 2:<br/>Does predicted rate law<br/>match experimental?"}
-        C2 -->|No| X2[Mechanism Invalid<br/>or Incomplete]
-        C2 -->|Yes| C3{"Check 3:<br/>Is mechanism<br/>chemically reasonable?"}
-        C3 -->|No| X3[Mechanism Unlikely]
-        C3 -->|Yes| V[Valid Mechanism]
-
-        C2 --> R["Derive rate law from RDS<br/>Eliminate intermediates using<br/>equilibrium expressions"]
-    end
-
-    style M fill:#e8f4f8
-    style C1 fill:#fff9e6
-    style C2 fill:#fff9e6
-    style C3 fill:#fff9e6
-    style X1 fill:#f8d7da
-    style X2 fill:#f8d7da
-    style X3 fill:#f8d7da
-    style V fill:#d4edda
-    style R fill:#d1ecf1
-```
 
 ### Problem 6: Mechanism with Slow First Step
 Consider the following proposed mechanism for the reaction \(2NO_2(g) + F_2(g) \rightarrow 2NO_2F(g)\):
@@ -561,34 +330,6 @@ Step 2 (fast): \(NO_2 + F \rightarrow NO_2F\)
 
 ---
 
-```mermaid
-graph TB
-    subgraph "Case 1: Slow First Step"
-        A1["Step 1: SLOW<br/>A + B → C"] --> R1["Rate = k₁[A][B]"]
-        A2["Step 2: FAST<br/>C → Products"]
-
-        R1 --> F1["Rate law contains<br/>only reactants<br/>No intermediate elimination needed"]
-    end
-
-    subgraph "Case 2: Fast Equilibrium then Slow"
-        B1["Step 1: FAST ⇌<br/>A + B ⇌ C<br/>K = [C]/[A][B]"] --> B2["Step 2: SLOW<br/>C + D → Products"]
-        B2 --> R2["Initial Rate = k₂[C][D]"]
-        R2 --> E2["Contains intermediate C<br/>Use equilibrium to eliminate"]
-        E2 --> S2["[C] = K[A][B]"]
-        S2 --> F2["Rate = k₂K[A][B][D]<br/>Rate = k[A][B][D]"]
-    end
-
-    style A1 fill:#fadbd8
-    style A2 fill:#d1f2eb
-    style R1 fill:#fef9e7
-    style F1 fill:#d4edda
-    style B1 fill:#d1f2eb
-    style B2 fill:#fadbd8
-    style R2 fill:#fef9e7
-    style E2 fill:#ffe6e6
-    style S2 fill:#e8daef
-    style F2 fill:#d4edda
-```
 
 ### Problem 7: Mechanism with Fast Equilibrium
 The reaction \(2NO(g) + Br_2(g) \rightarrow 2NOBr(g)\) has the experimental rate law: Rate = \(k[NO]^2[Br_2]\).
@@ -616,30 +357,6 @@ Step 2 (slow): \(O + O_3 \rightarrow 2O_2\)
 
 ---
 
-```mermaid
-graph LR
-    subgraph "Half-Life Patterns by Reaction Order"
-        direction TB
-        Z0["Zero-Order<br/>t₁/₂ = [A]₀/(2k)"] --> Z1["t₁/₂ ∝ [A]₀<br/>Depends on concentration"]
-        Z1 --> Z2["Each successive t₁/₂<br/>DECREASES"]
-
-        F0["First-Order<br/>t₁/₂ = 0.693/k"] --> F1["t₁/₂ independent of [A]₀<br/>CONSTANT"]
-        F1 --> F2["Each successive t₁/₂<br/>SAME"]
-
-        S0["Second-Order<br/>t₁/₂ = 1/(k[A]₀)"] --> S1["t₁/₂ ∝ 1/[A]₀<br/>Inversely proportional"]
-        S1 --> S2["Each successive t₁/₂<br/>INCREASES"]
-    end
-
-    style Z0 fill:#e3f2fd
-    style Z1 fill:#bbdefb
-    style Z2 fill:#90caf9
-    style F0 fill:#fff3e0
-    style F1 fill:#ffe0b2
-    style F2 fill:#ffcc80
-    style S0 fill:#f3e5f5
-    style S1 fill:#e1bee7
-    style S2 fill:#ce93d8
-```
 
 ### Problem 9: Half-Life Analysis
 A radioactive isotope undergoes first-order decay with a half-life of 14.3 days.
@@ -706,38 +423,6 @@ Percentage: \(\frac{0.0500}{0.800} \times 100\% = 6.25\%\)
 
 ---
 
-```mermaid
-graph LR
-    subgraph "Graphical Method for Order Determination"
-        DATA["Collect<br/>[A] vs time<br/>data points"] --> P1["Plot [A] vs t"]
-        DATA --> P2["Plot ln[A] vs t"]
-        DATA --> P3["Plot 1/[A] vs t"]
-
-        P1 --> L1{"Linear?"}
-        P2 --> L2{"Linear?"}
-        P3 --> L3{"Linear?"}
-
-        L1 -->|Yes| O1["Zero-Order<br/>slope = -k<br/>k units: M/s"]
-        L2 -->|Yes| O2["First-Order<br/>slope = -k<br/>k units: s⁻¹"]
-        L3 -->|Yes| O3["Second-Order<br/>slope = +k<br/>k units: M⁻¹s⁻¹"]
-
-        L1 -->|No| P2
-        L2 -->|No| P3
-        L3 -->|No| OTHER["Higher order or<br/>complex kinetics"]
-    end
-
-    style DATA fill:#e8f4f8
-    style P1 fill:#fff4e1
-    style P2 fill:#fff4e1
-    style P3 fill:#fff4e1
-    style L1 fill:#fef9e7
-    style L2 fill:#fef9e7
-    style L3 fill:#fef9e7
-    style O1 fill:#d4edda
-    style O2 fill:#d4edda
-    style O3 fill:#d4edda
-    style OTHER fill:#f8d7da
-```
 
 ### Solution 2: Order Determination from Data
 
@@ -1157,37 +842,6 @@ Want \(k_2 = 2k_1 = 2(0.0450) = 0.0900\) min\(^{-1}\)
 
 ## Step-by-Step Checker
 
-```mermaid
-flowchart TD
-    START["Arrhenius Problem"] --> TYPE{"What are you<br/>solving for?"}
-
-    TYPE -->|"Finding Ea"| EA["Use two-temperature form:<br/>ln(k₂/k₁) = Ea/R × (1/T₁ - 1/T₂)<br/>Solve for Ea"]
-    TYPE -->|"Finding k at new T"| K["Use two-temperature form:<br/>ln(k₂/k₁) = Ea/R × (1/T₁ - 1/T₂)<br/>Solve for k₂"]
-    TYPE -->|"Finding T"| T["Use two-temperature form:<br/>ln(k₂/k₁) = Ea/R × (1/T₁ - 1/T₂)<br/>Solve for T₂"]
-    TYPE -->|"Finding A"| A["Use: ln k = ln A - Ea/RT<br/>Solve for A = e^(ln k + Ea/RT)"]
-
-    EA --> CHECK["Check units:<br/>T in Kelvin<br/>Ea in J/mol<br/>R = 8.314 J/(mol·K)"]
-    K --> CHECK
-    T --> CHECK
-    A --> CHECK
-
-    CHECK --> VERIFY{"Verify answer"}
-    VERIFY -->|"Ea > 0?"| V1[Good]
-    VERIFY -->|"k increases with T?"| V2[Good]
-    VERIFY -->|"Units correct?"| V3[Good]
-
-    style START fill:#e8f4f8
-    style TYPE fill:#fff9e6
-    style EA fill:#d4edda
-    style K fill:#d4edda
-    style T fill:#d4edda
-    style A fill:#d4edda
-    style CHECK fill:#fef9e7
-    style VERIFY fill:#ffe6e6
-    style V1 fill:#d1ecf1
-    style V2 fill:#d1ecf1
-    style V3 fill:#d1ecf1
-```
 
 ### Arrhenius Equation Problem Template
 
@@ -1243,40 +897,6 @@ For frequency factor:
 
 ---
 
-```mermaid
-flowchart TD
-    START["Integrated Rate Law Problem"] --> ORDER{"Identify<br/>Reaction Order"}
-
-    ORDER -->|"0th Order"| Z["[A]t = -kt + [A]₀<br/>Linear: [A] vs t"]
-    ORDER -->|"1st Order"| F["ln[A]t = -kt + ln[A]₀<br/>Linear: ln[A] vs t"]
-    ORDER -->|"2nd Order"| S["1/[A]t = kt + 1/[A]₀<br/>Linear: 1/[A] vs t"]
-
-    Z --> SOLVE{"What to find?"}
-    F --> SOLVE
-    S --> SOLVE
-
-    SOLVE -->|"Find [A] at time t"| C1["Substitute k, t, [A]₀<br/>Solve for [A]t"]
-    SOLVE -->|"Find time t"| C2["Substitute k, [A]₀, [A]t<br/>Solve for t"]
-    SOLVE -->|"Find k"| C3["Substitute [A]₀, [A]t, t<br/>Solve for k"]
-    SOLVE -->|"Find t₁/₂"| C4["0th: t₁/₂ = [A]₀/2k<br/>1st: t₁/₂ = 0.693/k<br/>2nd: t₁/₂ = 1/(k[A]₀)"]
-
-    C1 --> VERIFY["Verify:<br/>[A] decreases<br/>Units consistent<br/>Makes physical sense"]
-    C2 --> VERIFY
-    C3 --> VERIFY
-    C4 --> VERIFY
-
-    style START fill:#e8f4f8
-    style ORDER fill:#fff9e6
-    style Z fill:#e3f2fd
-    style F fill:#fff3e0
-    style S fill:#f3e5f5
-    style SOLVE fill:#fef9e7
-    style C1 fill:#d4edda
-    style C2 fill:#d4edda
-    style C3 fill:#d4edda
-    style C4 fill:#d4edda
-    style VERIFY fill:#d1ecf1
-```
 
 ### Integrated Rate Law Problem Template
 

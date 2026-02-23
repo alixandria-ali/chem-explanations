@@ -4,36 +4,6 @@
 
 Advanced equilibrium extends basic concepts to solubility, weak acids/bases, buffers, and complex ion equilibria. These topics are essential for AP Chemistry and require careful attention to stoichiometry, equilibrium expressions, and approximation validity.
 
-```mermaid
-mindmap
-  root((Advanced<br/>Equilibrium))
-    Solubility
-      Ksp expression
-      Solubility calculations
-      Common ion effect
-      Precipitation Q vs Ksp
-    Weak Acids/Bases
-      Ka and Kb
-      pH calculations
-      ICE tables
-      5% rule
-      Conjugate pairs
-    Buffers
-      Henderson-Hasselbalch
-      Buffer capacity
-      Resist pH change
-      pKa ± 1 range
-    Titrations
-      Strong acid + strong base
-      Weak acid + strong base
-      Half-equivalence point
-      Equivalence point
-    Complex Ions
-      Formation constant Kf
-      Increase solubility
-      Coupled equilibria
-```
-
 ### Key Concepts
 
 **Solubility Equilibrium (Ksp)**:
@@ -48,52 +18,12 @@ mindmap
 - **Common ion effect**: Adding a common ion shifts equilibrium left, decreasing solubility
   - Example: \(AgCl\) is less soluble in \(NaCl\) solution than pure water
 
-```mermaid
-flowchart LR
-    subgraph Pure["Pure Water"]
-        A1["AgCl(s)"] -.->|"K<sub>sp</sub> = 1.8×10⁻¹⁰"| A2["Ag⁺ + Cl⁻"]
-        A3["Solubility = 1.3×10⁻⁵ M"]
-    end
-
-    subgraph Common["0.10 M NaCl Solution"]
-        B1["AgCl(s)"] -.->|"same K<sub>sp</sub>"| B2["Ag⁺ + Cl⁻"]
-        B3["Extra Cl⁻ present"]
-        B3 -->|"Le Châtelier"| B4["← Shifts left"]
-        B5["Solubility = 1.7×10⁻³ M<br/>(10× less!)"]
-    end
-
-    Pure -->|"Add NaCl"| Common
-
-    style Pure fill:#e3f2fd
-    style Common fill:#fff3e0
-    style A3 fill:#c8e6c9
-    style B5 fill:#ffcdd2
-```
-
 **Predicting Precipitation**:
 - Calculate **ion product** (\(Q\)) using **actual concentrations** (before equilibrium)
 - \(Q < K_{sp}\): No precipitate (unsaturated solution)
 - \(Q = K_{sp}\): Saturated equilibrium (on the edge)
 - \(Q > K_{sp}\): Precipitate forms (supersaturated)
 - When mixing solutions, remember to account for dilution: \(M_1V_1 = M_2V_2\)
-
-```mermaid
-graph LR
-    A[Solid Salt in Water] --> B[Dissolution Equilibrium]
-    B --> C{Solution State}
-
-    C -->|"Q < K<sub>sp</sub>"| D[Unsaturated<br/>More can dissolve<br/>No precipitate]
-    C -->|"Q = K<sub>sp</sub>"| E[Saturated<br/>Equilibrium<br/>Dissolved ⇌ Solid]
-    C -->|"Q > K<sub>sp</sub>"| F[Supersaturated<br/>Precipitation occurs<br/>Solid forms]
-
-    D -->|Add more salt| E
-    E -->|Add common ion| F
-    F -->|Remove ions| E
-
-    style D fill:#d4edda
-    style E fill:#fff3cd
-    style F fill:#f8d7da
-```
 
 **ICE Tables (Initial, Change, Equilibrium)**:
 - Systematic method for equilibrium calculations
@@ -103,28 +33,6 @@ graph LR
 - Substitute equilibrium row into \(K\) expression and solve for \(x\)
 - **5% Rule**: If \(\frac{C}{K} > 100\) (or equivalently \(\frac{K}{C} < 0.05\)), approximation \(C - x \approx C\) is valid
 - Always check approximation: Is \(\frac{x}{C} < 0.05\)? If not, use quadratic formula
-
-```mermaid
-flowchart TD
-    A[Start ICE Table Problem] --> B[Write Equilibrium Equation]
-    B --> C[Set Up ICE Table<br/>Initial, Change, Equilibrium]
-    C --> D{Check: C/K > 100?}
-    D -->|Yes| E[Use Approximation<br/>C - x ≈ C]
-    D -->|No| F[Must Use Quadratic Formula]
-    E --> G[Solve: x = √KC]
-    G --> H{Verify: x/C < 0.05?}
-    H -->|Yes| I[Approximation Valid<br/>Use x value]
-    H -->|No| F
-    F --> J[Set up Quadratic Equation<br/>x² + Kx - KC = 0]
-    J --> K[Apply Quadratic Formula]
-    K --> I
-    I --> L[Calculate pH or Equilibrium Concentrations]
-    L --> M[Check Reasonableness]
-
-    style D fill:#e1f5ff
-    style H fill:#ffe1e1
-    style I fill:#d4edda
-```
 
 **Weak Acid Equilibrium**:
 - \(HA \rightleftharpoons H^+ + A^-\)
@@ -137,30 +45,6 @@ flowchart TD
 - \(K_b = \frac{[BH^+][OH^-]}{[B]}\)
 - **Conjugate pair relationship**: \(K_a \times K_b = K_w = 1.0 \times 10^{-14}\) at 25°C
 - Use this to convert between \(K_a\) and \(K_b\) for conjugate pairs
-
-```mermaid
-graph TB
-    subgraph "Equilibrium Constant Relationships"
-        Kw["K<sub>w</sub> = 1.0 × 10⁻¹⁴<br/>(at 25°C)"]
-        Ka["K<sub>a</sub><br/>(Acid Dissociation)"]
-        Kb["K<sub>b</sub><br/>(Base Dissociation)"]
-        Kc["K<sub>c</sub><br/>(Concentration)"]
-        Kp["K<sub>p</sub><br/>(Pressure)"]
-        Ksp["K<sub>sp</sub><br/>(Solubility Product)"]
-    end
-
-    Ka -->|"K<sub>a</sub> × K<sub>b</sub> = K<sub>w</sub>"| Kb
-    Kb -->|"K<sub>b</sub> = K<sub>w</sub> / K<sub>a</sub>"| Ka
-    Kw -->|Defines| Ka
-    Kw -->|Defines| Kb
-    Kc -->|"K<sub>p</sub> = K<sub>c</sub>(RT)ⁿ"| Kp
-    Ksp -.->|"Special case of K<sub>c</sub>"| Kc
-
-    style Kw fill:#ffcccc
-    style Ka fill:#cce5ff
-    style Kb fill:#ccffcc
-    style Ksp fill:#ffffcc
-```
 
 **pH of Weak Acid**:
 - For weak acid at concentration \(C\): \([H^+] \approx \sqrt{K_a \cdot C}\) (only if 5% rule applies)
@@ -179,29 +63,6 @@ graph TB
 - **Buffer range**: Effective within \(pK_a \pm 1\) pH unit
 - For weak base buffers, convert to acid form or use: \(pOH = pK_b + \log\frac{[BH^+]}{[B]}\), then \(pH = 14 - pOH\)
 
-```mermaid
-sequenceDiagram
-    participant Buffer as Buffer Solution<br/>(HA + A⁻)
-    participant H as H⁺ added
-    participant OH as OH⁻ added
-
-    Note over Buffer: Initial: pH = pK<sub>a</sub> + log([A⁻]/[HA])
-
-    H->>Buffer: Add strong acid (H⁺)
-    Note over Buffer: A⁻ + H⁺ → HA
-    Note over Buffer: [A⁻] decreases<br/>[HA] increases
-    Buffer-->>H: pH decreases slightly
-
-    Note over Buffer: Buffer regenerated
-
-    OH->>Buffer: Add strong base (OH⁻)
-    Note over Buffer: HA + OH⁻ → A⁻ + H₂O
-    Note over Buffer: [HA] decreases<br/>[A⁻] increases
-    Buffer-->>OH: pH increases slightly
-
-    Note over Buffer: Small pH change!<br/>Buffer maintains pH
-```
-
 **Buffer Capacity**:
 - The amount of acid or base a buffer can neutralize before significant pH change (>1 pH unit)
 - Depends on **concentration** of buffer components (higher concentration = greater capacity)
@@ -213,30 +74,6 @@ sequenceDiagram
 - **Weak base + strong acid**: pH < 7 at equivalence point (conjugate acid present, acts as weak acid)
 - **Half-equivalence point**: pH = \(pK_a\) for weak acid titration (equal amounts HA and A^-)
 - **Buffer region**: Before equivalence point in weak acid/base titrations
-
-```mermaid
-graph TD
-    A[Titration Types] --> B[Strong Acid + Strong Base]
-    A --> C[Weak Acid + Strong Base]
-    A --> D[Weak Base + Strong Acid]
-
-    B --> B1["Equivalence: pH = 7<br/>(Neutral salt)"]
-    B --> B2["Sharp pH change<br/>at equivalence"]
-
-    C --> C1["Equivalence: pH > 7<br/>(Conjugate base A⁻)"]
-    C --> C2["Buffer region before<br/>equivalence point"]
-    C --> C3["Half-equiv: pH = pK<sub>a</sub>"]
-
-    D --> D1["Equivalence: pH < 7<br/>(Conjugate acid BH⁺)"]
-    D --> D2["Buffer region before<br/>equivalence point"]
-    D --> D3["Half-equiv: pH = pK<sub>a</sub>"]
-
-    style B1 fill:#e8f5e9
-    style C1 fill:#e3f2fd
-    style D1 fill:#fff3e0
-    style C3 fill:#f3e5f5
-    style D3 fill:#f3e5f5
-```
 
 **Complex Ion Equilibria**:
 - Metal ion + ligands → complex ion
@@ -257,27 +94,6 @@ graph TD
 - WRONG: "Solubility = \(1.8 \times 10^{-11}\) M"
 - CORRECT: \(Mg(OH)_2 \rightleftharpoons Mg^{2+} + 2OH^-\), so \(K_{sp} = [Mg^{2+}][OH^-]^2 = (s)(2s)^2 = 4s^3\)
 - Therefore: \(s = \sqrt[3]{\frac{K_{sp}}{4}} = 1.7 \times 10^{-4}\) M
-
-```mermaid
-flowchart TD
-    A["Mg(OH)₂ solid"] --> B[Dissolution]
-    B --> C["Mg²⁺(aq)"]
-    B --> D["2 OH⁻(aq)"]
-
-    C --> E["[Mg²⁺] = s"]
-    D --> F["[OH⁻] = 2s"]
-
-    E --> G["K<sub>sp</sub> = [Mg²⁺][OH⁻]²"]
-    F --> G
-
-    G --> H["K<sub>sp</sub> = (s)(2s)² = 4s³"]
-    H --> I["Solve for s:<br/>s = ∛(K<sub>sp</sub>/4)"]
-
-    style A fill:#ffebee
-    style C fill:#e3f2fd
-    style D fill:#e3f2fd
-    style I fill:#c8e6c9
-```
 
 **Key Point**: Always write the equilibrium equation and account for stoichiometric coefficients.
 
@@ -391,28 +207,6 @@ flowchart TD
 9. \([H^+] = 7.9 \times 10^{-3} \text{ M}\)
 10. \(pH = -\log(7.9 \times 10^{-3}) = 2.10\)
 
-```mermaid
-%%{init: {'theme':'base'}}%%
-graph LR
-    subgraph ICE["ICE Table: HF ⇌ H⁺ + F⁻"]
-        I["Initial:<br/>HF = 0.10<br/>H⁺ = 0<br/>F⁻ = 0"]
-        C["Change:<br/>HF = -x<br/>H⁺ = +x<br/>F⁻ = +x"]
-        E["Equilibrium:<br/>HF = 0.10-x<br/>H⁺ = x<br/>F⁻ = x"]
-    end
-
-    I --> C --> E
-
-    E --> K["K<sub>a</sub> = x²/(0.10-x)<br/>= 6.8×10⁻⁴"]
-    K --> Q["Quadratic:<br/>x² + 6.8×10⁻⁴x - 6.8×10⁻⁵ = 0"]
-    Q --> X["x = 7.9×10⁻³"]
-    X --> pH["pH = -log(7.9×10⁻³)<br/>= 2.10"]
-
-    style I fill:#fff3cd
-    style C fill:#d1ecf1
-    style E fill:#d4edda
-    style pH fill:#f8d7da
-```
-
 **Answer**: pH = 2.10
 
 ---
@@ -511,25 +305,6 @@ Calculate the molar solubility of \(AgCl\) in \(1.0\) M \(NH_3\) solution. (Hint
 
     **Answer**: (a) \(1.6 \times 10^{-2}\) M in pure water; (b) \(1.7 \times 10^{-3}\) M in 0.10 M NaCl
 
-    ```mermaid
-    graph TD
-        A["PbCl₂(s) ⇌ Pb²⁺ + 2Cl⁻"] --> B{Solution Type}
-
-        B -->|Pure Water| C["No common ion<br/>[Cl⁻] = 2s"]
-        B -->|0.10 M NaCl| D["Common ion present<br/>[Cl⁻] = 0.10 + 2s ≈ 0.10"]
-
-        C --> E["K<sub>sp</sub> = s(2s)² = 4s³<br/>s = 1.6×10⁻² M"]
-        D --> F["K<sub>sp</sub> = s(0.10)²<br/>s = 1.7×10⁻³ M"]
-
-        E --> G["Higher solubility"]
-        F --> H["10× Lower solubility<br/>Common ion effect!"]
-
-        style E fill:#c8e6c9
-        style F fill:#ffcdd2
-        style G fill:#a5d6a7
-        style H fill:#ef9a9a
-    ```
-
     **Key concept**: Common ion effect reduces solubility by ~10-fold here.
 
     ---
@@ -554,24 +329,6 @@ Calculate the molar solubility of \(AgCl\) in \(1.0\) M \(NH_3\) solution. (Hint
     - \(Q = 2.05 \times 10^{-8}\)
     - \(K_{sp} = 7.9 \times 10^{-9}\)
     - Since \(Q > K_{sp}\), **precipitate forms**
-
-    ```mermaid
-    flowchart TD
-        A["Mix Solutions:<br/>25 mL Pb(NO₃)₂ + 35 mL NaI"] --> B["Calculate diluted<br/>concentrations"]
-
-        B --> C["[Pb²⁺] = 1.67×10⁻³ M<br/>[I⁻] = 3.5×10⁻³ M"]
-        C --> D["Calculate Q:<br/>Q = [Pb²⁺][I⁻]²"]
-        D --> E["Q = 2.05×10⁻⁸"]
-
-        E --> F{Compare Q vs K<sub>sp</sub>}
-
-        F -->|"Q > K<sub>sp</sub><br/>(2.05×10⁻⁸ > 7.9×10⁻⁹)"| G["Precipitate Forms!<br/>PbI₂(s) appears"]
-        F -->|"Q < K<sub>sp</sub>"| H["No precipitate<br/>(not this case)"]
-
-        style G fill:#f8d7da
-        style H fill:#d4edda
-        style E fill:#fff3cd
-    ```
 
     **Answer**: Yes, \(PbI_2\) will precipitate because \(Q (2.05 \times 10^{-8}) > K_{sp} (7.9 \times 10^{-9})\)
 
@@ -686,28 +443,6 @@ Calculate the molar solubility of \(AgCl\) in \(1.0\) M \(NH_3\) solution. (Hint
     \[pH = 4.74 + \log\frac{0.27}{0.28} = 4.74 + \log(0.964)\]
     \[pH = 4.74 + (-0.016) = 4.72\]
 
-    ```mermaid
-    stateDiagram-v2
-        [*] --> Initial: Buffer Solution<br/>0.30 M CH₃COOH<br/>0.25 M CH₃COO⁻
-        Initial --> Add: pH = 4.66
-
-        Add --> Reaction: Add 0.020 mol NaOH
-        Reaction: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O
-
-        Reaction --> NewEquilibrium: New concentrations<br/>0.28 M CH₃COOH<br/>0.27 M CH₃COO⁻
-        NewEquilibrium --> [*]: pH = 4.72<br/>ΔpH = +0.06 only!
-
-        note right of Initial
-            pKₐ = 4.74
-        end note
-
-        note right of NewEquilibrium
-            Buffer resists pH change!
-            Without buffer, pH would
-            rise dramatically
-        end note
-    ```
-
     **Answer**: (a) Initial pH = 4.66; (b) pH after adding NaOH = 4.72
 
     **Key concept**: Buffer resists pH change (only 0.06 pH unit increase despite adding strong base)
@@ -736,29 +471,6 @@ Calculate the molar solubility of \(AgCl\) in \(1.0\) M \(NH_3\) solution. (Hint
     - \(1.1 \times 10^{-12} = 4s_2^3\)
     - \(s_2^3 = 2.75 \times 10^{-13}\)
     - \(s_2 = 6.5 \times 10^{-5}\) M
-
-    ```mermaid
-    graph TD
-        A["Compare Solubilities"] --> B["AgCl<br/>K<sub>sp</sub> = 1.8×10⁻¹⁰"]
-        A --> C["Ag₂CrO₄<br/>K<sub>sp</sub> = 1.1×10⁻¹²"]
-
-        B --> D["AgCl ⇌ Ag⁺ + Cl⁻<br/>K<sub>sp</sub> = s²"]
-        C --> E["Ag₂CrO₄ ⇌ 2Ag⁺ + CrO₄²⁻<br/>K<sub>sp</sub> = 4s³"]
-
-        D --> F["s = √K<sub>sp</sub><br/>s = 1.3×10⁻⁵ M"]
-        E --> G["s = ∛(K<sub>sp</sub>/4)<br/>s = 6.5×10⁻⁵ M"]
-
-        F --> H{Which is more soluble?}
-        G --> H
-
-        H --> I["Ag₂CrO₄ is 5× more soluble<br/>despite smaller K<sub>sp</sub>!"]
-
-        style B fill:#e3f2fd
-        style C fill:#fff3e0
-        style F fill:#ffcdd2
-        style G fill:#c8e6c9
-        style I fill:#f3e5f5
-    ```
 
     **Answer**: \(Ag_2CrO_4\) is more soluble (\(6.5 \times 10^{-5}\) M) than \(AgCl\) (\(1.3 \times 10^{-5}\) M), despite having a smaller \(K_{sp}\). This demonstrates that you cannot compare \(K_{sp}\) values directly for compounds with different stoichiometries.
 
@@ -833,20 +545,6 @@ Calculate the molar solubility of \(AgCl\) in \(1.0\) M \(NH_3\) solution. (Hint
     \[pOH = -\log(2.8 \times 10^{-6}) = 5.55\]
     \[pH = 14.00 - 5.55 = 8.45\]
 
-    ```mermaid
-    graph LR
-        A["Initial<br/>Weak acid only"] --> B["Half-Equivalence<br/>[HA] = [A⁻]"]
-        B --> C["Equivalence Point<br/>Only A⁻ present"]
-
-        A --> A1["pH = 2.60<br/>(from √KₐC)"]
-        B --> B1["pH = pKₐ = 4.20<br/>(buffer!)"]
-        C --> C1["pH = 8.45<br/>(weak base A⁻)"]
-
-        style A1 fill:#ffcdd2
-        style B1 fill:#fff3cd
-        style C1 fill:#c8e6c9
-    ```
-
     **Answer**: (a) Initial pH = 2.60; (b) Half-equivalence pH = 4.20; (c) Equivalence point pH = 8.45
 
     ---
@@ -913,28 +611,6 @@ Calculate the molar solubility of \(AgCl\) in \(1.0\) M \(NH_3\) solution. (Hint
     \[s = 0.0537 - 0.107s\]
     \[1.107s = 0.0537\]
     \[s = 0.049\] M
-
-    ```mermaid
-    flowchart TD
-        A["AgCl in pure water"] --> B["Very low solubility<br/>s ≈ 1.3×10⁻⁵ M"]
-
-        C["AgCl in 1.0 M NH₃"] --> D["Two coupled equilibria"]
-
-        D --> E["(1) AgCl(s) ⇌ Ag⁺ + Cl⁻<br/>K<sub>sp</sub> = 1.8×10⁻¹⁰"]
-        D --> F["(2) Ag⁺ + 2NH₃ ⇌ [Ag(NH₃)₂]⁺<br/>K<sub>f</sub> = 1.6×10⁷"]
-
-        E --> G["Overall:<br/>AgCl + 2NH₃ ⇌ [Ag(NH₃)₂]⁺ + Cl⁻"]
-        F --> G
-
-        G --> H["K<sub>overall</sub> = K<sub>sp</sub> × K<sub>f</sub><br/>= 2.88×10⁻³"]
-        H --> I["Much larger K!<br/>s ≈ 0.049 M"]
-
-        I --> J["250,000× increase<br/>in solubility!"]
-
-        style B fill:#ffcdd2
-        style I fill:#c8e6c9
-        style J fill:#a5d6a7
-    ```
 
     **Answer**: Molar solubility of \(AgCl\) in 1.0 M \(NH_3\) is approximately \(0.049\) M or \(4.9 \times 10^{-2}\) M
 

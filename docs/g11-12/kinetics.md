@@ -40,49 +40,7 @@ Chemical kinetics is the study of reaction rates and the factors that affect the
 - **Activation energy (\(E_a\))**: Minimum energy needed for reaction
 - Higher \(E_a\) → slower reaction
 
-```mermaid
-graph TD
-    A[Reactant Molecules Approach] --> B{Collision Occurs}
-    B --> C{Has Sufficient<br/>Energy E ≥ Ea?}
-    C -->|No| D[Molecules Bounce Apart<br/>No Reaction]
-    C -->|Yes| E{Proper<br/>Orientation?}
-    E -->|No| F[Molecules Bounce Apart<br/>No Reaction]
-    E -->|Yes| G[Activated Complex Forms]
-    G --> H[Products Form<br/>Successful Reaction]
-
-    style A fill:#e1f5ff
-    style H fill:#d4edda
-    style D fill:#f8d7da
-    style F fill:#f8d7da
-    style G fill:#fff3cd
-```
-
 **Reaction Energy Diagram**:
-
-```mermaid
-graph TD
-    subgraph "Energy Profile of a Reaction"
-    end
-
-    style "Energy Profile of a Reaction" fill:none,stroke:none
-
-%% This creates a visual representation of energy changes
-```
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'fontSize':'16px'}}}%%
-graph LR
-    A["<br/><br/><br/>Reactants<br/><br/>Energy = Er"]
-    B["<br/>Activated Complex<br/>(Transition State)<br/>Energy = Er + Ea<br/><br/>"]
-    C["<br/><br/><br/>Products<br/><br/>Energy = Ep"]
-
-    A -.->|"Activation Energy (Ea)"| B
-    B -.->|Energy Released| C
-
-    style A fill:#e1f5ff,stroke:#333
-    style B fill:#fff3cd,stroke:#333
-    style C fill:#d4edda,stroke:#333
-```
 
 The **activation energy (Ea)** is the energy barrier that must be overcome for reactants to transform into products. The energy difference between products and reactants determines if the reaction is exothermic (products lower) or endothermic (products higher).
 
@@ -95,32 +53,6 @@ The **activation energy (Ea)** is the energy barrier that must be overcome for r
 - **Zero order**: Rate independent of concentration
 - **First order**: Rate proportional to concentration
 - **Second order**: Rate proportional to concentration squared
-
-```mermaid
-graph TD
-    subgraph Orders["Reaction Orders and Their Effects"]
-        direction TB
-
-        Z[Zero Order: Rate = k]
-        Z1[" [A] doubles → Rate × 1<br/> [A] triples → Rate × 1"]
-        Z --> Z1
-
-        F[First Order: Rate = k A ]
-        F1[" [A] doubles → Rate × 2<br/> [A] triples → Rate × 3"]
-        F --> F1
-
-        S[Second Order: Rate = k A ²]
-        S1[" [A] doubles → Rate × 4<br/> [A] triples → Rate × 9"]
-        S --> S1
-    end
-
-    style Z fill:#e1f5ff
-    style Z1 fill:#e8f4f8
-    style F fill:#fff3cd
-    style F1 fill:#fff9e6
-    style S fill:#ffeaa7
-    style S1 fill:#fff5cc
-```
 
 The reaction order determines how changes in concentration affect the reaction rate. Higher orders show greater sensitivity to concentration changes.
 
@@ -148,34 +80,6 @@ The reaction order determines how changes in concentration affect the reaction r
 - Solve for \(k\)
 - Include proper units (depends on overall order)
 
-```mermaid
-flowchart TD
-    Start([Rate Law Determination<br/>from Experimental Data]) --> Step1[Step 1: Write General Rate Law<br/>Rate = k A ^m B ^n]
-    Step1 --> Step2[Step 2: Find Order for Each Reactant]
-    Step2 --> Step2a[Compare experiments where<br/>only ONE reactant changes]
-    Step2a --> Step2b{How does<br/>rate change?}
-    Step2b -->|Rate × 1| Zero["m or n = 0<br/>(Zero Order)"]
-    Step2b -->|Rate × 2| First["m or n = 1<br/>(First Order)"]
-    Step2b -->|Rate × 4| Second["m or n = 2<br/>(Second Order)"]
-
-    Zero --> Step3
-    First --> Step3
-    Second --> Step3
-
-    Step3[Step 3: Write Complete Rate Law<br/>with determined exponents]
-    Step3 --> Step4[Step 4: Calculate k<br/>using any experiment]
-    Step4 --> Step4a[Substitute concentrations<br/>and rate into rate law]
-    Step4a --> Step4b[Solve for k]
-    Step4b --> Step4c[Determine units based<br/>on overall order]
-    Step4c --> End([Complete Rate Law<br/>with k and units])
-
-    style Start fill:#e1f5ff
-    style End fill:#d4edda
-    style Zero fill:#fff3cd
-    style First fill:#fff3cd
-    style Second fill:#fff3cd
-```
-
 #### Factors Affecting Rate (Detailed)
 
 **1. Concentration**
@@ -190,29 +94,7 @@ flowchart TD
 - Exponential relationship: \(k = Ae^{-E_a/RT}\) (Arrhenius equation)
 - Rule of thumb: 10°C increase approximately doubles reaction rate
 
-```mermaid
-graph LR
-    subgraph Low["Low Temperature"]
-        A1[Few molecules<br/>have E ≥ Ea]
-        A2[Slower Reaction Rate]
-        A1 --> A2
-    end
-
-    subgraph High["High Temperature"]
-        B1[Many molecules<br/>have E ≥ Ea]
-        B2[Faster Reaction Rate]
-        B1 --> B2
-    end
-
-    Low -.->|"Increase<br/>Temperature"| High
-
-    style A1 fill:#e1f5ff
-    style A2 fill:#fff3cd
-    style B1 fill:#ffeaa7
-    style B2 fill:#d4edda
-```
-
-The diagram shows that increasing temperature increases the fraction of molecules with energy equal to or greater than the activation energy, leading to more successful collisions and faster reaction rates.
+Increasing temperature increases the fraction of molecules with energy equal to or greater than the activation energy, leading to more successful collisions and faster reaction rates.
 
 **3. Surface Area**
 - Only surface particles can collide with other reactants
@@ -226,36 +108,6 @@ The diagram shows that increasing temperature increases the fraction of molecule
 - Not consumed in reaction
 - Doesn't change thermodynamics (ΔH, ΔG, K)
 - Only affects kinetics (how fast, not how far)
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'fontSize':'16px'}}}%%
-graph TB
-    subgraph " "
-        direction LR
-        R[Reactants<br/>Energy Level]
-
-        subgraph Without["Without Catalyst (Higher Ea)"]
-            T1[Transition State<br/>High Energy<br/>Ea = 75 kJ/mol]
-        end
-
-        subgraph With["With Catalyst (Lower Ea)"]
-            T2[Transition State<br/>Lower Energy<br/>Ea = 50 kJ/mol]
-        end
-
-        P[Products<br/>Energy Level]
-
-        R -.->|"Uncatalyzed<br/>Pathway"| T1
-        T1 -.-> P
-
-        R ==>|"Catalyzed<br/>Pathway"| T2
-        T2 ==> P
-    end
-
-    style R fill:#e1f5ff,stroke:#333
-    style P fill:#d4edda,stroke:#333
-    style T1 fill:#f8d7da,stroke:#333
-    style T2 fill:#fff3cd,stroke:#333
-```
 
 **Key Points**:
 - Catalyst lowers the activation energy barrier
@@ -277,25 +129,6 @@ graph TB
 - **Intermediate**: Produced in one step, consumed in another
 - **Catalyst**: Speeds reaction but not consumed overall
 
-```mermaid
-flowchart LR
-    A[Reactants] -->|"Step 1<br/>(Fast)"| B[Intermediate 1]
-    B -->|"Step 2<br/>(SLOW)<br/>Rate-Determining"| C[Intermediate 2]
-    C -->|"Step 3<br/>(Fast)"| D[Products]
-
-    style A fill:#e1f5ff
-    style B fill:#fff3cd
-    style C fill:#fff3cd
-    style D fill:#d4edda
-    style B stroke-dasharray: 5 5
-    style C stroke-dasharray: 5 5
-
-    note1[Step 2 is slowest<br/>Controls overall rate]
-    note1 -.-> B
-
-    style note1 fill:#f8d7da,stroke:none
-```
-
 The rate-determining step acts as a "bottleneck" - the overall reaction cannot proceed faster than this slowest step, just like traffic flow is limited by the narrowest lane.
 
 **Catalysts**:
@@ -303,28 +136,6 @@ The rate-determining step acts as a "bottleneck" - the overall reaction cannot p
 - Increase rate of both forward and reverse reactions
 - Do not change equilibrium position, only how fast equilibrium is reached
 - Types: homogeneous (same phase) and heterogeneous (different phase)
-
-```mermaid
-graph TD
-    subgraph Effect["Effect of Catalyst on Reaction"]
-        A[Add Catalyst] --> B[Lowers Ea]
-        B --> C[More molecules have E ≥ Ea]
-        C --> D[More successful collisions]
-        D --> E[Faster forward rate]
-        D --> F[Faster reverse rate]
-        E --> G[Equilibrium reached faster]
-        F --> G
-        G --> H{Does K change?}
-        H -->|NO| I[Same equilibrium position<br/>Same final concentrations]
-    end
-
-    style A fill:#e1f5ff
-    style B fill:#fff3cd
-    style E fill:#d4edda
-    style F fill:#d4edda
-    style G fill:#ffeaa7
-    style I fill:#d4edda
-```
 
 ---
 

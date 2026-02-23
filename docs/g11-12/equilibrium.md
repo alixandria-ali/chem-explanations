@@ -29,40 +29,6 @@ Chemical equilibrium occurs in reversible reactions when the forward and reverse
 - At equilibrium: rate forward = rate reverse
 - Concentrations remain constant (but reactions continue)
 
-```mermaid
-graph LR
-    A[Reactants<br/>A + B] -->|Forward reaction| B[Products<br/>C + D]
-    B -->|Reverse reaction| A
-
-    style A fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style B fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-```
-
-**Dynamic Equilibrium Visualization:**
-
-```mermaid
-graph TD
-    subgraph "Before Equilibrium"
-    A1[High rate forward →]
-    A2[Low rate reverse ←]
-    end
-
-    subgraph "At Equilibrium"
-    B1[Rate forward = Rate reverse]
-    B2[Concentrations constant]
-    B3[Both reactions continue]
-    end
-
-    A1 --> B1
-    A2 --> B1
-
-    style A1 fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    style A2 fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style B1 fill:#fff9c4,stroke:#f57f17,stroke-width:3px
-    style B2 fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style B3 fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-```
-
 **Equilibrium Constant (\(K_c\))** - Step-by-Step:
 - For \(aA + bB \rightleftharpoons cC + dD\):
 \[K_c = \frac{[C]^c[D]^d}{[A]^a[B]^b}\]
@@ -94,25 +60,6 @@ The reaction quotient helps predict which direction a reaction will shift to rea
    - If \(Q = K_c\): System is at equilibrium (no shift)
 
 **Memory Aid:** Think of \(K_c\) as the "target" and \(Q\) as "where you are now." The reaction shifts to make \(Q\) equal to \(K_c\).
-
-```mermaid
-flowchart TD
-    Start([Calculate Q and compare to Kc])
-    Start --> Compare{Q vs Kc?}
-
-    Compare -->|Q < Kc| Left[Too few products<br/>Not enough in numerator]
-    Compare -->|Q = Kc| Middle[At equilibrium<br/>No shift]
-    Compare -->|Q > Kc| Right[Too many products<br/>Too much in numerator]
-
-    Left --> ShiftRight[Reaction shifts RIGHT →<br/>Toward products]
-    Right --> ShiftLeft[Reaction shifts LEFT ←<br/>Toward reactants]
-
-    style Left fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style Middle fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style Right fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style ShiftRight fill:#bbdefb,stroke:#1976d2,stroke-width:3px
-    style ShiftLeft fill:#ffe0b2,stroke:#ef6c00,stroke-width:3px
-```
 
 **Le Chatelier's Principle** - Step-by-Step:
 When a stress is applied to a system at equilibrium, the system shifts to relieve the stress.
@@ -150,41 +97,6 @@ When a stress is applied to a system at equilibrium, the system shifts to reliev
   - Speeds up both forward and reverse rates equally
   - No shift in equilibrium position
   - Reaches equilibrium faster, but same final concentrations
-
-**Le Chatelier's Principle - Visual Summary:**
-
-```mermaid
-flowchart TD
-    Stress([Stress Applied to Equilibrium])
-
-    Stress --> C1{Concentration Change}
-    Stress --> C2{Pressure Change<br/>gases only}
-    Stress --> C3{Temperature Change}
-    Stress --> C4{Catalyst Added}
-
-    C1 --> C1A[Add reactant → Shift RIGHT]
-    C1 --> C1B[Add product → Shift LEFT]
-    C1 --> C1C[Remove reactant → Shift LEFT]
-    C1 --> C1D[Remove product → Shift RIGHT]
-
-    C2 --> C2A[Increase P → Shift to fewer moles]
-    C2 --> C2B[Decrease P → Shift to more moles]
-    C2 --> C2C[Equal moles → No shift]
-
-    C3 --> C3A[Endothermic + heat → Shift RIGHT]
-    C3 --> C3B[Endothermic - heat → Shift LEFT]
-    C3 --> C3C[Exothermic + heat → Shift LEFT]
-    C3 --> C3D[Exothermic - heat → Shift RIGHT]
-
-    C4 --> C4A[No shift in position<br/>Faster equilibrium only]
-
-    style Stress fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
-    style C1 fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style C2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style C3 fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    style C4 fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style C4A fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
-```
 
 ---
 
@@ -225,34 +137,6 @@ flowchart TD
 
 **Why:** If the reaction has equal moles of gas on both sides (e.g., \(H_{2(g)} + I_{2(g)} \rightleftharpoons 2HI_{(g)}\), 2 moles = 2 moles), pressure changes cause no shift. Also, pressure doesn't significantly affect solids, liquids, or aqueous solutions.
 
-**Pressure Change Effects - Decision Tree:**
-
-```mermaid
-flowchart TD
-    Start([Pressure Increased])
-
-    Start --> Q1{Are gases<br/>involved?}
-
-    Q1 -->|No| NoEffect1[No effect<br/>Only affects gases]
-    Q1 -->|Yes| Q2{Count moles<br/>of gas}
-
-    Q2 --> Compare[Compare moles:<br/>Reactants vs Products]
-
-    Compare --> Case1{Moles<br/>comparison?}
-
-    Case1 -->|More moles<br/>on LEFT| ShiftRight[Shift RIGHT →<br/>Toward fewer moles]
-    Case1 -->|More moles<br/>on RIGHT| ShiftLeft[Shift LEFT ←<br/>Toward fewer moles]
-    Case1 -->|Equal moles<br/>both sides| NoEffect2[No shift<br/>No advantage either way]
-
-    style Start fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
-    style Q1 fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style Q2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style NoEffect1 fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
-    style NoEffect2 fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
-    style ShiftRight fill:#bbdefb,stroke:#1976d2,stroke-width:3px
-    style ShiftLeft fill:#ffe0b2,stroke:#ef6c00,stroke-width:3px
-```
-
 ---
 
 ## Worked Examples
@@ -269,31 +153,6 @@ flowchart TD
 4. \(K_c = \frac{[N_2O_4]}{[NO_2]^2}\)
 
 **Answer**: \(K_c = \frac{[N_2O_4]}{[NO_2]^2}\)
-
-**Visual Guide - Writing Equilibrium Expressions:**
-
-```mermaid
-flowchart LR
-    subgraph Reaction["2NO₂(g) ⇌ N₂O₄(g)"]
-    end
-
-    Reaction --> Step1[Step 1: Identify<br/>Products: N₂O₄<br/>Reactants: NO₂]
-
-    Step1 --> Step2[Step 2: Products<br/>in NUMERATOR<br/>N₂O₄]
-
-    Step2 --> Step3[Step 3: Reactants<br/>in DENOMINATOR<br/>NO₂]
-
-    Step3 --> Step4[Step 4: Apply coefficients<br/>as EXPONENTS<br/>coefficient 2 → squared]
-
-    Step4 --> Final["Kc = [N₂O₄] / [NO₂]²"]
-
-    style Reaction fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
-    style Step1 fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style Step2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style Step3 fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-    style Step4 fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    style Final fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
-```
 
 ---
 
@@ -347,26 +206,6 @@ Calculate \(K_c\).
 
 **Answer**: \(K_c = 36\) (unitless)
 
-**Understanding Kc Values:**
-
-```mermaid
-flowchart TD
-    Start([Equilibrium Constant Kc])
-
-    Start --> Range{Kc Value Range}
-
-    Range -->|Kc >> 1<br/>e.g., Kc = 100| Large[Products HIGHLY favored<br/>Reaction goes nearly to completion<br/>Very little reactants at equilibrium]
-
-    Range -->|Kc ≈ 1<br/>e.g., 0.1 < Kc < 10| Medium[Both present at equilibrium<br/>Significant amounts of<br/>reactants AND products]
-
-    Range -->|Kc << 1<br/>e.g., Kc = 0.001| Small[Reactants HIGHLY favored<br/>Reaction barely proceeds<br/>Very little products at equilibrium]
-
-    style Start fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
-    style Large fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
-    style Medium fill:#fff9c4,stroke:#f57f17,stroke-width:3px
-    style Small fill:#ffcdd2,stroke:#d32f2f,stroke-width:3px
-```
-
 ---
 
 ### Example 3: Applying Le Chatelier's Principle
@@ -387,65 +226,6 @@ Predict the effect on equilibrium of:
 4. (d) Increasing pressure: Left side has 4 moles gas (\(1 + 3\)), right side has 2 moles. System shifts **right** toward fewer moles to reduce pressure
 
 **Answer**: (a) shifts right; (b) shifts right; (c) shifts left; (d) shifts right
-
-**Concentration vs Time Graph for Reaching Equilibrium:**
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'fontSize':'16px'}}}%%
-graph TD
-    subgraph " "
-    direction TB
-    A["⬆ Concentration (M)<br/><br/><br/><br/><br/><br/><br/><br/><br/>━━━━━━━━━━━━━━━━━━━━━━━━━━━━▶ Time<br/><br/>"]
-    end
-
-    subgraph Legend
-    B1[Reactants: Start high, decrease to equilibrium]
-    B2[Products: Start low, increase to equilibrium]
-    B3[At equilibrium: Both concentrations constant]
-    B4[Rates equal, but concentrations NOT equal]
-    end
-
-    style A fill:#ffffff,stroke:#666,stroke-width:2px,color:#000
-    style B1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style B2 fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style B3 fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    style B4 fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-```
-
-**Note:** In a typical concentration vs time graph:
-- Reactant concentrations decrease from initial values and level off at equilibrium
-- Product concentrations increase from zero (or initial values) and level off at equilibrium
-- Once equilibrium is reached, all concentrations remain constant (horizontal lines)
-- The point where lines become horizontal indicates equilibrium has been reached
-
-**Equilibrium Position Shift - Example with Temperature:**
-
-For the exothermic reaction: \(N_{2(g)} + 3H_{2(g)} \rightleftharpoons 2NH_{3(g)} + \text{heat}\)
-
-```mermaid
-flowchart TD
-    subgraph Initial["Initial Equilibrium (Lower T)"]
-    I1["[N₂] = x M<br/>[H₂] = y M<br/>[NH₃] = z M"]
-    end
-
-    subgraph Stress["Temperature Increased<br/>Heat Added"]
-    S1["System shifts LEFT<br/>to consume added heat"]
-    end
-
-    subgraph New["New Equilibrium (Higher T)"]
-    N1["[N₂] = x + Δ M ↑<br/>[H₂] = y + Δ M ↑<br/>[NH₃] = z - Δ M ↓"]
-    end
-
-    Initial --> Stress
-    Stress --> New
-
-    style Initial fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style Stress fill:#ffcdd2,stroke:#d32f2f,stroke-width:3px
-    style New fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style I1 fill:#e3f2fd,stroke:#1976d2
-    style S1 fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style N1 fill:#ffe0b2,stroke:#ef6c00
-```
 
 ---
 
@@ -669,30 +449,6 @@ E) 4.50
     - D: The reaction shifts in ONE net direction
     - E: Temperature is not needed; we compare \(Q\) to \(K_c\)
 
-    **Visualizing Q vs Kc:**
-
-    ```mermaid
-    flowchart LR
-        subgraph Left["Q = 12.5"]
-        L1[Current state:<br/>Not enough products]
-        end
-
-        subgraph Middle["Reaction Progress"]
-        M1[System shifts RIGHT →<br/>Making more products<br/>Consuming reactants]
-        end
-
-        subgraph Right["Kc = 50"]
-        R1[Target equilibrium:<br/>More products needed]
-        end
-
-        Left --> Middle
-        Middle --> Right
-
-        style Left fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-        style Middle fill:#fff9c4,stroke:#f57f17,stroke-width:3px
-        style Right fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    ```
-
 ---
 
 ??? note "Question 5 - Answer: D"
@@ -778,38 +534,6 @@ E) 4.50
     - C: \([NO_2]\) increases, not decreases
     - D & E: \(K_c\) does NOT remain constant when temperature changes
 
-    **Temperature Effects on Kc:**
-
-    ```mermaid
-    flowchart TD
-        Start([Temperature Change])
-
-        Start --> Type{Reaction Type?}
-
-        Type -->|Endothermic<br/>Heat is REACTANT| Endo[Heat + Reactants ⇌ Products]
-
-        Type -->|Exothermic<br/>Heat is PRODUCT| Exo[Reactants ⇌ Products + Heat]
-
-        Endo --> EndoTemp{Temperature<br/>Change?}
-        Exo --> ExoTemp{Temperature<br/>Change?}
-
-        EndoTemp -->|Increase T<br/>Add heat| EndoUp[Shifts RIGHT<br/>Kc INCREASES<br/>More products favored]
-
-        EndoTemp -->|Decrease T<br/>Remove heat| EndoDown[Shifts LEFT<br/>Kc DECREASES<br/>More reactants favored]
-
-        ExoTemp -->|Increase T<br/>Add heat| ExoUp[Shifts LEFT<br/>Kc DECREASES<br/>More reactants favored]
-
-        ExoTemp -->|Decrease T<br/>Remove heat| ExoDown[Shifts RIGHT<br/>Kc INCREASES<br/>More products favored]
-
-        style Start fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
-        style Endo fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-        style Exo fill:#ffebee,stroke:#c62828,stroke-width:2px
-        style EndoUp fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-        style EndoDown fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-        style ExoUp fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-        style ExoDown fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    ```
-
 ---
 
 ??? note "Question 10 - Answer: C"
@@ -834,56 +558,6 @@ E) 4.50
     - E: Calculation error
 
 ---
-
----
-
-## Comprehensive Equilibrium Process Overview
-
-**From Start to Equilibrium - Complete Picture:**
-
-```mermaid
-flowchart TD
-    Start([Reaction Begins<br/>Reactants Mixed])
-
-    Start --> Initial[Initial State:<br/>High reactant concentration<br/>Low/zero product concentration<br/>Fast forward rate<br/>Slow/zero reverse rate]
-
-    Initial --> Progress[Reaction Progresses:<br/>Reactants decrease<br/>Products increase<br/>Forward rate slows<br/>Reverse rate speeds up]
-
-    Progress --> Check{Are forward and<br/>reverse rates equal?}
-
-    Check -->|No| Progress
-
-    Check -->|Yes| Equilibrium[EQUILIBRIUM REACHED<br/>Rate forward = Rate reverse<br/>Concentrations constant<br/>Both reactions continue]
-
-    Equilibrium --> External{External<br/>Stress Applied?}
-
-    External -->|No| Maintain[Equilibrium Maintained<br/>Concentrations stay constant]
-
-    External -->|Yes - Add/Remove<br/>substance| Shift1[Le Chatelier:<br/>Shift to oppose change]
-
-    External -->|Yes - Pressure<br/>change| Shift2[Le Chatelier:<br/>Shift toward fewer/more moles]
-
-    External -->|Yes - Temperature<br/>change| Shift3[Le Chatelier:<br/>Shift to absorb/release heat<br/>Kc value changes]
-
-    External -->|Yes - Catalyst<br/>added| Shift4[No shift in position<br/>Reaches equilibrium faster<br/>Same Kc, same final []]
-
-    Shift1 --> NewEq[New Equilibrium<br/>Established]
-    Shift2 --> NewEq
-    Shift3 --> NewEq
-    Shift4 --> Equilibrium
-    Maintain --> Equilibrium
-
-    style Start fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
-    style Initial fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    style Progress fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-    style Equilibrium fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
-    style Maintain fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px
-    style Shift1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style Shift2 fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
-    style Shift3 fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style Shift4 fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
-    style NewEq fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-```
 
 ---
 

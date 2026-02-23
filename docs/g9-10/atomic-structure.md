@@ -50,23 +50,6 @@ Atoms are the fundamental building blocks of matter. Understanding atomic struct
   2. For cations (positive ions): subtract the charge from protons
   3. For anions (negative ions): add the charge to protons
 
-```mermaid
-graph TD
-    subgraph "Basic Atomic Structure"
-    A[Atom] --> B[Nucleus<br/>center of atom]
-    A --> C[Electron Cloud<br/>surrounds nucleus]
-    B --> D[Protons<br/>+1 charge<br/>~1 amu]
-    B --> E[Neutrons<br/>no charge<br/>~1 amu]
-    C --> F[Electrons<br/>-1 charge<br/>~1/2000 amu]
-    end
-
-    style B fill:#ffcccc
-    style C fill:#cce5ff
-    style D fill:#ff6666
-    style E fill:#cccccc
-    style F fill:#66b3ff
-```
-
 #### Atomic Notation
 
 The standard atomic notation is: \(^A_Z X\) where:
@@ -80,31 +63,6 @@ The standard atomic notation is: \(^A_Z X\) where:
 3. Read the superscript (A) to find the total nuclear particles
 4. Calculate neutrons: A - Z
 5. For neutral atoms, electrons equal Z
-
-```mermaid
-graph TD
-    subgraph "Understanding Atomic Notation: ᴬ𝒁X"
-    A[Atomic Notation<br/>ᴬ𝒵X] --> B[Superscript A<br/>Mass Number<br/>protons + neutrons]
-    A --> C[Subscript Z<br/>Atomic Number<br/>number of protons]
-    A --> D[Symbol X<br/>Element Identity]
-
-    E[Example: ²³₁₁Na] --> F[Mass Number: 23<br/>Atomic Number: 11<br/>Element: Sodium]
-
-    F --> G[Protons = 11]
-    F --> H[Neutrons = 23 - 11 = 12]
-    F --> I[Electrons = 11<br/>neutral atom]
-
-    J[Key Formula:<br/>Neutrons = A - Z]
-    end
-
-    style A fill:#ffcccc
-    style B fill:#ffe6e6
-    style C fill:#e6f3ff
-    style D fill:#fff0e6
-    style E fill:#ffcccc
-    style F fill:#ccffcc
-    style J fill:#ffffcc
-```
 
 #### Isotopes
 
@@ -121,37 +79,6 @@ Isotopes are atoms of the same element with different numbers of neutrons. They 
 - Carbon-12 and Carbon-14 (used in radiocarbon dating)
 - Hydrogen-1, Hydrogen-2 (deuterium), and Hydrogen-3 (tritium)
 - Oxygen-16, Oxygen-17, and Oxygen-18
-
-```mermaid
-graph LR
-    subgraph "Carbon-12 Isotope"
-    A1[Nucleus] --> B1[6 Protons<br/>⊕⊕⊕⊕⊕⊕]
-    A1 --> C1[6 Neutrons<br/>○○○○○○]
-    D1[6 Electrons<br/>⊖⊖⊖⊖⊖⊖] -.orbiting.-> A1
-    end
-
-    subgraph "Carbon-14 Isotope"
-    A2[Nucleus] --> B2[6 Protons<br/>⊕⊕⊕⊕⊕⊕]
-    A2 --> C2[8 Neutrons<br/>○○○○○○○○]
-    D2[6 Electrons<br/>⊖⊖⊖⊖⊖⊖] -.orbiting.-> A2
-    end
-
-    E[Same Element<br/>Same Chemical Properties] --> A1
-    E --> A2
-    F[Different Mass<br/>12 vs 14 amu] -.-> A1
-    F -.-> A2
-
-    style A1 fill:#ffcccc
-    style A2 fill:#ffcccc
-    style B1 fill:#ff6666
-    style B2 fill:#ff6666
-    style C1 fill:#cccccc
-    style C2 fill:#cccccc
-    style D1 fill:#66b3ff
-    style D2 fill:#66b3ff
-    style E fill:#ccffcc
-    style F fill:#ffffcc
-```
 
 #### Electron Configuration
 
@@ -170,67 +97,6 @@ Electrons occupy energy levels (shells) around the nucleus. Each shell can hold 
 4. Fill the third shell with up to 8 electrons (for first 20 elements)
 5. Continue filling subsequent shells as needed
 6. Write configuration as: 2, 8, 8, etc.
-
-```mermaid
-graph TD
-    subgraph "Electron Shell Diagram Examples"
-    A[Hydrogen H<br/>1 electron] --> A1[Shell 1: 1e⁻<br/>●]
-
-    B[Carbon C<br/>6 electrons] --> B1[Shell 1: 2e⁻<br/>●●]
-    B --> B2[Shell 2: 4e⁻<br/>●●●●]
-
-    C[Oxygen O<br/>8 electrons] --> C1[Shell 1: 2e⁻<br/>●●]
-    C --> C2[Shell 2: 6e⁻<br/>●●●●●●]
-
-    D[Sodium Na<br/>11 electrons] --> D1[Shell 1: 2e⁻<br/>●●]
-    D --> D2[Shell 2: 8e⁻<br/>●●●●●●●●]
-    D --> D3[Shell 3: 1e⁻<br/>●]
-
-    E[Chlorine Cl<br/>17 electrons] --> E1[Shell 1: 2e⁻<br/>●●]
-    E --> E2[Shell 2: 8e⁻<br/>●●●●●●●●]
-    E --> E3[Shell 3: 7e⁻<br/>●●●●●●●]
-    end
-
-    style A fill:#ffe6e6
-    style B fill:#e6f3ff
-    style C fill:#ffe6f0
-    style D fill:#fff0e6
-    style E fill:#e6ffe6
-    style A1 fill:#ffcccc
-    style B1 fill:#cce5ff
-    style B2 fill:#99ccff
-    style C1 fill:#ffcce6
-    style C2 fill:#ff99cc
-    style D1 fill:#ffd9b3
-    style D2 fill:#ffb366
-    style D3 fill:#ff9933
-    style E1 fill:#ccffcc
-    style E2 fill:#99ff99
-    style E3 fill:#66ff66
-```
-
-```mermaid
-graph LR
-    subgraph "Circular Shell Model Example: Sodium Na"
-    N((Nucleus<br/>11p⊕ 12n○))
-
-    S1((Shell 1<br/>2e⊖))
-    S2((Shell 2<br/>8e⊖))
-    S3((Shell 3<br/>1e⊖))
-
-    N --> S1
-    S1 --> S2
-    S2 --> S3
-
-    Info[Config: 2, 8, 1<br/>Total: 11 electrons]
-    end
-
-    style N fill:#ff6666
-    style S1 fill:#66b3ff
-    style S2 fill:#66b3ff
-    style S3 fill:#66b3ff
-    style Info fill:#ffffcc
-```
 
 #### Ions
 
@@ -262,48 +128,6 @@ Ions are atoms that have gained or lost electrons, resulting in a net charge:
 - The octet rule: atoms tend to gain or lose electrons to have 8 electrons in their outer shell
 - Noble gas configuration: ions often have the same electron configuration as the nearest noble gas
 
-```mermaid
-graph TD
-    subgraph "Ion Formation Comparison"
-    A[Neutral Sodium Na<br/>11 protons, 11 electrons<br/>Config: 2, 8, 1] --> |loses 1e⊖| B[Sodium Ion Na⊕<br/>11 protons, 10 electrons<br/>Config: 2, 8<br/>Charge: +1]
-
-    C[Neutral Chlorine Cl<br/>17 protons, 17 electrons<br/>Config: 2, 8, 7] --> |gains 1e⊖| D[Chloride Ion Cl⊖<br/>17 protons, 18 electrons<br/>Config: 2, 8, 8<br/>Charge: -1]
-
-    E[Neutral Magnesium Mg<br/>12 protons, 12 electrons<br/>Config: 2, 8, 2] --> |loses 2e⊖| F[Magnesium Ion Mg²⊕<br/>12 protons, 10 electrons<br/>Config: 2, 8<br/>Charge: +2]
-
-    G[Neutral Oxygen O<br/>8 protons, 8 electrons<br/>Config: 2, 6] --> |gains 2e⊖| H[Oxide Ion O²⊖<br/>8 protons, 10 electrons<br/>Config: 2, 8<br/>Charge: -2]
-    end
-
-    style A fill:#ffe6e6
-    style B fill:#ff9999
-    style C fill:#e6ffe6
-    style D fill:#99ff99
-    style E fill:#e6f0ff
-    style F fill:#99ccff
-    style G fill:#fff0e6
-    style H fill:#ffcc99
-```
-
-```mermaid
-graph LR
-    subgraph "Cation vs Anion"
-    M[Metal Atoms] --> |lose electrons| C[Cations ⊕<br/>Positive Ions<br/>Fewer electrons<br/>than protons]
-
-    N[Nonmetal Atoms] --> |gain electrons| A[Anions ⊖<br/>Negative Ions<br/>More electrons<br/>than protons]
-
-    Goal[Goal: Stable<br/>Octet Configuration<br/>8 electrons in<br/>outer shell]
-
-    C -.achieve.-> Goal
-    A -.achieve.-> Goal
-    end
-
-    style M fill:#ffcccc
-    style C fill:#ff6666
-    style N fill:#ccffcc
-    style A fill:#66ff66
-    style Goal fill:#ffffcc
-```
-
 ---
 
 ## Worked Examples
@@ -334,29 +158,6 @@ graph LR
 
 **Answer**: 17 protons, 18 neutrons, 17 electrons
 
-```mermaid
-graph TD
-    subgraph "Chlorine-35 Atom Breakdown"
-    A[³⁵₁₇Cl] --> B[Mass Number A = 35<br/>superscript]
-    A --> C[Atomic Number Z = 17<br/>subscript]
-    A --> D[Element Symbol<br/>Chlorine Cl]
-
-    B --> E[Protons + Neutrons = 35]
-    C --> F[Protons = 17]
-
-    E --> G[Neutrons = 35 - 17 = 18]
-    F --> H[Electrons = 17<br/>neutral atom]
-
-    I[Final Composition:<br/>17 protons<br/>18 neutrons<br/>17 electrons]
-    end
-
-    style A fill:#ffcccc
-    style B fill:#ffe6e6
-    style C fill:#e6f3ff
-    style D fill:#fff0e6
-    style I fill:#ccffcc
-```
-
 ---
 
 ### Example 2: Identifying Isotopes
@@ -386,39 +187,6 @@ graph TD
 - By definition, atoms with the same protons but different neutrons are isotopes
 
 **Answer**: Carbon-14 has 8 neutrons. They are isotopes because they are the same element (same number of protons) but have different numbers of neutrons, resulting in different mass numbers.
-
-```mermaid
-graph LR
-    subgraph "Carbon-12 vs Carbon-14"
-    A[¹²₆C] --> A1[6 Protons ⊕]
-    A --> A2[6 Neutrons ○]
-    A --> A3[6 Electrons ⊖]
-    A --> A4[Mass = 12]
-
-    B[¹⁴₆C] --> B1[6 Protons ⊕]
-    B --> B2[8 Neutrons ○]
-    B --> B3[6 Electrons ⊖]
-    B --> B4[Mass = 14]
-
-    C[SAME:<br/>Atomic Number = 6<br/>Element = Carbon<br/>Chemical Properties]
-
-    D[DIFFERENT:<br/>Neutrons: 6 vs 8<br/>Mass Number: 12 vs 14<br/>Nuclear Stability]
-
-    A1 -.-> C
-    B1 -.-> C
-    A2 -.-> D
-    B2 -.-> D
-    end
-
-    style A fill:#ffcccc
-    style B fill:#ffcccc
-    style C fill:#ccffcc
-    style D fill:#ffffcc
-    style A1 fill:#ff6666
-    style B1 fill:#ff6666
-    style A2 fill:#cccccc
-    style B2 fill:#cccccc
-```
 
 ---
 
@@ -461,28 +229,6 @@ graph LR
 
 **Answer**: \(Na^+\) has electron configuration 2, 8. Sodium loses an electron to achieve a stable octet (8 electrons) in its outer shell, matching the electron configuration of neon, a noble gas.
 
-```mermaid
-graph TD
-    subgraph "Sodium Ion Formation"
-    A[Neutral Sodium Na<br/>Atomic Number: 11<br/>Protons: 11<br/>Electrons: 11<br/>Config: 2, 8, 1] --> |loses 1 electron| B[Sodium Ion Na⊕<br/>Protons: 11<br/>Electrons: 10<br/>Config: 2, 8<br/>Charge: +1]
-
-    C[Shell 1: 2e⊖<br/>Shell 2: 8e⊖<br/>Shell 3: 1e⊖<br/>Unstable outer shell] -.before.-> A
-
-    D[Shell 1: 2e⊖<br/>Shell 2: 8e⊖<br/>Shell 3: empty<br/>Stable octet] -.after.-> B
-
-    E[Same as Neon Ne<br/>Noble Gas<br/>Config: 2, 8<br/>Stable] -.matches.-> B
-
-    F[Why?<br/>Octet Rule:<br/>8 electrons in<br/>outer shell = stable]
-    end
-
-    style A fill:#ffe6e6
-    style B fill:#ff9999
-    style C fill:#ffcccc
-    style D fill:#99ff99
-    style E fill:#ccffcc
-    style F fill:#ffffcc
-```
-
 ---
 
 ### Example 4: Working with Mass Number and Isotopes (Multi-Step Problem with Interactive Checker)
@@ -512,33 +258,6 @@ graph TD
 - \(^{42}_{20}Ca\)
 
 **Answer**: The element is Calcium (Ca). Isotope A: \(^{40}_{20}Ca\) with 20 neutrons. Isotope B: \(^{42}_{20}Ca\) with 22 neutrons. Both isotopes are calcium because they have the same number of protons (20), but they differ in their neutron count.
-
-```mermaid
-graph TD
-    subgraph "Calcium Isotopes Problem"
-    A[Given: Element X<br/>20 protons] --> B[Periodic Table<br/>Z = 20]
-    B --> C[Element = Calcium Ca]
-
-    D[Isotope A:<br/>20 protons<br/>20 neutrons] --> E[Mass Number A<br/>= 20 + 20 = 40]
-    E --> F[Notation: ⁴⁰₂₀Ca]
-
-    G[Isotope B:<br/>20 protons<br/>Mass = 42] --> H[Neutrons<br/>= 42 - 20 = 22]
-    H --> I[Notation: ⁴²₂₀Ca]
-
-    J[Both are Calcium<br/>Same: 20 protons<br/>Different: neutrons<br/>20 vs 22]
-
-    F -.-> J
-    I -.-> J
-    end
-
-    style A fill:#ffe6e6
-    style C fill:#ccffcc
-    style D fill:#e6f3ff
-    style G fill:#e6f3ff
-    style F fill:#ffcccc
-    style I fill:#ffcccc
-    style J fill:#ffffcc
-```
 
 ---
 
@@ -641,45 +360,6 @@ Understanding where students typically struggle can help you avoid these pitfall
 **Why This Matters**: If protons changed, it wouldn't be sodium anymore! An atom with 12 protons is magnesium, not a sodium ion.
 
 **How to Avoid**: Remember this rule: "Protons = Identity". The number of protons never changes in chemical reactions, only in nuclear reactions. Ion charges come only from electron changes.
-
-```mermaid
-graph TD
-    subgraph "Atoms, Ions, and Isotopes: Key Relationships"
-    A[Sodium-23 Atom<br/>¹¹p⊕ 12n○ 11e⊖<br/>²³₁₁Na<br/>Neutral charge]
-
-    A --> |loses 1e⊖| B[Sodium-23 Ion<br/>11p⊕ 12n○ 10e⊖<br/>Na⊕<br/>+1 charge]
-
-    C[Sodium-24 Atom<br/>11p⊕ 13n○ 11e⊖<br/>²⁴₁₁Na<br/>Neutral charge]
-
-    C --> |loses 1e⊖| D[Sodium-24 Ion<br/>11p⊕ 13n○ 10e⊖<br/>Na⊕<br/>+1 charge]
-
-    E[A and C are ISOTOPES<br/>Same protons different neutrons]
-    F[B and D are ISOTOPES<br/>Same protons different neutrons]
-    G[A and B are Atom vs Ion<br/>Same protons same neutrons<br/>different electrons]
-    H[C and D are Atom vs Ion<br/>Same protons same neutrons<br/>different electrons]
-
-    A -.-> E
-    C -.-> E
-    B -.-> F
-    D -.-> F
-    A -.-> G
-    B -.-> G
-    C -.-> H
-    D -.-> H
-
-    I[Key Rule:<br/>Protons NEVER change<br/>in chemical processes<br/>Changing protons =<br/>different element]
-    end
-
-    style A fill:#e6f3ff
-    style B fill:#ff9999
-    style C fill:#e6f3ff
-    style D fill:#ff9999
-    style E fill:#ffffcc
-    style F fill:#ffffcc
-    style G fill:#ccffcc
-    style H fill:#ccffcc
-    style I fill:#ffcccc
-```
 
 ---
 

@@ -11,7 +11,8 @@
       "Bash(grep:*)",
       "Bash(python3:*)",
       "Bash(python:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(cd C:\\\\Users\\\\User\\\\Downloads\\\\Chemistry GitHub Pages:* and remove \"Ali\" after Alixandria)"
     ]
   }
 }

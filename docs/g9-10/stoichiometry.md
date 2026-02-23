@@ -75,19 +75,6 @@ Think of conversions as a triangle:
 - You ALWAYS go through moles to convert between mass and particles
 - Never try to convert directly from mass to particles!
 
-```mermaid
-graph TD
-    A[Mass in grams] -->|÷ molar mass| B[Moles]
-    B -->|× molar mass| A
-    B -->|× 6.022 × 10²³| C[Number of Particles]
-    C -->|÷ 6.022 × 10²³| B
-    A -.->|Must go through moles!| C
-
-    style B fill:#4CAF50,stroke:#333,stroke-width:3px,color:#fff
-    style A fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-    style C fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
-```
-
 ### Balancing Chemical Equations: The Foundation
 
 **Step 1: Why Balance Equations?**
@@ -155,36 +142,6 @@ Convert from moles to whatever unit is requested (mass, particles, volume for ga
 
 **Why this matters**: While calculations use moles, real-world applications need practical units like grams.
 
-```mermaid
-flowchart TD
-    Start([Start: Given Information]) --> Step1[Step 1: Write & Balance Equation]
-    Step1 --> Step2[Step 2: Convert Given Quantity to Moles]
-    Step2 --> Check{What are you given?}
-    Check -->|Mass| Convert1[moles = mass ÷ molar mass]
-    Check -->|Particles| Convert2[moles = particles ÷ 6.022×10²³]
-    Check -->|Already moles| Convert3[Use directly]
-    Convert1 --> Step3
-    Convert2 --> Step3
-    Convert3 --> Step3
-    Step3[Step 3: Use Mole Ratio from Equation]
-    Step3 --> Ratio[moles wanted = moles given × coefficient wanted/coefficient given]
-    Ratio --> Step4[Step 4: Convert to Desired Units]
-    Step4 --> Final{What do you need?}
-    Final -->|Mass| Result1[mass = moles × molar mass]
-    Final -->|Particles| Result2[particles = moles × 6.022×10²³]
-    Final -->|Moles| Result3[Already have it!]
-    Result1 --> End([Answer])
-    Result2 --> End
-    Result3 --> End
-
-    style Start fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style End fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style Step1 fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-    style Step2 fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-    style Step3 fill:#FF9800,stroke:#333,stroke-width:3px,color:#fff
-    style Step4 fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-```
-
 ### Limiting Reactant: Who Runs Out First?
 
 **Understanding the Concept**
@@ -213,41 +170,6 @@ Method 2 (Compare mole ratios):
 - The excess reactant(s) will have some left over after the reaction
 - To find how much excess remains: Calculate how much was consumed, subtract from starting amount
 
-```mermaid
-flowchart TD
-    Start([Multiple Reactants Given]) --> Convert[Convert all reactant masses to moles]
-    Convert --> Method{Choose Method}
-
-    Method -->|Method 1| M1[Calculate product from each reactant]
-    M1 --> M1a[Use stoichiometry with Reactant A]
-    M1 --> M1b[Use stoichiometry with Reactant B]
-    M1a --> Compare1[Compare amounts of product]
-    M1b --> Compare1
-    Compare1 --> Limit1[Reactant producing LEAST product is limiting]
-
-    Method -->|Method 2| M2[Compare mole ratios]
-    M2 --> M2a[Divide moles of A by its coefficient]
-    M2 --> M2b[Divide moles of B by its coefficient]
-    M2a --> Compare2[Compare results]
-    M2b --> Compare2
-    Compare2 --> Limit2[Smallest result = limiting reactant]
-
-    Limit1 --> UseLimit[Use ONLY limiting reactant for calculations]
-    Limit2 --> UseLimit
-    UseLimit --> Calc1[Calculate theoretical yield from limiting reactant]
-    UseLimit --> Calc2[Calculate how much excess was consumed]
-    Calc2 --> Remaining[Excess remaining = initial - consumed]
-    Calc1 --> End([Maximum Product Amount])
-    Remaining --> End2([Excess Reactant Left Over])
-
-    style Start fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style UseLimit fill:#FF5722,stroke:#333,stroke-width:3px,color:#fff
-    style Limit1 fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
-    style Limit2 fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
-    style End fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style End2 fill:#9C27B0,stroke:#333,stroke-width:2px,color:#fff
-```
-
 ### Percent Yield: Theory vs. Reality
 
 **Understanding the Concept**
@@ -271,44 +193,6 @@ In theory, chemical reactions should produce a specific amount of product based 
 - Human error in measurement
 
 **Why this matters**: In industry, percent yield affects profitability. A 90% yield means 10% of your reactants are "wasted." For expensive reactants, this matters!
-
-```mermaid
-flowchart TD
-    Start([Begin Experiment]) --> Theory[Calculate Theoretical Yield]
-    Theory --> Theory1[Use stoichiometry from balanced equation]
-    Theory --> Theory2[Use limiting reactant amount]
-    Theory1 --> TheoValue[Theoretical Yield = Maximum possible]
-    Theory2 --> TheoValue
-
-    Start --> Actual[Perform Experiment]
-    Actual --> Measure[Measure Actual Yield]
-    Measure --> ActValue[Actual Yield = What you got]
-
-    TheoValue --> Calculate[Calculate Percent Yield]
-    ActValue --> Calculate
-    Calculate --> Formula["Percent Yield = (Actual/Theoretical) × 100%"]
-    Formula --> Result{Analyze Result}
-
-    Result -->|85-95%| Good[Excellent Yield!]
-    Result -->|70-84%| Fair[Acceptable Yield]
-    Result -->|Below 70%| Poor[Poor Yield - investigate losses]
-    Result -->|Over 100%| Error[ERROR: Check calculations or impure product!]
-
-    Poor --> Reasons[Common Reasons for Loss]
-    Reasons --> R1[Product lost during transfer]
-    Reasons --> R2[Side reactions occurred]
-    Reasons --> R3[Incomplete reaction]
-    Reasons --> R4[Product decomposed]
-
-    style Start fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style TheoValue fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-    style ActValue fill:#FF9800,stroke:#333,stroke-width:2px,color:#fff
-    style Formula fill:#9C27B0,stroke:#333,stroke-width:3px,color:#fff
-    style Good fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style Fair fill:#FFC107,stroke:#333,stroke-width:2px,color:#000
-    style Poor fill:#FF5722,stroke:#333,stroke-width:2px,color:#fff
-    style Error fill:#F44336,stroke:#333,stroke-width:3px,color:#fff
-```
 
 ---
 
@@ -355,40 +239,6 @@ flowchart TD
 5. Maximum \(MgO\) that can form: 3.0 mol (determined by the limiting reactant)
 
 **Answer**: \(O_2\) is the limiting reactant. 3.0 moles of \(MgO\) can form.
-
-**Visual Representation**:
-
-```mermaid
-graph LR
-    subgraph Initial["Initial Amounts"]
-        Mg1["Mg: 4.0 mol<br/>⚪⚪⚪⚪"]
-        O2_1["O₂: 1.5 mol<br/>🔵🔵"]
-    end
-
-    subgraph Stoichiometry["Reaction: 2Mg + O₂ → 2MgO"]
-        Ratio["Ratio: 2:1:2"]
-    end
-
-    subgraph Analysis["Product Analysis"]
-        CalcMg["If all Mg used:<br/>4.0 mol Mg → 4.0 mol MgO"]
-        CalcO2["If all O₂ used:<br/>1.5 mol O₂ → 3.0 mol MgO"]
-    end
-
-    subgraph Result["Result"]
-        Limiting["O₂ is LIMITING<br/>🔵🔵 ✓"]
-        Excess["Mg is EXCESS<br/>⚪⚪⚪⚪ (1 mol left)"]
-        Product["Maximum MgO:<br/>3.0 mol 🟢🟢🟢"]
-    end
-
-    Initial --> Stoichiometry
-    Stoichiometry --> Analysis
-    Analysis --> Result
-
-    style Limiting fill:#FF5722,stroke:#333,stroke-width:3px,color:#fff
-    style Excess fill:#FFC107,stroke:#333,stroke-width:2px,color:#000
-    style Product fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-    style Ratio fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
-```
 
 ---
 

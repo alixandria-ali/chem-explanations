@@ -21,36 +21,6 @@ Chemical bonds form when atoms share or transfer electrons to achieve stable ele
 
 **Types of Bonds**:
 
-```mermaid
-graph TB
-    subgraph "Chemical Bond Types Comparison"
-        direction TB
-
-        CB[Chemical Bonding<br/>Atoms achieve stable<br/>electron configurations]
-
-        CB --> IB[Ionic Bonding]
-        CB --> CB2[Covalent Bonding]
-        CB --> MB[Metallic Bonding]
-
-        IB --> IB1[Metal + Nonmetal<br/>Electron Transfer<br/>Opposite charges attract]
-        IB1 --> IB2[Properties:<br/>High melting point<br/>Conducts when dissolved<br/>Crystalline solids]
-
-        CB2 --> CB3[Nonmetal + Nonmetal<br/>Electron Sharing<br/>Shared pairs between atoms]
-        CB3 --> CB4[Properties:<br/>Lower melting points<br/>Usually don't conduct<br/>Gas, liquid, or solid]
-
-        MB --> MB1[Metal + Metal<br/>Delocalized Electrons<br/>Sea of electrons]
-        MB1 --> MB2[Properties:<br/>Conducts electricity<br/>Malleable & ductile<br/>Metallic luster]
-    end
-
-    style CB fill:#e6f3ff
-    style IB fill:#ffcccc
-    style CB2 fill:#ccffcc
-    style MB fill:#ffffcc
-    style IB2 fill:#ff9999
-    style CB4 fill:#99ff99
-    style MB2 fill:#ffff99
-```
-
 **Ionic Bonds**:
 - Form between metals and nonmetals
 - Electrons are **transferred** from metal to nonmetal
@@ -59,19 +29,6 @@ graph TB
 - Example: \(NaCl\) (sodium chloride)
 - Properties: High melting points, conduct electricity when dissolved or molten, form crystalline solids
 
-```mermaid
-graph LR
-    A[Na Atom<br/>11 electrons<br/>1 valence e⁻] -->|loses 1 e⁻| B[Na⁺ Ion<br/>10 electrons<br/>stable octet]
-    C[Cl Atom<br/>17 electrons<br/>7 valence e⁻] -->|gains 1 e⁻| D[Cl⁻ Ion<br/>18 electrons<br/>stable octet]
-    B -.->|electron transfer| C
-    B -->|electrostatic<br/>attraction| D
-
-    style A fill:#ffcccc
-    style B fill:#ff6666
-    style C fill:#ccffcc
-    style D fill:#66ff66
-```
-
 **Covalent Bonds**:
 - Form between nonmetals
 - Electrons are **shared** between atoms
@@ -79,62 +36,11 @@ graph LR
 - Example: \(H_2O\) (water), \(O_2\) (oxygen gas)
 - Properties: Lower melting points than ionic, usually don't conduct electricity, can be solid, liquid, or gas
 
-```mermaid
-graph TB
-    subgraph "Electron Sharing in Covalent Bonds"
-        A[H Atom<br/>needs 1 e⁻]
-        B[H Atom<br/>needs 1 e⁻]
-        C[O Atom<br/>needs 2 e⁻]
-    end
-
-    A -.->|shares electrons| C
-    B -.->|shares electrons| C
-
-    D[H₂O Molecule<br/>Each H has 2 e⁻<br/>O has 8 e⁻<br/>Both achieve stable configuration]
-
-    C --> D
-    A --> D
-    B --> D
-
-    style A fill:#cce5ff
-    style B fill:#cce5ff
-    style C fill:#ffcccc
-    style D fill:#ccffcc
-```
-
 **Metallic Bonds**:
 - Form between metal atoms
 - Electrons are **delocalized** (mobile "sea of electrons")
 - Allows metals to conduct electricity and be malleable/ductile
 - Example: Copper (Cu), iron (Fe)
-
-```mermaid
-graph TB
-    subgraph "Metallic Bonding - Sea of Electrons"
-        M1[Metal<br/>Cation]
-        M2[Metal<br/>Cation]
-        M3[Metal<br/>Cation]
-        M4[Metal<br/>Cation]
-        M5[Metal<br/>Cation]
-        M6[Metal<br/>Cation]
-        E[Delocalized<br/>Electrons<br/>Can Move Freely]
-    end
-
-    E -.->|surrounds| M1
-    E -.->|surrounds| M2
-    E -.->|surrounds| M3
-    E -.->|surrounds| M4
-    E -.->|surrounds| M5
-    E -.->|surrounds| M6
-
-    style M1 fill:#ffd966
-    style M2 fill:#ffd966
-    style M3 fill:#ffd966
-    style M4 fill:#ffd966
-    style M5 fill:#ffd966
-    style M6 fill:#ffd966
-    style E fill:#99ccff
-```
 
 **Lewis Dot Structures**:
 - Show valence electrons as dots around element symbols
@@ -169,32 +75,6 @@ graph TB
 - Balance charges so the compound is electrically neutral
 - Use subscripts to indicate the number of each ion needed
 - Example: \(Ca^{2+}\) and \(Cl^-\) combine to form \(CaCl_2\)
-
-```mermaid
-flowchart TD
-    A[Start: Identify Elements] --> B{Is one element<br/>a metal?}
-    B -->|Yes| C{Is the other<br/>a nonmetal?}
-    B -->|No| D[Not Ionic]
-    C -->|Yes| E[Likely Ionic Bond]
-    C -->|No| F[Check for Polyatomic Ions]
-
-    E --> G[Determine Ion Charges]
-    F --> G
-
-    G --> H[Metal: Group 1 → +1<br/>Group 2 → +2<br/>Group 13 → +3]
-    G --> I[Nonmetal: Group 17 → -1<br/>Group 16 → -2<br/>Group 15 → -3]
-
-    H --> J[Balance Charges]
-    I --> J
-
-    J --> K[Write Formula with Subscripts<br/>Total + charge = Total - charge]
-
-    K --> L[Ionic Compound Formula]
-
-    style E fill:#ccffcc
-    style L fill:#66ff66
-    style D fill:#ffcccc
-```
 
 ---
 
@@ -235,33 +115,6 @@ flowchart TD
 6. Form double bonds: Move lone pairs from each O to form O=C=O
 7. Final check: Each atom has 8 electrons
 
-```mermaid
-flowchart TD
-    A[Start: Draw Lewis Structure] --> B[Count Total<br/>Valence Electrons]
-    B --> C[Identify Central Atom<br/>Least electronegative, not H]
-    C --> D[Draw Single Bonds<br/>Central to Outer Atoms]
-    D --> E[Complete Octets<br/>on Outer Atoms]
-    E --> F{Does central atom<br/>have 8 electrons?}
-
-    F -->|Yes| G[Structure Complete ✓<br/>Check all octets satisfied]
-    F -->|No| H[Form Multiple Bonds<br/>Move lone pairs to bonding]
-
-    H --> I[Create Double or<br/>Triple Bonds as Needed]
-    I --> J{Central atom<br/>now has 8 e⁻?}
-
-    J -->|Yes| G
-    J -->|No| K[Continue forming<br/>multiple bonds]
-    K --> J
-
-    G --> L[Final Lewis Structure]
-
-    style A fill:#e6f3ff
-    style G fill:#ccffcc
-    style L fill:#66ff66
-    style F fill:#fff4e6
-    style J fill:#fff4e6
-```
-
 ---
 
 ### Understanding Covalent Bond Formation
@@ -286,40 +139,6 @@ flowchart TD
 - These still count toward the octet
 - Lone pairs affect molecular shape and polarity
 
-```mermaid
-graph TB
-    subgraph "Single, Double, and Triple Bonds"
-        direction TB
-        S1[Single Bond<br/>H-H]
-        S2[2 electrons shared<br/>1 bonding pair]
-        S1 --> S2
-
-        D1[Double Bond<br/>O=O]
-        D2[4 electrons shared<br/>2 bonding pairs]
-        D1 --> D2
-
-        T1[Triple Bond<br/>N≡N]
-        T2[6 electrons shared<br/>3 bonding pairs]
-        T1 --> T2
-    end
-
-    subgraph "Bond Strength & Length"
-        direction LR
-        B1[Single Bond<br/>Longest<br/>Weakest]
-        B2[Double Bond<br/>Medium<br/>Medium]
-        B3[Triple Bond<br/>Shortest<br/>Strongest]
-
-        B1 -.->|increasing strength| B2
-        B2 -.->|increasing strength| B3
-        B3 -.->|decreasing length| B1
-    end
-
-    style S1 fill:#cce5ff
-    style D1 fill:#99ccff
-    style T1 fill:#6699ff
-    style B3 fill:#66ff66
-```
-
 ---
 
 ## Common Mistakes in Chemical Bonding
@@ -337,26 +156,6 @@ graph TB
 - Remember: Hydrogen acts as a nonmetal in bonding
 
 **Correct Thinking**: \(NH_3\) is covalent because both N and H are nonmetals that share electrons.
-
-```mermaid
-flowchart TD
-    A[Identify Elements<br/>in Compound] --> B{Contains<br/>a metal?}
-
-    B -->|Yes| C{Other element<br/>is a nonmetal?}
-    B -->|No| D[All Nonmetals]
-
-    C -->|Yes| E[IONIC BOND<br/>Electron Transfer<br/>Example: NaCl, MgO, CaF₂]
-    C -->|No| F[Both Metals]
-
-    F --> G[METALLIC BOND<br/>Delocalized Electrons<br/>Example: Cu, Fe, Au]
-
-    D --> H[COVALENT BOND<br/>Electron Sharing<br/>Example: H₂O, CO₂, NH₃]
-
-    style E fill:#ffcccc
-    style G fill:#ffffcc
-    style H fill:#ccffcc
-    style A fill:#e6f3ff
-```
 
 ---
 
@@ -461,39 +260,6 @@ flowchart TD
 
 **Answer**: Water has two O-H single bonds with two lone pairs on oxygen. Oxygen satisfies the octet rule with 8 electrons total.
 
-```mermaid
-graph TB
-    subgraph "Molecular Geometry Examples"
-        direction TB
-
-        L1[Linear<br/>CO₂<br/>O=C=O<br/>180° bond angle]
-        L2[No lone pairs<br/>on central atom]
-        L1 --> L2
-
-        B1[Bent<br/>H₂O<br/>H-O-H<br/>104.5° bond angle]
-        B2[2 lone pairs<br/>on central atom]
-        B1 --> B2
-
-        T1[Trigonal Planar<br/>BF₃<br/>120° bond angles]
-        T2[No lone pairs<br/>3 bonding pairs]
-        T1 --> T2
-
-        Te1[Tetrahedral<br/>CH₄<br/>109.5° bond angles]
-        Te2[No lone pairs<br/>4 bonding pairs]
-        Te1 --> Te2
-
-        Tr1[Trigonal Pyramidal<br/>NH₃<br/>107° bond angles]
-        Tr2[1 lone pair<br/>3 bonding pairs]
-        Tr1 --> Tr2
-    end
-
-    style L1 fill:#cce5ff
-    style B1 fill:#ffcccc
-    style T1 fill:#ccffcc
-    style Te1 fill:#ffffcc
-    style Tr1 fill:#ffccff
-```
-
 ---
 
 ### Example 3: Ionic Compound Formation
@@ -509,61 +275,7 @@ graph TB
 6. Resulting \(Cl^-\): 18 electrons, configuration 2, 8, 8
 7. Ionic compound forms: \(Na^+ Cl^-\) (neutral overall)
 
-```mermaid
-sequenceDiagram
-    participant Na as Sodium Atom<br/>(Na)<br/>Config: 2,8,1<br/>1 valence e⁻
-    participant e as Electron Transfer
-    participant Cl as Chlorine Atom<br/>(Cl)<br/>Config: 2,8,7<br/>7 valence e⁻
-
-    Na->>e: Loses 1 electron
-    Note over Na: Becomes Na⁺<br/>Config: 2,8<br/>Charge: +1<br/>Stable octet
-
-    e->>Cl: Gains 1 electron
-    Note over Cl: Becomes Cl⁻<br/>Config: 2,8,8<br/>Charge: -1<br/>Stable octet
-
-    Note over Na,Cl: Electrostatic Attraction<br/>Forms Ionic Bond<br/>NaCl compound
-```
-
 **Answer**: Na loses 1 electron to form \(Na^+\) (charge: +1). Cl gains 1 electron to form \(Cl^-\) (charge: -1). The ionic bond forms between \(Na^+\) and \(Cl^-\).
-
-```mermaid
-graph TB
-    subgraph "Polarity Concepts"
-        direction TB
-
-        P1[Electronegativity Difference<br/>Between Bonded Atoms]
-
-        P1 -->|ΔEN < 0.5| NP[Nonpolar Covalent<br/>Equal sharing<br/>Example: H₂, O₂, Cl₂]
-
-        P1 -->|0.5 < ΔEN < 1.7| PC[Polar Covalent<br/>Unequal sharing<br/>Example: H-O, H-Cl]
-
-        P1 -->|ΔEN > 1.7| I[Ionic<br/>Electron transfer<br/>Example: NaCl, MgO]
-    end
-
-    subgraph "Molecular Polarity"
-        direction LR
-
-        M1[Polar Bonds +<br/>Asymmetric Shape]
-        M2[Polar Molecule<br/>Example: H₂O, NH₃]
-
-        M3[Polar Bonds +<br/>Symmetric Shape]
-        M4[Nonpolar Molecule<br/>Example: CO₂, CCl₄]
-
-        M5[Nonpolar Bonds]
-        M6[Nonpolar Molecule<br/>Example: H₂, O₂]
-
-        M1 --> M2
-        M3 --> M4
-        M5 --> M6
-    end
-
-    style NP fill:#ccffcc
-    style PC fill:#ffffcc
-    style I fill:#ffcccc
-    style M2 fill:#ff9999
-    style M4 fill:#99ff99
-    style M6 fill:#99ff99
-```
 
 ---
 
