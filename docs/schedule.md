@@ -8,7 +8,7 @@ Ready to get personalized help with chemistry? Our expert coaches are here to su
 
 <div class="coach-card">
 
-🧪 **Alixandria Ali**
+🧪 Alixandria Ali
 
 <a href="https://calendly.com/alixandria-ali-alpha/science-coaching" target="_blank" class="schedule-button alixandria">
     📅 Schedule with Alixandria
@@ -18,7 +18,7 @@ Ready to get personalized help with chemistry? Our expert coaches are here to su
 
 <div class="coach-card">
 
-🔬 **Kari Beth**
+🔬 Kari Beth
 
 <a href="https://calendar.app.google/kjc8peUUURAQQ2VE7" target="_blank" class="schedule-button karibeth">
     📅 Schedule with Kari Beth
