@@ -62,7 +62,7 @@ Matter exists in different physical states based on the arrangement and energy o
 
 **Solution**:
 1. **Ice (solid)**:
-   - Arrangement: \(H_2O\) molecules in fixed, ordered crystal structure
+   - Arrangement: $H_2O$ molecules in fixed, ordered crystal structure
    - Motion: molecules vibrate in place
    - Properties: definite shape and volume, rigid
 2. **Liquid water**:
@@ -83,7 +83,7 @@ Matter exists in different physical states based on the arrangement and energy o
 **Problem**: Identify the phase change and whether it is endothermic or exothermic:
 (a) Dew forming on grass in the morning
 (b) Ice melting on a warm day
-(c) Dry ice (solid \(CO_2\)) turning directly to gas
+(c) Dry ice (solid $CO_2$) turning directly to gas
 
 **Solution**:
 1. (a) Dew forming: water vapor (gas) → liquid water
@@ -166,4 +166,4 @@ Matter exists in different physical states based on the arrangement and energy o
 
     9. Diagonal sections represent **temperature changes** within a single state. During these sections, added heat increases the kinetic energy (and thus temperature) of particles.
 
-    10. In ice, \(H_2O\) molecules form a **rigid crystal structure with open spaces**, making ice less dense than liquid water. In liquid water, molecules are closer together on average. Because ice is less dense, it floats on liquid water (density principle: less dense floats on more dense).
+    10. In ice, $H_2O$ molecules form a **rigid crystal structure with open spaces**, making ice less dense than liquid water. In liquid water, molecules are closer together on average. Because ice is less dense, it floats on liquid water (density principle: less dense floats on more dense).
