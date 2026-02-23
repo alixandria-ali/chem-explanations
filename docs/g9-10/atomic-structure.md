@@ -237,47 +237,6 @@ Ions are atoms that have gained or lost electrons, resulting in a net charge:
 
 **Solution**:
 
-<div class="step-checker" data-problem="atomic-structure-isotope">
-  <div class="step-input">
-    <label>Step 1: Identify the element using the atomic number (number of protons)</label>
-    <input type="text" data-step="1" placeholder="Enter element name">
-    <button onclick="checkStep(this, 'Calcium')">Check Step 1</button>
-    <div class="feedback"></div>
-  </div>
-
-  <div class="step-input">
-    <label>Step 2: Calculate the mass number of Isotope A (protons + neutrons)</label>
-    <input type="number" data-step="2" placeholder="Enter mass number">
-    <button onclick="checkStep(this, '40')">Check Step 2</button>
-    <div class="feedback"></div>
-  </div>
-
-  <div class="step-input">
-    <label>Step 3: Write the atomic notation for Isotope A</label>
-    <input type="text" data-step="3" placeholder="Enter notation (e.g., ^40_20Ca)">
-    <button onclick="checkStep(this, '^40_20Ca')">Check Step 3</button>
-    <div class="feedback"></div>
-  </div>
-
-  <div class="step-input">
-    <label>Step 4: Calculate the number of neutrons in Isotope B (mass number - protons)</label>
-    <input type="number" data-step="4" placeholder="Enter number of neutrons">
-    <button onclick="checkStep(this, '22')">Check Step 4</button>
-    <div class="feedback"></div>
-  </div>
-
-  <div class="step-input">
-    <label>Step 5: Write the atomic notation for Isotope B</label>
-    <input type="text" data-step="5" placeholder="Enter notation (e.g., ^42_20Ca)">
-    <button onclick="checkStep(this, '^42_20Ca')">Check Step 5</button>
-    <div class="feedback"></div>
-  </div>
-</div>
-
-<script src="../../js/step-checker.js"></script>
-
-**Detailed Solution**:
-
 **Step 1**: Identify the element
 - Atomic number = number of protons = 20
 - Looking at the periodic table, element 20 is **Calcium (Ca)**

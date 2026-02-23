@@ -332,16 +332,6 @@ Reaction: \(C_3H_8 + 5O_2 \rightarrow 3CO_2 + 4H_2O\)
 (D) 6.0 mol
 (E) 8.0 mol
 
-**Interactive Step Checker for Problem 4**:
-<div id="step-checker-problem-4"></div>
-<script>
-const checker_step_checker_problem_4 = new StepChecker('step-checker-problem-4');
-checker_step_checker_problem_4.addStep(1, 4.0, 0.1, 'mol NH₃ from N₂');
-checker_step_checker_problem_4.addStep(2, 2.67, 0.1, 'mol NH₃ from H₂');
-checker_step_checker_problem_4.addStep(3, 2.67, 0.1, 'mol NH₃ (final answer)');
-checker_step_checker_problem_4.render();
-</script>
-
 ---
 
 **Problem 5**: A sample contains \(3.01 \times 10^{23}\) molecules of glucose (\(C_6H_{12}O_6\)). What is the mass of this sample? (Molar mass of glucose = 180.0 g/mol)

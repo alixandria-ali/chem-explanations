@@ -4,19 +4,11 @@ Ready to get personalized help with chemistry? Our expert coaches are here to su
 
 ---
 
-## Choose Your Coach
-
 <div class="coach-container">
 
 <div class="coach-card">
 
-### 🧪 Alixandria Ali
-
-**Specialties:**
-- General Chemistry (Grades 9-12)
-- AP Chemistry
-- SAT Chemistry Subject Test Prep
-- College Chemistry Support
+🧪 **Alixandria Ali**
 
 <a href="https://calendly.com/alixandria-ali-alpha/science-coaching" target="_blank" class="schedule-button alixandria">
     📅 Schedule with Alixandria
@@ -26,13 +18,7 @@ Ready to get personalized help with chemistry? Our expert coaches are here to su
 
 <div class="coach-card">
 
-### 🔬 Kari Beth
-
-**Specialties:**
-- Chemistry Fundamentals
-- Problem-Solving Strategies
-- Exam Preparation
-- Concept Clarification
+🔬 **Kari Beth**
 
 <a href="https://calendar.app.google/kjc8peUUURAQQ2VE7" target="_blank" class="schedule-button karibeth">
     📅 Schedule with Kari Beth
@@ -44,29 +30,20 @@ Ready to get personalized help with chemistry? Our expert coaches are here to su
 
 ---
 
-## What to Expect in a Coaching Session
-
-- **Personalized Attention**: One-on-one support tailored to your needs
-- **Flexible Topics**: Focus on what you need help with most
-- **Interactive Learning**: Work through problems together
-- **Study Strategies**: Learn effective approaches for mastering chemistry
-- **Exam Prep**: Get ready for tests, quizzes, and standardized exams
-
----
-
-## Frequently Asked Questions
-
-??? question "How long are sessions?"
-    Sessions are typically 45-60 minutes, but can be adjusted based on your needs.
-
-??? question "What should I bring to the session?"
-    Come prepared with specific questions, homework problems, or topics you'd like to review. Having your textbook or class materials handy is helpful!
-
-??? question "Can I get help with homework?"
-    Absolutely! We can work through homework problems together and make sure you understand the concepts.
-
-??? question "Do you offer group sessions?"
-    Contact us directly to discuss group session options!
+<div class="widget-container" style="background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%); margin-top: 3rem;">
+  <h3>📧 Before Your Session</h3>
+  <p style="font-size: 1.1rem; line-height: 1.8;">
+    Please send an <strong>email</strong> or <strong>Slack message</strong> to your coach with:
+  </p>
+  <ul style="text-align: left; font-size: 1.05rem; line-height: 1.8; margin: 1.5rem auto; max-width: 600px;">
+    <li>Topics you'd like to cover</li>
+    <li>Specific problems or concepts you're struggling with</li>
+    <li>Any homework or test prep materials you want to review</li>
+  </ul>
+  <p style="font-style: italic; color: var(--learning-focus); font-weight: 500;">
+    This helps us make the most of your coaching time!
+  </p>
+</div>
 
 ---
 

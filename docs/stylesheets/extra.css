@@ -187,20 +187,6 @@
   font-size: 1.1rem;
 }
 
-/* Enhanced step checker styling */
-.step-checker-container {
-  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
-  border: 2px solid var(--learning-focus);
-  border-radius: 12px;
-  padding: 2rem;
-  margin: 2rem 0;
-  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.1);
-}
-
-[data-md-color-scheme="slate"] .step-checker-container {
-  background: linear-gradient(135deg, #134e4a 0%, #115e59 100%);
-}
-
 /* Video container styling */
 .video-container {
   margin: 2rem 0;

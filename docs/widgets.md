@@ -4,9 +4,9 @@ Interactive tools to help you solve chemistry problems faster and check your wor
 
 ---
 
-## Molar Mass Calculator
+??? example "🧮 Molar Mass Calculator"
 
-<div class="widget-container" id="molar-mass-calc">
+    <div class="widget-container" id="molar-mass-calc">
   <h3>🧮 Calculate Molar Mass</h3>
   <p>Enter a chemical formula (e.g., H2O, Ca(OH)2, Fe2(SO4)3)</p>
 
@@ -71,13 +71,11 @@ function calculateMolarMass() {
     resultDiv.style.display = 'block';
   }
 }
-</script>
+    </script>
 
----
+??? example "🧪 pH Calculator"
 
-## pH Calculator
-
-<div class="widget-container" id="ph-calc">
+    <div class="widget-container" id="ph-calc">
   <h3>🧪 pH and pOH Calculator</h3>
 
   <div class="widget-input">
@@ -180,13 +178,11 @@ function calculatePH() {
     resultDiv.style.display = 'block';
   }
 }
-</script>
+    </script>
 
----
+??? example "⚖️ Stoichiometry Calculator"
 
-## Stoichiometry Calculator
-
-<div class="widget-container" id="stoich-calc">
+    <div class="widget-container" id="stoich-calc">
   <h3>⚖️ Moles, Mass, and Particles Converter</h3>
 
   <div class="widget-input">
@@ -266,13 +262,11 @@ function calculateStoich() {
   `;
   resultDiv.style.display = 'block';
 }
-</script>
+    </script>
 
----
+??? example "💧 Dilution Calculator"
 
-## Dilution Calculator
-
-<div class="widget-container" id="dilution-calc">
+    <div class="widget-container" id="dilution-calc">
   <h3>💧 M₁V₁ = M₂V₂ Calculator</h3>
   <p>Calculate dilution values using M₁V₁ = M₂V₂</p>
 
@@ -359,23 +353,19 @@ function calculateDilution() {
     resultDiv.style.display = 'block';
   }
 }
-</script>
+    </script>
 
 ---
 
-## Quick Reference: Common Molar Masses
+??? info "Quick Reference: Common Molar Masses"
 
-| Compound | Formula | Molar Mass (g/mol) |
-|----------|---------|-------------------|
-| Water | H₂O | 18.015 |
-| Carbon Dioxide | CO₂ | 44.009 |
-| Sodium Chloride | NaCl | 58.443 |
-| Glucose | C₆H₁₂O₆ | 180.156 |
-| Sulfuric Acid | H₂SO₄ | 98.079 |
-| Ammonia | NH₃ | 17.031 |
-| Calcium Carbonate | CaCO₃ | 100.087 |
-| Methane | CH₄ | 16.043 |
-
----
-
-*These calculators are designed to help you learn and check your work. Always show your work on exams!*
+    | Compound | Formula | Molar Mass (g/mol) |
+    |----------|---------|-------------------|
+    | Water | H₂O | 18.015 |
+    | Carbon Dioxide | CO₂ | 44.009 |
+    | Sodium Chloride | NaCl | 58.443 |
+    | Glucose | C₆H₁₂O₆ | 180.156 |
+    | Sulfuric Acid | H₂SO₄ | 98.079 |
+    | Ammonia | NH₃ | 17.031 |
+    | Calcium Carbonate | CaCO₃ | 100.087 |
+    | Methane | CH₄ | 16.043 |
