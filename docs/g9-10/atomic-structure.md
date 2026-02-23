@@ -2,14 +2,17 @@
 
 ## Video Resources
 
-!!! tip "Khan Academy Videos"
-    **Atomic Models & Periodicity Playlist** - Comprehensive coverage of atomic structure, electron configuration, and periodic trends
+<div class="video-container" markdown="1">
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HBLR7jdrTrb81DNX6MaICRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Atomic Models & Periodicity Playlist** - Comprehensive coverage of atomic structure, electron configuration, and periodic trends
 
-    **Electron Orbitals & Subshells** (Advanced)
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HBLR7jdrTrb81DNX6MaICRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/26PF9Ctch9YkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Electron Orbitals & Subshells** (Advanced)
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/26PF9Ctch9YkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
 
 ---
 

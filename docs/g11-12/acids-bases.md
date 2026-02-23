@@ -2,14 +2,18 @@
 
 ## Video Resources
 
-!!! tip "Khan Academy Videos"
-    **Solutions, Acids and Bases Playlist** - pH, molarity, strong/weak acids & bases
+<div class="video-container" markdown="1">
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HAHzfFIPU3q0hDdHKTEPrz5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Solutions, Acids and Bases Playlist** - pH, molarity, strong/weak acids & bases
 
-    **Introduction to Acids & Bases (Arrhenius)**
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HAHzfFIPU3q0hDdHKTEPrz5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/ja7p_tzTTEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Introduction to Acids & Bases (Arrhenius)**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/ja7p_tzTTEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
 
 ---
 

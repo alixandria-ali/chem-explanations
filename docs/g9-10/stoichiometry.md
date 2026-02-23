@@ -2,14 +2,18 @@
 
 ## Video Resources
 
-!!! tip "Khan Academy Videos"
-    **Stoichiometry & The Mole Playlist** - Comprehensive coverage of mole calculations and stoichiometry problems
+<div class="video-container" markdown="1">
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HDlQzYt6FMr4i4Yf_nyjRN6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Stoichiometry & The Mole Playlist** - Comprehensive coverage of mole calculations and stoichiometry problems
 
-    **Stoichiometry Practice Video**
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HDlQzYt6FMr4i4Yf_nyjRN6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/5l4JEoPhnuQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Stoichiometry Practice Video**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/5l4JEoPhnuQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
 
 ---
 

@@ -2,14 +2,14 @@
 
 ## Video Resources
 
-!!! tip "Khan Academy Videos"
-    **Periodic Table Overview**
+<div class="video-container" markdown="1">
+**Periodic Table Overview**
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/t_f8bB1kf6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/t_f8bB1kf6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    **Atomic Models & Periodicity Playlist** - Includes detailed periodic table trends
+**Atomic Models & Periodicity Playlist** - Includes detailed periodic table trends
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HBLR7jdrTrb81DNX6MaICRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HBLR7jdrTrb81DNX6MaICRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -116,22 +116,22 @@ The periodic table organizes all known elements by atomic number and groups elem
 ## Answer Key
 
 ??? note "Click to reveal answers"
-    1. **2 electron shells**, **6 valence electrons**, element is **oxygen (O)**
+1. **2 electron shells**, **6 valence electrons**, element is **oxygen (O)**
 
-    2. **Phosphorus (P)** has more protons (15 vs 7)
+2. **Phosphorus (P)** has more protons (15 vs 7)
 
-    3. **F < Cl < Br** (atomic radius increases down a group)
+3. **F < Cl < Br** (atomic radius increases down a group)
 
-    4. **Mg has higher ionization energy**. Ionization energy increases left to right across a period, and Mg is to the right of Na in Period 3.
+4. **Mg has higher ionization energy**. Ionization energy increases left to right across a period, and Mg is to the right of Na in Period 3.
 
-    5. **Ca = metal**, **S = nonmetal**, **Si = metalloid**, **Ar = nonmetal** (noble gas)
+5. **Ca = metal**, **S = nonmetal**, **Si = metalloid**, **Ar = nonmetal** (noble gas)
 
-    6. Noble gases have **full outer electron shells** (8 valence electrons, except He with 2), making them stable and unreactive.
+6. Noble gases have **full outer electron shells** (8 valence electrons, except He with 2), making them stable and unreactive.
 
-    7. **Francium (Fr)** has a larger atomic radius. Atomic radius increases down a group, and Fr is much further down Group 1 than Li.
+7. **Francium (Fr)** has a larger atomic radius. Atomic radius increases down a group, and Fr is much further down Group 1 than Li.
 
-    8. **Calcium (Ca)**, **2 valence electrons**
+8. **Calcium (Ca)**, **2 valence electrons**
 
-    9. **Oxygen has higher electronegativity**. Electronegativity decreases down a group, and O is above S in Group 16.
+9. **Oxygen has higher electronegativity**. Electronegativity decreases down a group, and O is above S in Group 16.
 
-    10. Period 3 (3 shells), Group 17 (7 valence electrons): **Chlorine (Cl)**
+10. Period 3 (3 shells), Group 17 (7 valence electrons): **Chlorine (Cl)**

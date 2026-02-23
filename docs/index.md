@@ -27,12 +27,15 @@ Use the navigation menu on the left to browse all topics. Topics are organized f
 
 ## Video Resources
 
-!!! tip "Comprehensive Video Series"
-    **The Organic Chemistry Tutor - AP & General Chemistry Playlist**
+<div class="video-container" markdown="1">
 
-    A massive collection covering all chemistry topics from foundational to advanced levels:
+**The Organic Chemistry Tutor - AP & General Chemistry Playlist**
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PL0o_zxa4K1BWziAvOKdqsMFSB_MyyLAqS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+A massive collection covering all chemistry topics from foundational to advanced levels:
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PL0o_zxa4K1BWziAvOKdqsMFSB_MyyLAqS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
 
 ---
 

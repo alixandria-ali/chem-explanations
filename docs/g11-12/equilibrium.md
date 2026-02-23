@@ -2,14 +2,18 @@
 
 ## Video Resources
 
-!!! tip "Khan Academy Videos"
-    **Equilibrium Playlist** - Dynamic equilibrium, Le Chatelier's principle, Q vs K
+<div class="video-container" markdown="1">
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PL2ub1_oKCn7qmUZ80MJDPaRTdgJm8ZenX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Equilibrium Playlist** - Dynamic equilibrium, Le Chatelier's principle, Q vs K
 
-    **Dynamic Equilibrium Introduction**
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PL2ub1_oKCn7qmUZ80MJDPaRTdgJm8ZenX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/zaHM74k9Z1w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Dynamic Equilibrium Introduction**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/zaHM74k9Z1w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
 
 ---
 

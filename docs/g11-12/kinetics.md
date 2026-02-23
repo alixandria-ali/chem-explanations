@@ -2,10 +2,14 @@
 
 ## Video Resources
 
-!!! tip "Khan Academy Videos"
-    **Reaction Rates and Equilibrium Playlist** - Collision theory and kinetics
+<div class="video-container" markdown="1">
 
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HDruddqk-uDm8j82CintX6V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Reaction Rates and Equilibrium Playlist** - Collision theory and kinetics
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HDruddqk-uDm8j82CintX6V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
 
 ---
 
