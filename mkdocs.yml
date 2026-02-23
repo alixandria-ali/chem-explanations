@@ -1,7 +1,7 @@
 site_name: Chemistry Study Guide
 site_description: Comprehensive chemistry resource for grades 9-12 and AP Chemistry
 site_author: Chemistry Education
-repo_url: https://github.com/yourusername/chemistry-study-guide
+repo_url: https://github.com/alixandria-ali/chem-explanations
 edit_uri: ""
 
 theme:
@@ -24,8 +24,6 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.sections
     - navigation.top
     - navigation.tracking
     - search.suggest
@@ -55,27 +53,21 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Grades 9-10:
-    - g9-10/index.md
-    - Atomic Structure: g9-10/atomic-structure.md
-    - Periodic Table: g9-10/periodic-table.md
-    - Chemical Bonding: g9-10/chemical-bonding.md
-    - Stoichiometry: g9-10/stoichiometry.md
-    - States of Matter: g9-10/states-of-matter.md
-  - Grades 11-12:
-    - g11-12/index.md
-    - Thermochemistry: g11-12/thermochemistry.md
-    - Chemical Equilibrium: g11-12/equilibrium.md
-    - Acids and Bases: g11-12/acids-bases.md
-    - Electrochemistry: g11-12/electrochemistry.md
-    - Chemical Kinetics: g11-12/kinetics.md
-  - AP Chemistry:
-    - ap/index.md
-    - Advanced Atomic Structure: ap/atomic-structure-advanced.md
-    - Thermodynamics: ap/thermodynamics.md
-    - Advanced Equilibrium: ap/equilibrium-advanced.md
-    - Advanced Kinetics: ap/kinetics-advanced.md
-    - Advanced Electrochemistry: ap/electrochemistry-advanced.md
+  - Atomic Structure: g9-10/atomic-structure.md
+  - Periodic Table: g9-10/periodic-table.md
+  - Chemical Bonding: g9-10/chemical-bonding.md
+  - Stoichiometry: g9-10/stoichiometry.md
+  - States of Matter: g9-10/states-of-matter.md
+  - Thermochemistry: g11-12/thermochemistry.md
+  - Chemical Equilibrium: g11-12/equilibrium.md
+  - Acids and Bases: g11-12/acids-bases.md
+  - Electrochemistry: g11-12/electrochemistry.md
+  - Chemical Kinetics: g11-12/kinetics.md
+  - Advanced Atomic Structure: ap/atomic-structure-advanced.md
+  - Thermodynamics: ap/thermodynamics.md
+  - Advanced Equilibrium: ap/equilibrium-advanced.md
+  - Advanced Kinetics: ap/kinetics-advanced.md
+  - Advanced Electrochemistry: ap/electrochemistry-advanced.md
 
 plugins:
   - search

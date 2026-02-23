@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd C:\\\\Users\\\\User\\\\Downloads\\\\Chemistry GitHub Pages:*)"
+      "Bash(cd C:\\\\Users\\\\User\\\\Downloads\\\\Chemistry GitHub Pages:*)",
+      "WebFetch(domain:alixandria-ali.github.io)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
