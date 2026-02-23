@@ -38,7 +38,6 @@ theme:
     - content.tooltips
   logo: assets/chemistry-icon.svg
   favicon: assets/chemistry-icon.svg
-  custom_dir: overrides
 
 markdown_extensions:
   - pymdownx.arithmatex:
