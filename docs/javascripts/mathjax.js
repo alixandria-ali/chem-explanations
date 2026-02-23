@@ -1,11 +1,16 @@
 window.MathJax = {
   tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
     processEscapes: true,
     processEnvironments: true
   },
-  svg: {
-    fontCache: 'global'
+  options: {
+    ignoreHtmlClass: ".*|",
+    processHtmlClass: "arithmatex"
   }
 };
+
+document$.subscribe(() => {
+  MathJax.typesetPromise()
+})

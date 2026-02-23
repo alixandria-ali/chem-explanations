@@ -68,7 +68,7 @@ The periodic table organizes all known elements by atomic number and groups elem
 2. Elements in the same group have similar properties
 3. Group 1 properties:
    - Both have 1 valence electron
-   - Both readily lose that electron to form +1 ions ($K^+$, $Na^+$)
+   - Both readily lose that electron to form +1 ions (\(K^+\), \(Na^+\))
    - Both are highly reactive metals
    - Both react vigorously with water
 
