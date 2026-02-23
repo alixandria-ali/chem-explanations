@@ -7,59 +7,86 @@ edit_uri: ""
 theme:
   name: material
   palette:
-    # Light mode
+    # Light mode - optimized for learning (calming blues/teals)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
-      accent: light-blue
+      primary: teal
+      accent: cyan
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
+    # Dark mode - reduced eye strain
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
-      accent: light-blue
+      primary: teal
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Inter
+    code: Fira Code
   features:
     - navigation.top
     - navigation.tracking
+    - navigation.expand
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
+  logo: assets/chemistry-icon.svg
+  favicon: assets/chemistry-icon.svg
+  custom_dir: overrides
 
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
         - name: html
           class: html
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - attr_list
   - md_in_html
   - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true
-  - md_in_html
+      toc_depth: 3
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/step-checker.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
 
 nav:
   - Home: index.md
   - 📅 Schedule Coaching: schedule.md
+  - 🧮 Calculators & Tools: widgets.md
   - Atomic Structure: g9-10/atomic-structure.md
   - Periodic Table: g9-10/periodic-table.md
   - Chemical Bonding: g9-10/chemical-bonding.md
