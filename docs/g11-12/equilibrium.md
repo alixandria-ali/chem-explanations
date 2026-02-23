@@ -1,5 +1,18 @@
 # Chemical Equilibrium
 
+## Video Resources
+
+!!! tip "Khan Academy Videos"
+    **Equilibrium Playlist** - Dynamic equilibrium, Le Chatelier's principle, Q vs K
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PL2ub1_oKCn7qmUZ80MJDPaRTdgJm8ZenX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    **Dynamic Equilibrium Introduction**
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/zaHM74k9Z1w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Explanation
 
 Chemical equilibrium occurs in reversible reactions when the forward and reverse reaction rates are equal. Understanding equilibrium is crucial for predicting reaction behavior and optimizing conditions.

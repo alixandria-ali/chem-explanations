@@ -1,5 +1,18 @@
 # Periodic Table
 
+## Video Resources
+
+!!! tip "Khan Academy Videos"
+    **Periodic Table Overview**
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/t_f8bB1kf6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    **Atomic Models & Periodicity Playlist** - Includes detailed periodic table trends
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HBLR7jdrTrb81DNX6MaICRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Explanation
 
 The periodic table organizes all known elements by atomic number and groups elements with similar properties together.

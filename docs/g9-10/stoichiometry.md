@@ -1,5 +1,18 @@
 # Stoichiometry
 
+## Video Resources
+
+!!! tip "Khan Academy Videos"
+    **Stoichiometry & The Mole Playlist** - Comprehensive coverage of mole calculations and stoichiometry problems
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HDlQzYt6FMr4i4Yf_nyjRN6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    **Stoichiometry Practice Video**
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/5l4JEoPhnuQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Explanation
 
 Stoichiometry is the study of quantitative relationships in chemical reactions. It allows us to predict how much product forms or how much reactant is needed.

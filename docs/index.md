@@ -25,13 +25,25 @@ Each topic page includes:
 
 Use the navigation menu on the left to browse all topics. Topics are organized from foundational to advanced concepts.
 
+## Video Resources
+
+!!! tip "Comprehensive Video Series"
+    **The Organic Chemistry Tutor - AP & General Chemistry Playlist**
+
+    A massive collection covering all chemistry topics from foundational to advanced levels:
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PL0o_zxa4K1BWziAvOKdqsMFSB_MyyLAqS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Study Tips
 
 1. Read the explanation section carefully before attempting problems
-2. Work through the examples, covering the solution and trying it yourself first
-3. Attempt practice problems without looking at the answers
-4. Check your work and review any mistakes
-5. For challenging topics, review the worked examples again
+2. **Watch the video resources** to see concepts explained visually
+3. Work through the examples, covering the solution and trying it yourself first
+4. Attempt practice problems without looking at the answers
+5. Check your work and review any mistakes
+6. For challenging topics, review the worked examples and videos again
 
 ---
 

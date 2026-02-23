@@ -1,5 +1,18 @@
 # Acids and Bases
 
+## Video Resources
+
+!!! tip "Khan Academy Videos"
+    **Solutions, Acids and Bases Playlist** - pH, molarity, strong/weak acids & bases
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HAHzfFIPU3q0hDdHKTEPrz5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    **Introduction to Acids & Bases (Arrhenius)**
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/ja7p_tzTTEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Explanation
 
 Acids and bases are fundamental classes of compounds in chemistry. Understanding their properties, strength, and reactions is essential for many applications.

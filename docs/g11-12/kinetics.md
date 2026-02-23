@@ -1,5 +1,14 @@
 # Chemical Kinetics
 
+## Video Resources
+
+!!! tip "Khan Academy Videos"
+    **Reaction Rates and Equilibrium Playlist** - Collision theory and kinetics
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HDruddqk-uDm8j82CintX6V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Explanation
 
 Chemical kinetics is the study of reaction rates and the factors that affect them. Understanding kinetics helps predict how fast reactions proceed and how to control them.

@@ -1,5 +1,18 @@
 # Atomic Structure
 
+## Video Resources
+
+!!! tip "Khan Academy Videos"
+    **Atomic Models & Periodicity Playlist** - Comprehensive coverage of atomic structure, electron configuration, and periodic trends
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLSQl0a2vh4HBLR7jdrTrb81DNX6MaICRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    **Electron Orbitals & Subshells** (Advanced)
+
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/26PF9Ctch9YkM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Explanation
 
 Atoms are the fundamental building blocks of matter. Understanding atomic structure is essential for all of chemistry.
