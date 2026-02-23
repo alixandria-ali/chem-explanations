@@ -20,27 +20,94 @@ Advanced electrochemistry extends redox concepts to quantitative calculations in
 - \(F\) = Faraday constant = \(96,485 \text{ C/mol } e^-\) (or 96,500 C/mol)
 - More positive \(E°_{\text{cell}}\) = more negative \(\Delta G°\) = more spontaneous
 
+**Understanding the \(\Delta G°\) and \(E°\) Relationship**:
+
+The relationship \(\Delta G° = -nFE°_{\text{cell}}\) is fundamental to electrochemistry. Here's why it matters:
+
+1. **The negative sign**: The negative sign indicates that a positive cell potential corresponds to a negative Gibbs free energy, meaning the reaction is thermodynamically favorable (spontaneous).
+
+2. **Quantitative connection**: This equation allows us to convert between electrochemical measurements (voltage) and thermodynamic quantities (free energy). Since \(F = 96,485 \text{ C/mol}\) and voltage is joules per coulomb (1 V = 1 J/C), multiplying gives energy in joules.
+
+3. **Effect of electron transfer**: The more electrons transferred (\(n\)), the more energy is available from the same cell potential. For example, a 2-electron process at 1.0 V releases twice as much energy as a 1-electron process at 1.0 V.
+
+4. **Spontaneity criterion**:
+   - If \(E°_{\text{cell}} > 0\), then \(\Delta G° < 0\) (spontaneous)
+   - If \(E°_{\text{cell}} < 0\), then \(\Delta G° > 0\) (non-spontaneous, requires energy input)
+   - If \(E°_{\text{cell}} = 0\), then \(\Delta G° = 0\) (system at equilibrium)
+
 **Relationship to Equilibrium**:
 \[E°_{\text{cell}} = \frac{RT}{nF}\ln K = \frac{0.0592}{n}\log K \quad \text{(at 25°C)}\]
 
 Or: \(\log K = \frac{nE°}{0.0592}\) at 25°C
 
+This relationship connects electrochemistry to equilibrium:
+- Large positive \(E°\) means very large \(K\) (products strongly favored)
+- Negative \(E°\) means \(K < 1\) (reactants favored)
+- For every 0.0592 V increase in \(E°\) (at n=1), \(K\) increases by a factor of 10
+
 **Nernst Equation**:
-Calculates cell potential under non-standard conditions:
+
+The Nernst equation calculates cell potential under non-standard conditions:
 \[E_{\text{cell}} = E°_{\text{cell}} - \frac{RT}{nF}\ln Q\]
 
 At 25°C:
 \[E_{\text{cell}} = E°_{\text{cell}} - \frac{0.0592}{n}\log Q\]
 
-- \(Q\) = reaction quotient
-- As reaction proceeds: \(Q\) increases, \(E_{\text{cell}}\) decreases
-- At equilibrium: \(Q = K\), \(E_{\text{cell}} = 0\)
+**Understanding the Nernst Equation**:
+
+1. **What it tells us**: The actual cell potential depends on both the standard potential (\(E°\)) and the current concentrations/pressures (via \(Q\)).
+
+2. **The correction term**: \(\frac{0.0592}{n}\log Q\) represents how far the system is from standard conditions:
+   - If \(Q < 1\): Reactants dominate, correction is negative (adds to \(E°\)), cell potential increases
+   - If \(Q > 1\): Products dominate, correction is positive (subtracts from \(E°\)), cell potential decreases
+   - If \(Q = 1\): Standard conditions, \(E = E°\)
+
+3. **As reaction proceeds**:
+   - Products form, reactants consumed
+   - \(Q\) increases continuously
+   - \(E_{\text{cell}}\) decreases continuously
+   - At equilibrium: \(Q = K\) and \(E_{\text{cell}} = 0\) (no driving force)
+
+4. **Practical applications**:
+   - pH meters (measure \(E\), calculate \([H^+]\))
+   - Concentration cells (same half-reactions, different concentrations)
+   - Predicting battery performance as it discharges
+
+**Constructing the Reaction Quotient \(Q\)**:
+
+For a general cell reaction: \(aA + bB \rightarrow cC + dD\)
+
+\[Q = \frac{[C]^c[D]^d}{[A]^a[B]^b}\]
+
+Important notes:
+- Include aqueous ions and gases (with partial pressures)
+- Omit pure solids and pure liquids (activity = 1)
+- For metals in half-cells, they don't appear in \(Q\)
+- Use molarity for solutions, atmospheres for gases
 
 **Electrolysis Calculations**:
-- **Faraday's Law**: Amount of substance produced/consumed is proportional to charge passed
-- Charge: \(Q = I \times t\) (coulombs = amperes × seconds)
-- Moles of electrons: \(\text{mol } e^- = \frac{Q}{F} = \frac{It}{F}\)
-- Use stoichiometry to find moles of substance
+
+Electrolysis uses electrical energy to drive non-spontaneous reactions. The key is Faraday's Law.
+
+**Understanding Faraday's Law**:
+The amount of substance produced or consumed at an electrode is directly proportional to the quantity of electricity (charge) passed through the circuit.
+
+1. **Charge calculation**:
+   \[Q = I \times t\]
+   - \(Q\) = charge in coulombs (C)
+   - \(I\) = current in amperes (A)
+   - \(t\) = time in seconds (s)
+
+2. **Moles of electrons**:
+   \[\text{mol } e^- = \frac{Q}{F} = \frac{It}{F}\]
+   - \(F = 96,485 \text{ C/mol}\) (often approximated as 96,500 C/mol)
+
+3. **Stoichiometry**: Use the balanced half-reaction to convert moles of electrons to moles of substance:
+   - \(Cu^{2+} + 2e^- \rightarrow Cu\): 2 moles \(e^-\) per 1 mole Cu
+   - \(Al^{3+} + 3e^- \rightarrow Al\): 3 moles \(e^-\) per 1 mole Al
+   - \(2Cl^- \rightarrow Cl_2 + 2e^-\): 2 moles \(e^-\) per 1 mole \(Cl_2\)
+
+4. **Mass or volume**: Convert moles to grams (using molar mass) or liters (using 22.4 L/mol at STP for gases)
 
 **Common Electrolysis Reactions**:
 - **Water**: \(2H_2O \rightarrow 2H_2 + O_2\) (requires 4 \(e^-\) per \(O_2\), 2 \(e^-\) per \(H_2\))
@@ -48,8 +115,112 @@ At 25°C:
 - **Aqueous NaCl**: Cathode: \(2H_2O + 2e^- \rightarrow H_2 + 2OH^-\); Anode: \(2Cl^- \rightarrow Cl_2 + 2e^-\)
 
 **Electroplating**: Depositing metal using electrolysis
-- Metal cation reduced at cathode
-- Metal oxidized at anode (if active anode)
+- Metal cation reduced at cathode (object being plated)
+- Metal oxidized at anode (if active anode, replenishes metal ions)
+- Thickness of plating depends on current, time, and surface area
+
+---
+
+## Common Mistakes to Avoid
+
+### 1. Sign Convention Errors in Cell Potential Calculations
+
+**The Mistake**: Confusing which electrode is the cathode vs. anode, or incorrectly applying the formula \(E°_{\text{cell}} = E°_{\text{cathode}} - E°_{\text{anode}}\).
+
+**Why it happens**: Students sometimes subtract in the wrong order or forget that the anode is where oxidation occurs (loses electrons).
+
+**Example of error**:
+Given \(E°_{Cu^{2+}/Cu} = +0.34 \text{ V}\) and \(E°_{Zn^{2+}/Zn} = -0.76 \text{ V}\), incorrectly calculating:
+\(E°_{\text{cell}} = -0.76 - 0.34 = -1.10 \text{ V}\)
+
+**Correct approach**:
+- Identify reduction (cathode): \(Cu^{2+} + 2e^- \rightarrow Cu\) (more positive \(E°\))
+- Identify oxidation (anode): \(Zn \rightarrow Zn^{2+} + 2e^-\)
+- Calculate: \(E°_{\text{cell}} = E°_{\text{cathode}} - E°_{\text{anode}} = 0.34 - (-0.76) = +1.10 \text{ V}\)
+
+**Key reminder**: The more positive (or less negative) reduction potential becomes the cathode. The anode value is subtracted as-is from the table of reduction potentials.
+
+---
+
+### 2. Incorrect Electron Stoichiometry in Faraday's Law
+
+**The Mistake**: Using the wrong number of electrons (\(n\)) in electrolysis calculations, especially for polyatomic ions or molecular products.
+
+**Why it happens**: Students don't carefully balance the half-reaction or forget to account for stoichiometric coefficients.
+
+**Example of error**:
+For the production of \(Cl_2\) gas from \(Cl^-\), using \(n = 1\) instead of \(n = 2\):
+\(2Cl^- \rightarrow Cl_2 + 2e^-\) requires 2 electrons per molecule of \(Cl_2\)
+
+**Correct approach**:
+1. Write the balanced half-reaction
+2. Identify electrons per formula unit of the substance of interest
+3. For \(O_2\) from water: \(2H_2O \rightarrow O_2 + 4H^+ + 4e^-\) means 4 electrons per \(O_2\)
+4. For \(Al\) from \(Al^{3+}\): \(Al^{3+} + 3e^- \rightarrow Al\) means 3 electrons per Al atom
+
+**Key reminder**: Always write out the half-reaction and count the electrons explicitly. Don't assume the charge equals the number of electrons for molecular species.
+
+---
+
+### 3. Confusing \(Q\) and \(K\) in Nernst Equation Applications
+
+**The Mistake**: Using the equilibrium constant \(K\) instead of the reaction quotient \(Q\) in the Nernst equation, or vice versa.
+
+**Why it happens**: Both \(Q\) and \(K\) have the same mathematical form, but they represent different conditions.
+
+**Example of error**:
+At equilibrium, trying to calculate \(E_{\text{cell}}\) using \(Q\) values from current concentrations rather than recognizing that \(E_{\text{cell}} = 0\) at equilibrium.
+
+**Correct approach**:
+- **Use \(Q\)** with the Nernst equation to find \(E_{\text{cell}}\) at non-standard conditions:
+  \[E_{\text{cell}} = E° - \frac{0.0592}{n}\log Q\]
+
+- **Use \(K\)** when relating standard potential to equilibrium:
+  \[E° = \frac{0.0592}{n}\log K\]
+
+- **At equilibrium**: \(Q = K\) and \(E_{\text{cell}} = 0\) (not \(E°\))
+
+**Key reminder**: \(Q\) is calculated from current concentrations (any point in time), while \(K\) is calculated from equilibrium concentrations. Use \(Q\) in Nernst unless you're asked about equilibrium conditions.
+
+---
+
+### 4. Forgetting to Convert Time to Seconds in Electrolysis
+
+**The Mistake**: Using time in minutes or hours directly in the formula \(Q = It\) without converting to seconds.
+
+**Why it happens**: The problem gives time in convenient units (minutes or hours), but coulombs require amperes times seconds.
+
+**Example of error**:
+Current = 5.0 A for 30 minutes
+Incorrectly: \(Q = (5.0)(30) = 150 \text{ C}\)
+
+**Correct approach**:
+1. Convert time: 30 minutes = 30 × 60 = 1800 seconds
+2. Calculate charge: \(Q = (5.0)(1800) = 9000 \text{ C}\)
+3. Then use \(\text{mol } e^- = \frac{Q}{F}\)
+
+**Key reminder**: Always convert time to seconds before using \(Q = It\). Set up a conversion factor: 1 min = 60 s, 1 hr = 3600 s.
+
+---
+
+### 5. Incorrect Sign or Missing Negative Sign in \(\Delta G° = -nFE°\)
+
+**The Mistake**: Forgetting the negative sign in the relationship between \(\Delta G°\) and \(E°_{\text{cell}}\), leading to wrong conclusions about spontaneity.
+
+**Why it happens**: Students memorize the formula incompletely or don't understand the inverse relationship.
+
+**Example of error**:
+Given \(E°_{\text{cell}} = +1.0 \text{ V}\), \(n = 2\), incorrectly calculating:
+\(\Delta G° = (2)(96,500)(1.0) = +193,000 \text{ J}\) (wrong sign)
+
+**Correct approach**:
+1. Use the complete formula with the negative sign: \(\Delta G° = -nFE°\)
+2. \(\Delta G° = -(2)(96,500)(1.0) = -193,000 \text{ J} = -193 \text{ kJ}\)
+3. Negative \(\Delta G°\) confirms the reaction is spontaneous
+
+**Key reminder**: The negative sign is crucial. Positive \(E°\) means spontaneous reaction, which requires negative \(\Delta G°\). Always include the negative sign in your calculation.
+
+---
 
 ---
 
@@ -104,47 +275,572 @@ At 25°C:
 
 ## Practice Problems
 
-1. If \(E°_{\text{cell}} = +0.46 \text{ V}\) for a 2-electron process, calculate \(\Delta G°\) in kJ.
+### Challenging AP-Level Problems
 
-2. A cell has \(\Delta G° = -150 \text{ kJ}\) and \(n = 3\). Calculate \(E°_{\text{cell}}\).
+1. A galvanic cell is constructed with a silver electrode in 0.10 M \(AgNO_3\) and a copper electrode in 0.50 M \(Cu(NO_3)_2\). Given \(E°_{Ag^+/Ag} = +0.80 \text{ V}\) and \(E°_{Cu^{2+}/Cu} = +0.34 \text{ V}\), calculate the cell potential at 25°C. Write the overall cell reaction.
 
-3. For \(E°_{\text{cell}} = +1.20 \text{ V}\) with \(n = 2\), calculate \(K\) at 25°C.
+2. For the reaction \(Fe^{2+} + Ce^{4+} \rightarrow Fe^{3+} + Ce^{3+}\), \(E°_{\text{cell}} = +0.43 \text{ V}\). Calculate \(\Delta G°\) and the equilibrium constant \(K\) at 25°C. Is this reaction product-favored?
 
-4. Using the Nernst equation, what happens to \(E_{\text{cell}}\) as the reaction proceeds toward equilibrium?
+3. A concentration cell is constructed using two zinc electrodes: one in 0.001 M \(Zn^{2+}\) and the other in 1.0 M \(Zn^{2+}\). Calculate the cell potential at 25°C. Which electrode is the anode?
 
-5. For the cell \(Zn|Zn^{2+}(0.01 \text{ M})||H^+(1.0 \text{ M})|H_2(1 \text{ atm})|Pt\), if \(E° = +0.76 \text{ V}\), calculate \(E_{\text{cell}}\) at 25°C.
+4. In the electrolysis of molten \(AlCl_3\), a current of 8.50 A runs for 2.00 hours. Calculate:
+   a) The charge passed in coulombs
+   b) The moles of electrons transferred
+   c) The mass of aluminum produced (Al = 27.0 g/mol)
 
-6. In the electrolysis of molten \(NaCl\), how many grams of Na (atomic mass = 23 g/mol) are produced by 10.0 A for 30.0 minutes?
+5. A galvanic cell has the reaction \(Ni(s) + 2Ag^+(aq) \rightarrow Ni^{2+}(aq) + 2Ag(s)\) with \(E°_{\text{cell}} = +1.05 \text{ V}\). If \([Ag^+] = 0.0010 \text{ M}\) and \([Ni^{2+}] = 2.0 \text{ M}\), calculate \(E_{\text{cell}}\) at 25°C.
 
-7. How long (in seconds) must a 5.00 A current run to deposit 10.0 g of silver (Ag, atomic mass = 108 g/mol) from \(Ag^+\) solution?
+6. The electrolysis of water produces hydrogen and oxygen gases. If 3.50 L of \(H_2\) gas is collected at STP, calculate:
+   a) The moles of \(H_2\) produced
+   b) The moles of electrons required
+   c) The time required if the current is 4.25 A
 
-8. For the reaction \(2Cr^{3+} + 3Zn \rightarrow 2Cr + 3Zn^{2+}\), if \(E° = -0.50 \text{ V}\), is this reaction spontaneous under standard conditions?
+7. For the cell reaction \(Zn(s) + Cu^{2+}(aq) \rightarrow Zn^{2+}(aq) + Cu(s)\), \(E°_{\text{cell}} = +1.10 \text{ V}\). A cell is constructed with \([Cu^{2+}] = 1.0 \text{ M}\). What concentration of \(Zn^{2+}\) would be needed for the cell potential to be exactly +1.00 V at 25°C?
 
-9. At equilibrium in an electrochemical cell, what is the value of \(E_{\text{cell}}\)?
+8. During the electrolysis of aqueous \(CuSO_4\) using copper electrodes, the anode (copper metal) dissolves while copper plates onto the cathode. If 5.08 g of copper is plated onto the cathode, calculate:
+   a) The moles of copper deposited
+   b) The moles of electrons transferred
+   c) The charge passed through the cell
+   d) The mass of copper dissolved from the anode
 
-10. In the electrolysis of water (\(2H_2O \rightarrow 2H_2 + O_2\)), what volume of \(O_2\) gas at STP is produced by 0.20 mol of electrons?
+9. A student constructs a cell with \(E°_{\text{cell}} = +0.90 \text{ V}\) and measures an actual cell potential of +0.86 V at 25°C. The cell reaction is \(A + B^{2+} \rightarrow A^{2+} + B\) with \([B^{2+}] = 0.50 \text{ M}\). Calculate the concentration of \(A^{2+}\) in the cell.
+
+10. In an industrial electrolysis process, chlorine gas is produced at the anode according to \(2Cl^- \rightarrow Cl_2 + 2e^-\). If 250 g of \(Cl_2\) must be produced, calculate:
+    a) The moles of \(Cl_2\) needed
+    b) The moles of electrons required
+    c) The total charge needed in coulombs
+    d) The time required using a current of 15.0 A
+    e) The volume of \(Cl_2\) produced at STP
 
 ---
 
-## Answer Key
+## Answer Key with Full Explanations
 
 ??? note "Click to reveal answers"
-    1. \(\Delta G° = -nFE° = -(2)(96,500)(0.46) = -88,780 \text{ J} = \mathbf{-89 \text{ kJ}}\) (or -88.8 kJ)
 
-    2. \(\Delta G° = -nFE°\), so \(E° = -\frac{\Delta G°}{nF} = -\frac{-150,000}{(3)(96,500)} = \frac{150,000}{289,500} = \mathbf{0.52 \text{ V}}\)
+    ### Problem 1: Galvanic Cell with Ag and Cu
 
-    3. \(\log K = \frac{nE°}{0.0592} = \frac{(2)(1.20)}{0.0592} = 40.5\). \(K = 10^{40.5} = \mathbf{3 \times 10^{40}}\) (very large, products highly favored)
+    **Given**: \(E°_{Ag^+/Ag} = +0.80 \text{ V}\), \(E°_{Cu^{2+}/Cu} = +0.34 \text{ V}\), \([Ag^+] = 0.10 \text{ M}\), \([Cu^{2+}] = 0.50 \text{ M}\)
 
-    4. As reaction proceeds, **\(E_{\text{cell}}\) decreases**. \(Q\) increases, making the correction term larger, reducing \(E_{\text{cell}}\) until it reaches 0 at equilibrium.
+    **Solution**:
 
-    5. Reaction: \(Zn + 2H^+ \rightarrow Zn^{2+} + H_2\), \(n = 2\). \(Q = \frac{[Zn^{2+}]P_{H_2}}{[H^+]^2} = \frac{(0.01)(1)}{(1.0)^2} = 0.01\). \(E = 0.76 - \frac{0.0592}{2}\log(0.01) = 0.76 - (0.0296)(-2) = 0.76 + 0.059 = \mathbf{0.82 \text{ V}}\)
+    Step 1: Identify cathode and anode. Silver has the more positive reduction potential, so it's reduced (cathode).
+    - Cathode: \(2Ag^+ + 2e^- \rightarrow 2Ag\)
+    - Anode: \(Cu \rightarrow Cu^{2+} + 2e^-\)
+    - Overall: \(Cu + 2Ag^+ \rightarrow Cu^{2+} + 2Ag\)
 
-    6. \(Q = It = (10.0)(30.0 \times 60) = 18,000 \text{ C}\). Mol \(e^- = \frac{18,000}{96,500} = 0.187\) mol. Reaction: \(Na^+ + e^- \rightarrow Na\) (1:1 ratio). Mol Na = 0.187. Mass \(= (0.187)(23) = \mathbf{4.3 \text{ g}}\)
+    Step 2: Calculate \(E°_{\text{cell}}\).
+    \[E°_{\text{cell}} = E°_{\text{cathode}} - E°_{\text{anode}} = 0.80 - 0.34 = +0.46 \text{ V}\]
 
-    7. \(Ag^+ + e^- \rightarrow Ag\) (1:1). Mol Ag \(= \frac{10.0}{108} = 0.0926\) mol. Mol \(e^- = 0.0926\). \(Q = nF = (0.0926)(96,500) = 8,940 \text{ C}\). \(t = \frac{Q}{I} = \frac{8,940}{5.00} = \mathbf{1,788 \text{ s}}\) or **1,790 s** (29.8 min)
+    Step 3: Apply Nernst equation. For this reaction, \(n = 2\).
+    \[Q = \frac{[Cu^{2+}]}{[Ag^+]^2} = \frac{0.50}{(0.10)^2} = \frac{0.50}{0.01} = 50\]
 
-    8. **No, not spontaneous**. \(E° < 0\) means \(\Delta G° > 0\), indicating non-spontaneous under standard conditions.
+    Step 4: Calculate \(E_{\text{cell}}\).
+    \[E_{\text{cell}} = E° - \frac{0.0592}{n}\log Q = 0.46 - \frac{0.0592}{2}\log(50)\]
+    \[\log(50) = 1.699\]
+    \[E_{\text{cell}} = 0.46 - (0.0296)(1.699) = 0.46 - 0.050 = 0.41 \text{ V}\]
 
-    9. **\(E_{\text{cell}} = 0\)**. At equilibrium, no net driving force remains, so cell potential is zero.
+    **Answer**: \(E_{\text{cell}} = 0.41 \text{ V}\); Overall reaction: \(Cu + 2Ag^+ \rightarrow Cu^{2+} + 2Ag\)
 
-    10. \(2H_2O \rightarrow 2H_2 + O_2\) requires 4 \(e^-\) total (2 per \(H_2\), 4 per \(O_2\)). For 0.20 mol \(e^-\): mol \(O_2 = \frac{0.20}{4} = 0.050\) mol. At STP: \(V = nRT/P = (0.050)(22.4) = \mathbf{1.12 \text{ L}}\) (or use 22.4 L/mol directly: \(0.050 \times 22.4 = 1.1\) L)
+    ---
+
+    ### Problem 2: Free Energy and Equilibrium Constant
+
+    **Given**: \(Fe^{2+} + Ce^{4+} \rightarrow Fe^{3+} + Ce^{3+}\), \(E°_{\text{cell}} = +0.43 \text{ V}\)
+
+    **Solution**:
+
+    Step 1: Calculate \(\Delta G°\). This is a 1-electron transfer (\(n = 1\)).
+    \[\Delta G° = -nFE° = -(1)(96,500)(0.43) = -41,495 \text{ J} = -41.5 \text{ kJ}\]
+
+    Step 2: Calculate \(K\) using the relationship between \(E°\) and \(K\).
+    \[\log K = \frac{nE°}{0.0592} = \frac{(1)(0.43)}{0.0592} = 7.26\]
+    \[K = 10^{7.26} = 1.8 \times 10^7\]
+
+    Step 3: Interpret results. Since \(\Delta G° < 0\) and \(K >> 1\), the reaction is strongly product-favored.
+
+    **Answer**: \(\Delta G° = -41.5 \text{ kJ}\); \(K = 1.8 \times 10^7\); Yes, the reaction is product-favored.
+
+    ---
+
+    ### Problem 3: Concentration Cell
+
+    **Given**: Two Zn electrodes, one in 0.001 M \(Zn^{2+}\), the other in 1.0 M \(Zn^{2+}\)
+
+    **Solution**:
+
+    Step 1: Understand concentration cells. Both electrodes are identical, so \(E° = 0\). The cell potential comes entirely from the concentration difference.
+
+    Step 2: Determine which electrode is which. Oxidation occurs at the lower concentration (anode), reduction at higher concentration (cathode).
+    - Anode (oxidation): \(Zn \rightarrow Zn^{2+} + 2e^-\) in 0.001 M solution
+    - Cathode (reduction): \(Zn^{2+} + 2e^- \rightarrow Zn\) in 1.0 M solution
+
+    Step 3: Calculate \(Q\) for the overall reaction: \(Zn^{2+}(1.0 \text{ M}) \rightarrow Zn^{2+}(0.001 \text{ M})\)
+    \[Q = \frac{[\text{product}]}{[\text{reactant}]} = \frac{0.001}{1.0} = 0.001\]
+
+    Step 4: Apply Nernst equation with \(E° = 0\) and \(n = 2\).
+    \[E_{\text{cell}} = 0 - \frac{0.0592}{2}\log(0.001) = -(0.0296)(-3) = 0.089 \text{ V}\]
+
+    **Answer**: \(E_{\text{cell}} = 0.089 \text{ V}\) (or 0.09 V); The electrode in 0.001 M \(Zn^{2+}\) is the anode.
+
+    ---
+
+    ### Problem 4: Electrolysis of Molten AlCl₃
+
+    **Given**: Current = 8.50 A, time = 2.00 hours
+
+    **Solution**:
+
+    Step 1a: Calculate charge. Convert time to seconds: 2.00 hr × 3600 s/hr = 7200 s
+    \[Q = It = (8.50)(7200) = 61,200 \text{ C}\]
+
+    Step 1b: Calculate moles of electrons.
+    \[\text{mol } e^- = \frac{Q}{F} = \frac{61,200}{96,500} = 0.634 \text{ mol } e^-\]
+
+    Step 1c: Calculate mass of Al. The reduction half-reaction is: \(Al^{3+} + 3e^- \rightarrow Al\)
+    \[\text{mol Al} = \frac{0.634 \text{ mol } e^-}{3} = 0.211 \text{ mol Al}\]
+    \[\text{mass} = (0.211)(27.0) = 5.70 \text{ g Al}\]
+
+    **Answer**:
+    a) \(Q = 61,200 \text{ C}\)
+    b) \(0.634 \text{ mol } e^-\)
+    c) \(5.70 \text{ g Al}\)
+
+    ---
+
+    ### Problem 5: Nernst Equation with Dilute Ion
+
+    **Given**: \(Ni(s) + 2Ag^+(aq) \rightarrow Ni^{2+}(aq) + 2Ag(s)\), \(E°_{\text{cell}} = +1.05 \text{ V}\), \([Ag^+] = 0.0010 \text{ M}\), \([Ni^{2+}] = 2.0 \text{ M}\)
+
+    **Solution**:
+
+    Step 1: Identify \(n\). Two electrons are transferred (\(n = 2\)).
+
+    Step 2: Write \(Q\) expression. Solids are omitted.
+    \[Q = \frac{[Ni^{2+}]}{[Ag^+]^2} = \frac{2.0}{(0.0010)^2} = \frac{2.0}{0.0000010} = 2.0 \times 10^6\]
+
+    Step 3: Apply Nernst equation.
+    \[E_{\text{cell}} = E° - \frac{0.0592}{n}\log Q = 1.05 - \frac{0.0592}{2}\log(2.0 \times 10^6)\]
+    \[\log(2.0 \times 10^6) = \log(2.0) + \log(10^6) = 0.301 + 6 = 6.301\]
+    \[E_{\text{cell}} = 1.05 - (0.0296)(6.301) = 1.05 - 0.187 = 0.86 \text{ V}\]
+
+    **Answer**: \(E_{\text{cell}} = 0.86 \text{ V}\)
+
+    Note: The very low \([Ag^+]\) significantly reduces the cell potential because the reaction has already proceeded far toward products.
+
+    ---
+
+    ### Problem 6: Electrolysis of Water
+
+    **Given**: 3.50 L of \(H_2\) at STP, current = 4.25 A
+
+    **Solution**:
+
+    Step 1a: Calculate moles of \(H_2\). At STP, 1 mol of gas = 22.4 L.
+    \[\text{mol } H_2 = \frac{3.50}{22.4} = 0.156 \text{ mol}\]
+
+    Step 1b: Calculate moles of electrons. The half-reaction is: \(2H_2O + 2e^- \rightarrow H_2 + 2OH^-\)
+    This shows 2 electrons per \(H_2\) molecule.
+    \[\text{mol } e^- = 2 \times 0.156 = 0.312 \text{ mol } e^-\]
+
+    Step 1c: Calculate time. First find charge needed.
+    \[Q = \text{mol } e^- \times F = (0.312)(96,500) = 30,108 \text{ C}\]
+    \[t = \frac{Q}{I} = \frac{30,108}{4.25} = 7,084 \text{ s}\]
+    Convert to minutes: \(7,084 \div 60 = 118 \text{ min}\) (or 1.97 hours)
+
+    **Answer**:
+    a) \(0.156 \text{ mol } H_2\)
+    b) \(0.312 \text{ mol } e^-\)
+    c) \(7,084 \text{ s}\) (or 118 min)
+
+    ---
+
+    ### Problem 7: Solving for Unknown Concentration
+
+    **Given**: \(Zn(s) + Cu^{2+}(aq) \rightarrow Zn^{2+}(aq) + Cu(s)\), \(E°_{\text{cell}} = +1.10 \text{ V}\), \([Cu^{2+}] = 1.0 \text{ M}\), \(E_{\text{cell}} = +1.00 \text{ V}\)
+
+    **Solution**:
+
+    Step 1: Set up Nernst equation. \(n = 2\)
+    \[E_{\text{cell}} = E° - \frac{0.0592}{n}\log Q\]
+    \[1.00 = 1.10 - \frac{0.0592}{2}\log Q\]
+
+    Step 2: Solve for \(Q\).
+    \[1.00 - 1.10 = -\frac{0.0592}{2}\log Q\]
+    \[-0.10 = -0.0296\log Q\]
+    \[\log Q = \frac{0.10}{0.0296} = 3.38\]
+    \[Q = 10^{3.38} = 2,399 \approx 2.4 \times 10^3\]
+
+    Step 3: Relate \(Q\) to concentrations.
+    \[Q = \frac{[Zn^{2+}]}{[Cu^{2+}]} = \frac{[Zn^{2+}]}{1.0} = [Zn^{2+}]\]
+    \[[Zn^{2+}] = 2.4 \times 10^3 \text{ M}\]
+
+    **Answer**: \([Zn^{2+}] = 2.4 \times 10^3 \text{ M}\) (or 2400 M)
+
+    Note: This extremely high concentration is not physically realistic, demonstrating that a reduction of only 0.10 V from standard conditions requires a very large shift in \(Q\).
+
+    ---
+
+    ### Problem 8: Electroplating with Copper Electrodes
+
+    **Given**: 5.08 g of Cu plated onto cathode, Cu = 63.5 g/mol
+
+    **Solution**:
+
+    Step 1a: Calculate moles of Cu deposited.
+    \[\text{mol Cu} = \frac{5.08}{63.5} = 0.0800 \text{ mol}\]
+
+    Step 1b: Calculate moles of electrons. Cathode reaction: \(Cu^{2+} + 2e^- \rightarrow Cu\)
+    \[\text{mol } e^- = 2 \times 0.0800 = 0.160 \text{ mol } e^-\]
+
+    Step 1c: Calculate charge passed.
+    \[Q = \text{mol } e^- \times F = (0.160)(96,500) = 15,440 \text{ C}\]
+
+    Step 1d: Calculate mass dissolved from anode. Anode reaction: \(Cu \rightarrow Cu^{2+} + 2e^-\)
+    The same number of electrons means the same number of moles of Cu dissolves.
+    \[\text{mass} = (0.0800)(63.5) = 5.08 \text{ g Cu}\]
+
+    **Answer**:
+    a) \(0.0800 \text{ mol Cu}\)
+    b) \(0.160 \text{ mol } e^-\)
+    c) \(15,440 \text{ C}\) (or 15,400 C)
+    d) \(5.08 \text{ g Cu}\) (same as deposited)
+
+    ---
+
+    ### Problem 9: Calculating Unknown Concentration from Cell Potential
+
+    **Given**: \(A + B^{2+} \rightarrow A^{2+} + B\), \(E° = +0.90 \text{ V}\), \(E_{\text{cell}} = +0.86 \text{ V}\), \([B^{2+}] = 0.50 \text{ M}\)
+
+    **Solution**:
+
+    Step 1: Set up Nernst equation. \(n = 2\)
+    \[0.86 = 0.90 - \frac{0.0592}{2}\log Q\]
+
+    Step 2: Solve for \(Q\).
+    \[0.86 - 0.90 = -\frac{0.0592}{2}\log Q\]
+    \[-0.04 = -0.0296\log Q\]
+    \[\log Q = \frac{0.04}{0.0296} = 1.35\]
+    \[Q = 10^{1.35} = 22.4\]
+
+    Step 3: Relate \(Q\) to concentrations.
+    \[Q = \frac{[A^{2+}]}{[B^{2+}]} = \frac{[A^{2+}]}{0.50}\]
+    \[[A^{2+}] = Q \times 0.50 = 22.4 \times 0.50 = 11.2 \text{ M}\]
+
+    **Answer**: \([A^{2+}] = 11.2 \text{ M}\) (or 11 M)
+
+    ---
+
+    ### Problem 10: Industrial Electrolysis of Chlorine
+
+    **Given**: 250 g of \(Cl_2\) needed, current = 15.0 A, Cl = 35.5 g/mol
+
+    **Solution**:
+
+    Step 1a: Calculate moles of \(Cl_2\). Molar mass of \(Cl_2 = 2 \times 35.5 = 71.0 \text{ g/mol}\)
+    \[\text{mol } Cl_2 = \frac{250}{71.0} = 3.52 \text{ mol}\]
+
+    Step 1b: Calculate moles of electrons. Anode reaction: \(2Cl^- \rightarrow Cl_2 + 2e^-\)
+    This shows 2 electrons per \(Cl_2\) molecule.
+    \[\text{mol } e^- = 2 \times 3.52 = 7.04 \text{ mol } e^-\]
+
+    Step 1c: Calculate total charge.
+    \[Q = \text{mol } e^- \times F = (7.04)(96,500) = 679,360 \text{ C}\]
+
+    Step 1d: Calculate time required.
+    \[t = \frac{Q}{I} = \frac{679,360}{15.0} = 45,291 \text{ s}\]
+    Convert to hours: \(45,291 \div 3600 = 12.6 \text{ hours}\)
+
+    Step 1e: Calculate volume at STP.
+    \[V = \text{mol} \times 22.4 \text{ L/mol} = (3.52)(22.4) = 78.8 \text{ L}\]
+
+    **Answer**:
+    a) \(3.52 \text{ mol } Cl_2\)
+    b) \(7.04 \text{ mol } e^-\)
+    c) \(679,360 \text{ C}\) (or 6.79 × 10⁵ C)
+    d) \(45,291 \text{ s}\) (or 12.6 hours)
+    e) \(78.8 \text{ L } Cl_2\) at STP
+
+---
+
+## Step-by-Step Checker: Nernst Equation Problem
+
+This section provides a detailed step checker to help you verify your work on a Nernst equation calculation.
+
+### Practice Problem:
+
+A galvanic cell is constructed using the reaction:
+\[Mg(s) + Pb^{2+}(aq) \rightarrow Mg^{2+}(aq) + Pb(s)\]
+
+Given: \(E°_{\text{cell}} = +2.23 \text{ V}\), \([Pb^{2+}] = 0.025 \text{ M}\), \([Mg^{2+}] = 1.50 \text{ M}\)
+
+Calculate the cell potential at 25°C.
+
+---
+
+### Step Checker:
+
+??? note "Step 1: Identify the number of electrons transferred"
+
+    **What to do**: Look at the overall balanced equation and count how many electrons are transferred.
+
+    **For this problem**:
+    - Oxidation half-reaction: \(Mg \rightarrow Mg^{2+} + 2e^-\)
+    - Reduction half-reaction: \(Pb^{2+} + 2e^- \rightarrow Pb\)
+    - Overall: \(Mg(s) + Pb^{2+}(aq) \rightarrow Mg^{2+}(aq) + Pb(s)\)
+
+    **Answer**: \(n = 2\) electrons
+
+    **Check your work**:
+    - Did you identify both half-reactions?
+    - Does the number of electrons match in both half-reactions?
+    - Common mistake: Forgetting that both ions have 2+ charges, so 2 electrons are transferred
+
+---
+
+??? note "Step 2: Write the expression for the reaction quotient Q"
+
+    **What to do**: Write \(Q\) using products over reactants, with proper exponents. Omit pure solids and pure liquids.
+
+    **For this problem**:
+    \[Q = \frac{[\text{products}]}{[\text{reactants}]} = \frac{[Mg^{2+}]}{[Pb^{2+}]}\]
+
+    Note: \(Mg(s)\) and \(Pb(s)\) are pure solids, so they don't appear in \(Q\).
+
+    **Check your work**:
+    - Did you put products in the numerator?
+    - Did you put reactants in the denominator?
+    - Did you omit the solid metals?
+    - Are there any exponents needed? (Not in this case, since all coefficients are 1)
+
+---
+
+??? note "Step 3: Calculate the numerical value of Q"
+
+    **What to do**: Substitute the given concentrations into your \(Q\) expression.
+
+    **For this problem**:
+    \[Q = \frac{[Mg^{2+}]}{[Pb^{2+}]} = \frac{1.50}{0.025} = 60\]
+
+    **Check your work**:
+    - Did you substitute the correct concentrations?
+    - Did you divide correctly? (\(1.50 \div 0.025 = 60\))
+    - Common mistake: Inverting the fraction (putting reactants over products)
+    - Is \(Q > 1\) or \(Q < 1\)? If \(Q > 1\), products dominate; if \(Q < 1\), reactants dominate
+
+---
+
+??? note "Step 4: Set up the Nernst equation"
+
+    **What to do**: Write the Nernst equation with the given values.
+
+    **For this problem**:
+    \[E_{\text{cell}} = E°_{\text{cell}} - \frac{0.0592}{n}\log Q\]
+    \[E_{\text{cell}} = 2.23 - \frac{0.0592}{2}\log(60)\]
+
+    **Check your work**:
+    - Did you use the correct value of \(E°_{\text{cell}}\)?
+    - Did you use \(n = 2\)?
+    - Did you use 0.0592 (at 25°C)?
+    - Is it a subtraction (not addition)?
+    - Did you use \(\log\) (base 10), not \(\ln\) (natural log)?
+
+---
+
+??? note "Step 5: Calculate log Q"
+
+    **What to do**: Find the base-10 logarithm of \(Q\).
+
+    **For this problem**:
+    \[\log(60) = 1.778\]
+
+    (Using a calculator: \(\log(60) \approx 1.778\))
+
+    **Check your work**:
+    - Did you use base-10 log (not natural log)?
+    - Is your answer reasonable? (\(\log(60)\) should be between 1 and 2, since \(\log(10) = 1\) and \(\log(100) = 2\))
+    - Common mistake: Using \(\ln(60) = 4.094\) instead
+
+---
+
+??? note "Step 6: Calculate the correction term"
+
+    **What to do**: Calculate \(\frac{0.0592}{n}\log Q\)
+
+    **For this problem**:
+    \[\frac{0.0592}{2} \times 1.778 = 0.0296 \times 1.778 = 0.0526 \text{ V}\]
+
+    **Check your work**:
+    - Did you divide 0.0592 by \(n\) first?
+    - Did you multiply by \(\log Q\)?
+    - Is your answer in volts?
+    - Is the magnitude reasonable? (Should be relatively small compared to \(E°\))
+
+---
+
+??? note "Step 7: Calculate the final cell potential"
+
+    **What to do**: Subtract the correction term from \(E°_{\text{cell}}\).
+
+    **For this problem**:
+    \[E_{\text{cell}} = 2.23 - 0.0526 = 2.18 \text{ V}\]
+
+    **Check your work**:
+    - Did you subtract (not add) the correction term?
+    - Is your answer less than \(E°_{\text{cell}}\)? (It should be, since \(Q > 1\))
+    - Is the cell potential still positive? (It should be for a spontaneous reaction)
+    - Does your answer make physical sense?
+
+    **Interpretation**:
+    - Since \(Q = 60 > 1\), products dominate over reactants
+    - This means the reaction has proceeded toward products
+    - Therefore, \(E_{\text{cell}}\) should be less than \(E°_{\text{cell}}\), which it is
+    - The cell is still spontaneous (\(E > 0\)) but with reduced driving force
+
+---
+
+### Final Answer:
+\[E_{\text{cell}} = 2.18 \text{ V}\]
+
+---
+
+## Step-by-Step Checker: Electrolysis Problem
+
+This section provides a detailed step checker to help you verify your work on an electrolysis calculation.
+
+### Practice Problem:
+
+In the electrolysis of molten \(MgCl_2\), how many grams of magnesium metal are produced when a current of 12.5 A runs for 45.0 minutes?
+
+Given: Mg = 24.3 g/mol, \(F = 96,500 \text{ C/mol } e^-\)
+
+---
+
+### Step Checker:
+
+??? note "Step 1: Convert time to seconds"
+
+    **What to do**: Convert the given time to seconds since charge is calculated as amperes × seconds.
+
+    **For this problem**:
+    Time = 45.0 minutes
+    \[t = 45.0 \text{ min} \times \frac{60 \text{ s}}{1 \text{ min}} = 2700 \text{ s}\]
+
+    **Check your work**:
+    - Did you multiply by 60 (not divide)?
+    - Is your answer in seconds?
+    - Common mistake: Using 45.0 directly without converting
+    - Quick check: 45 minutes should be 2700 seconds
+
+---
+
+??? note "Step 2: Calculate the total charge passed"
+
+    **What to do**: Use the formula \(Q = I \times t\) where \(Q\) is charge in coulombs, \(I\) is current in amperes, and \(t\) is time in seconds.
+
+    **For this problem**:
+    \[Q = I \times t = 12.5 \text{ A} \times 2700 \text{ s} = 33,750 \text{ C}\]
+
+    **Check your work**:
+    - Did you use the time in seconds?
+    - Did you multiply current by time?
+    - Is your answer in coulombs?
+    - Quick check: \(12.5 \times 2700 = 33,750\)
+
+---
+
+??? note "Step 3: Calculate moles of electrons"
+
+    **What to do**: Convert charge to moles of electrons using Faraday's constant: \(\text{mol } e^- = \frac{Q}{F}\)
+
+    **For this problem**:
+    \[\text{mol } e^- = \frac{Q}{F} = \frac{33,750 \text{ C}}{96,500 \text{ C/mol}} = 0.350 \text{ mol } e^-\]
+
+    **Check your work**:
+    - Did you divide charge by Faraday's constant?
+    - Did you use \(F = 96,500\) C/mol (or 96,485)?
+    - Is your answer in moles?
+    - Quick check: \(33,750 \div 96,500 \approx 0.35\)
+
+---
+
+??? note "Step 4: Write the balanced cathode half-reaction"
+
+    **What to do**: Determine what happens at the cathode (where reduction occurs) and write the balanced equation.
+
+    **For this problem**:
+    In molten \(MgCl_2\), magnesium ions are reduced at the cathode:
+    \[Mg^{2+} + 2e^- \rightarrow Mg(s)\]
+
+    This shows that 2 electrons are required per 1 magnesium atom.
+
+    **Check your work**:
+    - Did you identify the reduction reaction (at the cathode)?
+    - Is the equation balanced for both atoms and charge?
+    - Did you correctly identify the number of electrons? (\(Mg^{2+}\) requires 2 electrons)
+    - Common mistake: Using 1 electron instead of 2
+
+---
+
+??? note "Step 5: Use stoichiometry to find moles of magnesium"
+
+    **What to do**: Use the stoichiometric ratio from the half-reaction to convert moles of electrons to moles of magnesium.
+
+    **For this problem**:
+    From the half-reaction: 2 mol \(e^-\) produces 1 mol Mg
+
+    \[\text{mol Mg} = \frac{0.350 \text{ mol } e^-}{2} = 0.175 \text{ mol Mg}\]
+
+    **Check your work**:
+    - Did you use the correct stoichiometric ratio?
+    - Did you divide by 2 (since 2 electrons per Mg)?
+    - Is your answer in moles of Mg?
+    - Common mistake: Forgetting to account for the 2:1 ratio
+
+---
+
+??? note "Step 6: Convert moles to grams"
+
+    **What to do**: Use the molar mass to convert moles of magnesium to grams: \(\text{mass} = n \times M\)
+
+    **For this problem**:
+    \[\text{mass} = n \times M = 0.175 \text{ mol} \times 24.3 \text{ g/mol} = 4.25 \text{ g}\]
+
+    **Check your work**:
+    - Did you multiply moles by molar mass?
+    - Did you use the correct molar mass for Mg (24.3 g/mol)?
+    - Is your answer in grams?
+    - Is your answer reasonable? (A few grams seems reasonable for this amount of current and time)
+    - Quick check: \(0.175 \times 24.3 \approx 4.25\)
+
+---
+
+??? note "Step 7: Verify your answer makes physical sense"
+
+    **What to check**:
+    - Is the mass positive?
+    - Is the magnitude reasonable for the given current and time?
+    - Could you produce this amount of metal with the energy supplied?
+
+    **For this problem**:
+    - Mass = 4.25 g is positive
+    - This seems reasonable: 12.5 A for 45 minutes is a moderate amount of electricity
+    - Producing about 4 grams of metal makes sense
+
+    **Additional insight**:
+    - More current or more time would produce more metal
+    - Metals with higher charges (like \(Al^{3+}\)) require more electrons per atom
+
+---
+
+### Final Answer:
+\[\text{4.25 g of Mg is produced}\]
+
+---
+
+### Summary of Key Formulas for Electrolysis:
+
+1. **Charge**: \(Q = I \times t\) (convert time to seconds)
+2. **Moles of electrons**: \(\text{mol } e^- = \frac{Q}{F}\) where \(F = 96,500 \text{ C/mol}\)
+3. **Stoichiometry**: Use balanced half-reaction to relate electrons to substance
+4. **Mass**: \(\text{mass} = n \times M\) where \(M\) is molar mass
