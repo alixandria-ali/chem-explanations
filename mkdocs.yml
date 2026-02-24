@@ -99,6 +99,7 @@ nav:
   - Advanced Equilibrium: ap/equilibrium-advanced.md
   - Advanced Kinetics: ap/kinetics-advanced.md
   - Advanced Electrochemistry: ap/electrochemistry-advanced.md
+  - 📋 Summary Sheets: summary-sheets.md
 
 plugins:
   - search
