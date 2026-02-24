@@ -1,6 +1,6 @@
 # Chemistry Study Guide
 
-Welcome to the comprehensive Chemistry Study Guide! This site provides clear explanations, worked examples, and practice problems for chemistry students at all levels.
+Welcome to the comprehensive Chemistry Study Guide! This site provides clear explanations, worked examples, and practice problems.
 
 ## About This Site
 
@@ -49,7 +49,5 @@ A massive collection covering all chemistry topics from foundational to advanced
 6. For challenging topics, review the worked examples and videos again
 
 ---
-
-**Note**: This site uses LaTeX for mathematical notation. All chemical equations and formulas are properly formatted for clarity.
 
 Good luck with your chemistry studies!
