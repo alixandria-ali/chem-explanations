@@ -36,8 +36,6 @@ theme:
     - content.code.copy
     - content.tabs.link
     - content.tooltips
-  logo: assets/chemistry-icon.svg
-  favicon: assets/chemistry-icon.svg
 
 markdown_extensions:
   - pymdownx.arithmatex:
