@@ -306,29 +306,29 @@ Determine the rate law and calculate \(k\).
 ### Question 1
 For the reaction \(2NO(g) + O_2(g) \rightarrow 2NO_2(g)\), the rate law is found to be \(\text{Rate} = k[NO]^2[O_2]\). If the concentration of NO is doubled while [O\(_2\)] remains constant, the rate will:
 
-A) Remain the same
-B) Double
-C) Triple
-D) Quadruple
-E) Increase by a factor of 8
+A\) Remain the same
+B\) Double
+C\) Triple
+D\) Quadruple
+E\) Increase by a factor of 8
 
 ### Question 2
 Which of the following will NOT increase the rate of a chemical reaction?
 
-A) Increasing the temperature
-B) Adding a catalyst
-C) Increasing the concentration of reactants
-D) Increasing the pressure (for gaseous reactions)
-E) Adding an inert gas at constant volume
+A\) Increasing the temperature
+B\) Adding a catalyst
+C\) Increasing the concentration of reactants
+D\) Increasing the pressure (for gaseous reactions)
+E\) Adding an inert gas at constant volume
 
 ### Question 3
 The rate constant for a first-order reaction is 0.0150 s\(^{-1}\). What are the correct units for this rate constant?
 
-A) M/s
-B) s\(^{-1}\)
-C) M\(^{-1}\)s\(^{-1}\)
-D) M\(^{-2}\)s\(^{-1}\)
-E) No units (dimensionless)
+A\) M/s
+B\) s\(^{-1}\)
+C\) M\(^{-1}\)s\(^{-1}\)
+D\) M\(^{-2}\)s\(^{-1}\)
+E\) No units (dimensionless)
 
 ### Question 4
 For the reaction \(A + B \rightarrow C\), the following data were obtained:
@@ -341,47 +341,47 @@ For the reaction \(A + B \rightarrow C\), the following data were obtained:
 
 What is the rate law for this reaction?
 
-A) Rate = k[A][B]
-B) Rate = k[A]^2[B]
-C) Rate = k[B]
-D) Rate = k[A][B]^2
-E) Rate = k[B]^2
+A\) Rate = k[A][B]
+B\) Rate = k[A]^2[B]
+C\) Rate = k[B]
+D\) Rate = k[A][B]^2
+E\) Rate = k[B]^2
 
 ### Question 5
 Activation energy is best defined as:
 
-A) The energy released during a reaction
-B) The minimum energy required for a reaction to occur
-C) The difference between products and reactants energy
-D) The energy absorbed to break all bonds
-E) The heat of reaction
+A\) The energy released during a reaction
+B\) The minimum energy required for a reaction to occur
+C\) The difference between products and reactants energy
+D\) The energy absorbed to break all bonds
+E\) The heat of reaction
 
 ### Question 6
 A catalyst increases the rate of a chemical reaction by:
 
-A) Increasing the temperature of the reaction
-B) Increasing the concentration of reactants
-C) Changing the equilibrium constant
-D) Lowering the activation energy
-E) Providing additional reactant molecules
+A\) Increasing the temperature of the reaction
+B\) Increasing the concentration of reactants
+C\) Changing the equilibrium constant
+D\) Lowering the activation energy
+E\) Providing additional reactant molecules
 
 ### Question 7
 For the reaction \(X \rightarrow Y\), the concentration of X decreases from 0.80 M to 0.20 M in 60 seconds. What is the average rate of disappearance of X?
 
-A) 0.010 M/s
-B) 0.013 M/s
-C) 0.020 M/s
-D) 0.60 M/s
-E) 48 M/s
+A\) 0.010 M/s
+B\) 0.013 M/s
+C\) 0.020 M/s
+D\) 0.60 M/s
+E\) 48 M/s
 
 ### Question 8
 Which statement about reaction mechanisms is true?
 
-A) The slowest step is called the rate-determining step
-B) All steps in a mechanism occur at the same rate
-C) The coefficients in the overall equation determine the rate law
-D) Catalysts appear in the overall balanced equation
-E) Intermediates appear in the final products
+A\) The slowest step is called the rate-determining step
+B\) All steps in a mechanism occur at the same rate
+C\) The coefficients in the overall equation determine the rate law
+D\) Catalysts appear in the overall balanced equation
+E\) Intermediates appear in the final products
 
 ### Question 9
 In collision theory, for a reaction to occur, colliding molecules must:
@@ -390,26 +390,26 @@ I. Have sufficient energy
 II. Have proper orientation
 III. Be in the same phase
 
-A) I only
-B) II only
-C) I and II only
-D) I and III only
-E) I, II, and III
+A\) I only
+B\) II only
+C\) I and II only
+D\) I and III only
+E\) I, II, and III
 
 ### Question 10
 The rate law for a reaction is \(\text{Rate} = k[A]^2[B]\). What is the overall order of this reaction?
 
-A) First order
-B) Second order
-C) Third order
-D) Fourth order
-E) Cannot be determined
+A\) First order
+B\) Second order
+C\) Third order
+D\) Fourth order
+E\) Cannot be determined
 
 ---
 
 ## SAT Chemistry Solutions
 
-### Solution 1: **Answer: D) Quadruple**
+### Solution 1: **Answer: D\) Quadruple**
 
 **Explanation**:
 - Given rate law: \(\text{Rate} = k[NO]^2[O_2]\)
@@ -421,7 +421,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 2: **Answer: E) Adding an inert gas at constant volume**
+### Solution 2: **Answer: E\) Adding an inert gas at constant volume**
 
 **Explanation**:
 - Options A-D all increase reaction rate:
@@ -439,7 +439,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 3: **Answer: B) s\(^{-1}\)**
+### Solution 3: **Answer: B\) s\(^{-1}\)**
 
 **Explanation**:
 - For first-order reactions: \(\text{Rate} = k[A]\)
@@ -456,7 +456,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 4: **Answer: C) Rate = k[B]**
+### Solution 4: **Answer: C\) Rate = k[B]**
 
 **Explanation**:
 
@@ -479,7 +479,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 5: **Answer: B) The minimum energy required for a reaction to occur**
+### Solution 5: **Answer: B\) The minimum energy required for a reaction to occur**
 
 **Explanation**:
 - Activation energy (\(E_a\)) is the energy barrier that must be overcome
@@ -497,7 +497,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 6: **Answer: D) Lowering the activation energy**
+### Solution 6: **Answer: D\) Lowering the activation energy**
 
 **Explanation**:
 - Catalysts provide an alternative reaction pathway with lower \(E_a\)
@@ -515,7 +515,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 7: **Answer: A) 0.010 M/s**
+### Solution 7: **Answer: A\) 0.010 M/s**
 
 **Explanation**:
 
@@ -537,7 +537,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 8: **Answer: A) The slowest step is called the rate-determining step**
+### Solution 8: **Answer: A\) The slowest step is called the rate-determining step**
 
 **Explanation**:
 - In multi-step mechanisms, the slowest step limits overall rate
@@ -555,7 +555,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 9: **Answer: C) I and II only**
+### Solution 9: **Answer: C\) I and II only**
 
 **Explanation**:
 
@@ -578,7 +578,7 @@ E) Cannot be determined
 
 ---
 
-### Solution 10: **Answer: C) Third order**
+### Solution 10: **Answer: C\) Third order**
 
 **Explanation**:
 - Rate law: \(\text{Rate} = k[A]^2[B]\)
@@ -685,7 +685,7 @@ E) Cannot be determined
         - Set up ratio: \(\frac{\text{Rate}_2}{\text{Rate}_1} = \left(\frac{[A]_2}{[A]_1}\right)^m\)
         - \(\frac{0.160}{0.040} = \left(\frac{0.40}{0.20}\right)^m\)
         - \(4 = 2^m\)
-        - \(m = 2\) (second order in A)
+        - \(m = 2\) (second order in A\)
 
         ??? note "Check Step 2"
             - Did you identify which experiments to compare?
@@ -701,7 +701,7 @@ E) Cannot be determined
         - Set up ratio: \(\frac{\text{Rate}_3}{\text{Rate}_1} = \left(\frac{[B]_3}{[B]_1}\right)^n\)
         - \(\frac{0.080}{0.040} = \left(\frac{0.20}{0.10}\right)^n\)
         - \(2 = 2^n\)
-        - \(n = 1\) (first order in B)
+        - \(n = 1\) (first order in B\)
 
         ??? note "Check Step 3"
             - Did you compare correct experiments (1 and 3)?

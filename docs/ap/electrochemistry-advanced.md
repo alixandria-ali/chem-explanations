@@ -284,33 +284,48 @@ Given \(E°_{\text{cell}} = +1.0 \text{ V}\), \(n = 2\), incorrectly calculating
 3. A concentration cell is constructed using two zinc electrodes: one in 0.001 M \(Zn^{2+}\) and the other in 1.0 M \(Zn^{2+}\). Calculate the cell potential at 25°C. Which electrode is the anode?
 
 4. In the electrolysis of molten \(AlCl_3\), a current of 8.50 A runs for 2.00 hours. Calculate:
-   a) The charge passed in coulombs
-   b) The moles of electrons transferred
-   c) The mass of aluminum produced (Al = 27.0 g/mol)
+
+a) The charge passed in coulombs
+
+b) The moles of electrons transferred
+
+c) The mass of aluminum produced (Al = 27.0 g/mol)
 
 5. A galvanic cell has the reaction \(Ni(s) + 2Ag^+(aq) \rightarrow Ni^{2+}(aq) + 2Ag(s)\) with \(E°_{\text{cell}} = +1.05 \text{ V}\). If \([Ag^+] = 0.0010 \text{ M}\) and \([Ni^{2+}] = 2.0 \text{ M}\), calculate \(E_{\text{cell}}\) at 25°C.
 
 6. The electrolysis of water produces hydrogen and oxygen gases. If 3.50 L of \(H_2\) gas is collected at STP, calculate:
-   a) The moles of \(H_2\) produced
-   b) The moles of electrons required
-   c) The time required if the current is 4.25 A
+
+a) The moles of \(H_2\) produced
+
+b) The moles of electrons required
+
+c) The time required if the current is 4.25 A
 
 7. For the cell reaction \(Zn(s) + Cu^{2+}(aq) \rightarrow Zn^{2+}(aq) + Cu(s)\), \(E°_{\text{cell}} = +1.10 \text{ V}\). A cell is constructed with \([Cu^{2+}] = 1.0 \text{ M}\). What concentration of \(Zn^{2+}\) would be needed for the cell potential to be exactly +1.00 V at 25°C?
 
 8. During the electrolysis of aqueous \(CuSO_4\) using copper electrodes, the anode (copper metal) dissolves while copper plates onto the cathode. If 5.08 g of copper is plated onto the cathode, calculate:
-   a) The moles of copper deposited
-   b) The moles of electrons transferred
-   c) The charge passed through the cell
-   d) The mass of copper dissolved from the anode
+
+a) The moles of copper deposited
+
+b) The moles of electrons transferred
+
+c) The charge passed through the cell
+
+d) The mass of copper dissolved from the anode
 
 9. A student constructs a cell with \(E°_{\text{cell}} = +0.90 \text{ V}\) and measures an actual cell potential of +0.86 V at 25°C. The cell reaction is \(A + B^{2+} \rightarrow A^{2+} + B\) with \([B^{2+}] = 0.50 \text{ M}\). Calculate the concentration of \(A^{2+}\) in the cell.
 
 10. In an industrial electrolysis process, chlorine gas is produced at the anode according to \(2Cl^- \rightarrow Cl_2 + 2e^-\). If 250 g of \(Cl_2\) must be produced, calculate:
-    a) The moles of \(Cl_2\) needed
-    b) The moles of electrons required
-    c) The total charge needed in coulombs
-    d) The time required using a current of 15.0 A
-    e) The volume of \(Cl_2\) produced at STP
+
+a) The moles of \(Cl_2\) needed
+
+b) The moles of electrons required
+
+c) The total charge needed in coulombs
+
+d) The time required using a current of 15.0 A
+
+e) The volume of \(Cl_2\) produced at STP
 
 ---
 

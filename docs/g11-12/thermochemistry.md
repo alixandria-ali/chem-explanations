@@ -287,56 +287,56 @@ Given: \(\Delta H_f°(CH_4) = -75 \text{ kJ/mol}\), \(\Delta H_f°(CO_2) = -394 
 ### Section A: Concept Application (Questions 1-5)
 
 1. A reaction occurs in a calorimeter, and the temperature of the water surrounding the reaction vessel increases from 22.0°C to 28.5°C. Which statement best describes the reaction?
-   - A) The reaction is endothermic and \(\Delta H > 0\)
-   - B) The reaction is endothermic and \(\Delta H < 0\)
-   - C) The reaction is exothermic and \(\Delta H > 0\)
-   - D) The reaction is exothermic and \(\Delta H < 0\)
+   A) The reaction is endothermic and \(\Delta H > 0\)
+   B) The reaction is endothermic and \(\Delta H < 0\)
+   C) The reaction is exothermic and \(\Delta H > 0\)
+   D) The reaction is exothermic and \(\Delta H < 0\)
 
 2. The standard enthalpy of formation (\(\Delta H_f°\)) of a compound is defined as the enthalpy change when:
-   - A) One mole of compound decomposes into its elements
-   - B) One mole of compound is formed from its elements in their standard states
-   - C) One gram of compound is formed from its elements
-   - D) One mole of any substance reacts with oxygen
+   A) One mole of compound decomposes into its elements
+   B) One mole of compound is formed from its elements in their standard states
+   C) One gram of compound is formed from its elements
+   D) One mole of any substance reacts with oxygen
 
 3. How much heat is required to raise the temperature of 300 g of water from 20°C to 60°C? (Specific heat of water = 4.18 J/g·°C)
-   - A) 25,080 J
-   - B) 50,160 J
-   - C) 75,240 J
-   - D) 100,320 J
+   A) 25,080 J
+   B) 50,160 J
+   C) 75,240 J
+   D) 100,320 J
 
 4. Which of the following substances has a standard enthalpy of formation equal to zero?
-   - A) \(O_{3(g)}\)
-   - B) \(H_2O_{(l)}\)
-   - C) \(Br_{2(l)}\)
-   - D) \(C_{(diamond)}\)
+   A) \(O_{3(g)}\)
+   B) \(H_2O_{(l)}\)
+   C) \(Br_{2(l)}\)
+   D) \(C_{(diamond)}\)
 
 5. For the reaction: \(2H_2 + O_2 \rightarrow 2H_2O\), \(\Delta H = -572 \text{ kJ}\). How much heat is released when 1.0 mole of \(H_2\) reacts?
-   - A) 143 kJ
-   - B) 286 kJ
-   - C) 572 kJ
-   - D) 1144 kJ
+   A) 143 kJ
+   B) 286 kJ
+   C) 572 kJ
+   D) 1144 kJ
 
 ### Section B: Calculation Problems (Questions 6-8)
 
 6. A 75.0 g sample of copper (specific heat = 0.385 J/g·°C) is heated from 25.0°C to 95.0°C. What is the heat absorbed?
-   - A) 1.35 kJ
-   - B) 2.02 kJ
-   - C) 2.70 kJ
-   - D) 5.40 kJ
+   A) 1.35 kJ
+   B) 2.02 kJ
+   C) 2.70 kJ
+   D) 5.40 kJ
 
 7. Calculate \(\Delta H\) for the reaction: \(CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O\)
 
    Given: \(\Delta H_f°(CH_4) = -75 \text{ kJ/mol}\), \(\Delta H_f°(CO_2) = -394 \text{ kJ/mol}\), \(\Delta H_f°(H_2O) = -286 \text{ kJ/mol}\)
-   - A) -891 kJ
-   - B) -605 kJ
-   - C) -405 kJ
-   - D) -755 kJ
+   A) -891 kJ
+   B) -605 kJ
+   C) -405 kJ
+   D) -755 kJ
 
 8. When 5.0 g of ammonium nitrate dissolves in 100 g of water, the temperature drops from 25.0°C to 20.0°C. What is the heat change of the water? (c = 4.18 J/g·°C)
-   - A) +2090 J
-   - B) -2090 J
-   - C) +10,450 J
-   - D) -10,450 J
+   A) +2090 J
+   B) -2090 J
+   C) +10,450 J
+   D) -10,450 J
 
 ### Section C: Hess's Law Problems (Questions 9-10)
 
@@ -345,20 +345,20 @@ Given: \(\Delta H_f°(CH_4) = -75 \text{ kJ/mol}\), \(\Delta H_f°(CO_2) = -394 
    - (2) \(2CO + O_2 \rightarrow 2CO_2 \quad \Delta H = -566 \text{ kJ}\)
 
    What is \(\Delta H\) for the reaction: \(2C + O_2 \rightarrow 2CO\)?
-   - A) -222 kJ
-   - B) -172 kJ
-   - C) +172 kJ
-   - D) +222 kJ
+   A) -222 kJ
+   B) -172 kJ
+   C) +172 kJ
+   D) +222 kJ
 
 10. Given:
     - (1) \(S + O_2 \rightarrow SO_2 \quad \Delta H = -297 \text{ kJ}\)
     - (2) \(2SO_2 + O_2 \rightarrow 2SO_3 \quad \Delta H = -198 \text{ kJ}\)
 
     Calculate \(\Delta H\) for: \(2S + 3O_2 \rightarrow 2SO_3\)
-    - A) -495 kJ
-    - B) -594 kJ
-    - C) -693 kJ
-    - D) -792 kJ
+    A) -495 kJ
+    B) -594 kJ
+    C) -693 kJ
+    D) -792 kJ
 
 ---
 

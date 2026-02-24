@@ -391,118 +391,127 @@ Use this checklist to verify your work on Gibbs free energy calculations:
 10. Explain why \(\Delta G < 0\) does not mean a reaction will occur quickly.
 
 11. For the dissolution of ammonium nitrate: \(NH_4NO_3(s) \rightarrow NH_4^+(aq) + NO_3^-(aq)\)
+
     Given: \(\Delta H° = +25.7 \text{ kJ/mol}\) and \(\Delta S° = +108.7 \text{ J/mol·K}\)
 
-    (a) Calculate \(\Delta G°\) at 298 K.
+    a) Calculate \(\Delta G°\) at 298 K.
 
-    (b) Is the dissolution spontaneous at room temperature? Explain why cold packs work even though the process is endothermic.
+    b) Is the dissolution spontaneous at room temperature? Explain why cold packs work even though the process is endothermic.
 
-    (c) Calculate the minimum temperature at which dissolution becomes non-spontaneous.
+    c) Calculate the minimum temperature at which dissolution becomes non-spontaneous.
 
 12. Consider the Haber process: \(N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)\)
+
     Given at 298 K: \(\Delta H° = -92.4 \text{ kJ}\), \(\Delta S° = -198.8 \text{ J/K}\), \(K = 6.0 \times 10^5\)
 
-    (a) Calculate \(\Delta G°\) at 298 K using \(\Delta H°\) and \(\Delta S°\).
+    a) Calculate \(\Delta G°\) at 298 K using \(\Delta H°\) and \(\Delta S°\).
 
-    (b) Calculate \(\Delta G°\) using the equilibrium constant.
+    b) Calculate \(\Delta G°\) using the equilibrium constant.
 
-    (c) Industrial ammonia synthesis operates at 450°C. Assuming \(\Delta H°\) and \(\Delta S°\) remain constant, calculate \(\Delta G°\) at 723 K.
+    c) Industrial ammonia synthesis operates at 450°C. Assuming \(\Delta H°\) and \(\Delta S°\) remain constant, calculate \(\Delta G°\) at 723 K.
 
-    (d) Explain why high temperatures are used industrially despite making the reaction less favorable thermodynamically.
+    d) Explain why high temperatures are used industrially despite making the reaction less favorable thermodynamically.
 
 13. The vaporization of water can be represented as: \(H_2O(l) \rightleftharpoons H_2O(g)\)
+
     At 100°C and 1 atm, water boils (liquid and vapor are at equilibrium).
     Given: \(\Delta H°_{\text{vap}} = +40.7 \text{ kJ/mol}\)
 
-    (a) What is \(\Delta G\) for vaporization at 100°C and 1 atm? Explain.
+    a) What is \(\Delta G\) for vaporization at 100°C and 1 atm? Explain.
 
-    (b) Calculate \(\Delta S°_{\text{vap}}\) for water at 100°C.
+    b) Calculate \(\Delta S°_{\text{vap}}\) for water at 100°C.
 
-    (c) Calculate \(\Delta G\) for vaporization at 25°C. Is vaporization spontaneous at room temperature and 1 atm?
+    c) Calculate \(\Delta G\) for vaporization at 25°C. Is vaporization spontaneous at room temperature and 1 atm?
 
-    (d) Explain why water spontaneously evaporates at 25°C even though \(\Delta G > 0\) at 1 atm.
+    d) Explain why water spontaneously evaporates at 25°C even though \(\Delta G > 0\) at 1 atm.
 
 14. Consider the following reaction at 298 K:
+
     \(2NO(g) + O_2(g) \rightleftharpoons 2NO_2(g)\)
 
     At a particular moment, the partial pressures are: \(P_{NO} = 0.50 \text{ atm}\), \(P_{O_2} = 0.25 \text{ atm}\), \(P_{NO_2} = 2.0 \text{ atm}\)
     Given: \(\Delta G° = -70.5 \text{ kJ}\)
 
-    (a) Calculate \(K_p\) for this reaction at 298 K.
+    a) Calculate \(K_p\) for this reaction at 298 K.
 
-    (b) Calculate \(Q_p\) for the given conditions.
+    b) Calculate \(Q_p\) for the given conditions.
 
-    (c) Calculate \(\Delta G\) under these conditions.
+    c) Calculate \(\Delta G\) under these conditions.
 
-    (d) In which direction will the reaction proceed? Explain using both Q vs K and the sign of \(\Delta G\).
+    d) In which direction will the reaction proceed? Explain using both Q vs K and the sign of \(\Delta G\).
 
 15. A student measures the equilibrium constant for a reaction at different temperatures and obtains:
+
     At 300 K: \(K = 1.5 \times 10^{-3}\)
     At 400 K: \(K = 8.2 \times 10^{-2}\)
 
-    (a) Calculate \(\Delta G°\) at both temperatures.
+    a) Calculate \(\Delta G°\) at both temperatures.
 
-    (b) Determine whether the reaction is endothermic or exothermic. Explain your reasoning.
+    b) Determine whether the reaction is endothermic or exothermic. Explain your reasoning.
 
-    (c) Use the relationship between \(\Delta G°\), \(\Delta H°\), and \(\Delta S°\) to estimate \(\Delta H°\) and \(\Delta S°\) (assume they are constant). Hint: Set up two equations.
+    c) Use the relationship between \(\Delta G°\), \(\Delta H°\), and \(\Delta S°\) to estimate \(\Delta H°\) and \(\Delta S°\) (assume they are constant). Hint: Set up two equations.
 
 16. For the decomposition of calcium carbonate:
+
     \(CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g)\)
     Given: \(\Delta H° = +178 \text{ kJ}\) and \(\Delta S° = +161 \text{ J/K}\)
 
-    (a) Calculate the temperature at which \(K = 1\).
+    a) Calculate the temperature at which \(K = 1\).
 
-    (b) At what temperature does the equilibrium partial pressure of \(CO_2\) equal 1 atm?
+    b) At what temperature does the equilibrium partial pressure of \(CO_2\) equal 1 atm?
 
-    (c) Explain why limestone (CaCO3) is stable at room temperature but decomposes when heated in a kiln.
+    c) Explain why limestone (CaCO3) is stable at room temperature but decomposes when heated in a kiln.
 
-    (d) If the partial pressure of \(CO_2\) in the atmosphere is 0.0004 atm, at what temperature will limestone start to decompose?
+    d) If the partial pressure of \(CO_2\) in the atmosphere is 0.0004 atm, at what temperature will limestone start to decompose?
 
 17. The following reaction is used in some chemical heat pumps:
+
     \(NH_3(g) + HCl(g) \rightarrow NH_4Cl(s)\)
     Given: \(\Delta H° = -176 \text{ kJ}\) and \(\Delta G° = -91.2 \text{ kJ}\) at 298 K
 
-    (a) Calculate \(\Delta S°\) for this reaction.
+    a) Calculate \(\Delta S°\) for this reaction.
 
-    (b) Predict the sign of \(\Delta S°\) based on the states of matter. Does your calculation agree?
+    b) Predict the sign of \(\Delta S°\) based on the states of matter. Does your calculation agree?
 
-    (c) Is this reaction more or less spontaneous at higher temperatures? Explain.
+    c) Is this reaction more or less spontaneous at higher temperatures? Explain.
 
-    (d) Calculate the temperature at which \(\Delta G = 0\).
+    d) Calculate the temperature at which \(\Delta G = 0\).
 
 18. A biochemical reaction has \(\Delta G° = +15.5 \text{ kJ/mol}\) at 37°C (body temperature).
 
-    (a) Calculate the equilibrium constant at body temperature.
+    a) Calculate the equilibrium constant at body temperature.
 
-    (b) What is the ratio of products to reactants at equilibrium?
+    b) What is the ratio of products to reactants at equilibrium?
 
-    (c) In living cells, this reaction is coupled with ATP hydrolysis (\(\Delta G° = -30.5 \text{ kJ/mol}\)). Calculate \(\Delta G°\) for the coupled reaction.
+    c) In living cells, this reaction is coupled with ATP hydrolysis (\(\Delta G° = -30.5 \text{ kJ/mol}\)). Calculate \(\Delta G°\) for the coupled reaction.
 
-    (d) Calculate the new equilibrium constant for the coupled reaction and explain why coupling makes unfavorable reactions proceed in cells.
+    d) Calculate the new equilibrium constant for the coupled reaction and explain why coupling makes unfavorable reactions proceed in cells.
 
 19. Consider the phase transition: \(I_2(s) \rightleftharpoons I_2(g)\)
+
     The vapor pressure of solid iodine at different temperatures:
     At 298 K: \(P = 0.31 \text{ torr}\)
     At 323 K: \(P = 3.3 \text{ torr}\)
 
-    (a) Calculate \(\Delta G°\) for sublimation at both temperatures (note: \(K_p = P_{I_2}\) in atm).
+    a) Calculate \(\Delta G°\) for sublimation at both temperatures (note: \(K_p = P_{I_2}\) in atm).
 
-    (b) Use your results to estimate \(\Delta H°_{sub}\). Hint: \(\Delta G° = -RT\ln K\), so use the two temperatures to set up equations.
+    b) Use your results to estimate \(\Delta H°_{sub}\). Hint: \(\Delta G° = -RT\ln K\), so use the two temperatures to set up equations.
 
-    (c) Is the sublimation of iodine favored at higher or lower temperatures?
+    c) Is the sublimation of iodine favored at higher or lower temperatures?
 
 20. Multi-step problem: The reaction \(2A + B \rightleftharpoons 2C\) has the following thermodynamic data at 298 K:
+
     \(\Delta H° = -85 \text{ kJ}\), \(\Delta S° = -125 \text{ J/K}\)
 
-    (a) Calculate \(\Delta G°\) at 298 K and determine the equilibrium constant.
+    a) Calculate \(\Delta G°\) at 298 K and determine the equilibrium constant.
 
-    (b) If the reaction mixture contains [A] = 0.50 M, [B] = 0.25 M, and [C] = 2.0 M, calculate Q and \(\Delta G\).
+    b) If the reaction mixture contains [A] = 0.50 M, [B] = 0.25 M, and [C] = 2.0 M, calculate Q and \(\Delta G\).
 
-    (c) Determine if the reaction will proceed forward or reverse.
+    c) Determine if the reaction will proceed forward or reverse.
 
-    (d) At what temperature does the reaction transition from spontaneous to non-spontaneous?
+    d) At what temperature does the reaction transition from spontaneous to non-spontaneous?
 
-    (e) If you wanted to maximize product formation, would you run this reaction at high or low temperature? Justify your answer considering both thermodynamics and the likely kinetic effects.
+    e) If you wanted to maximize product formation, would you run this reaction at high or low temperature? Justify your answer considering both thermodynamics and the likely kinetic effects.
 
 ---
 

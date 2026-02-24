@@ -284,64 +284,64 @@ Chemical bonds form when atoms share or transfer electrons to achieve stable ele
 ### Set 1: Fundamental Concepts (Questions 1-10)
 
 1. Which of the following best describes the bonding in sodium chloride (\(NaCl\))?
-   - A) Electrons are shared equally between sodium and chlorine atoms
-   - B) Sodium transfers one electron to chlorine, forming oppositely charged ions
-   - C) Both atoms contribute electrons to a delocalized electron sea
-   - D) Sodium and chlorine share electrons unequally in a polar covalent bond
+   A) Electrons are shared equally between sodium and chlorine atoms
+   B) Sodium transfers one electron to chlorine, forming oppositely charged ions
+   C) Both atoms contribute electrons to a delocalized electron sea
+   D) Sodium and chlorine share electrons unequally in a polar covalent bond
 
 2. A student draws the Lewis structure for \(CH_4\) (methane). How many total valence electrons should be shown in the correct structure?
-   - A) 4
-   - B) 6
-   - C) 8
-   - D) 10
+   A) 4
+   B) 6
+   C) 8
+   D) 10
 
 3. Which compound has the strongest ionic character in its bonding?
-   - A) \(H_2O\)
-   - B) \(NH_3\)
-   - C) \(CaO\)
-   - D) \(CO_2\)
+   A) \(H_2O\)
+   B) \(NH_3\)
+   C) \(CaO\)
+   D) \(CO_2\)
 
 4. An element in Group 17 of the periodic table forms an ion. What is the most likely charge of this ion?
-   - A) +1
-   - B) +7
-   - C) -1
-   - D) -7
+   A) +1
+   B) +7
+   C) -1
+   D) -7
 
 5. Which of the following statements about metallic bonding is correct?
-   - A) Electrons are transferred from one metal atom to another
-   - B) Electrons are shared between specific pairs of metal atoms
-   - C) Electrons are delocalized and can move freely throughout the metal structure
-   - D) Electrons are localized in fixed positions between metal atoms
+   A) Electrons are transferred from one metal atom to another
+   B) Electrons are shared between specific pairs of metal atoms
+   C) Electrons are delocalized and can move freely throughout the metal structure
+   D) Electrons are localized in fixed positions between metal atoms
 
 6. A molecule of nitrogen gas (\(N_2\)) contains a triple bond. How many electrons are shared between the two nitrogen atoms?
-   - A) 2
-   - B) 3
-   - C) 6
-   - D) 8
+   A) 2
+   B) 3
+   C) 6
+   D) 8
 
 7. Which property is characteristic of ionic compounds but NOT typical of covalent compounds?
-   - A) Forming molecules with discrete units
-   - B) Conducting electricity when dissolved in water
-   - C) Having low melting points
-   - D) Existing as gases at room temperature
+   A) Forming molecules with discrete units
+   B) Conducting electricity when dissolved in water
+   C) Having low melting points
+   D) Existing as gases at room temperature
 
 8. The Lewis structure for water (\(H_2O\)) shows two O-H bonds and two lone pairs on oxygen. How many total electrons does the oxygen atom have in this structure?
-   - A) 4
-   - B) 6
-   - C) 8
-   - D) 10
+   A) 4
+   B) 6
+   C) 8
+   D) 10
 
 9. When aluminum (Group 13) forms an ionic compound with oxygen (Group 16), what is the most likely formula?
-   - A) \(AlO\)
-   - B) \(Al_2O\)
-   - C) \(AlO_3\)
-   - D) \(Al_2O_3\)
+   A) \(AlO\)
+   B) \(Al_2O\)
+   C) \(AlO_3\)
+   D) \(Al_2O_3\)
 
 10. Which pair of elements is most likely to form a covalent bond?
-    - A) Sodium and chlorine
-    - B) Carbon and oxygen
-    - C) Magnesium and sulfur
-    - D) Potassium and bromine
+    A) Sodium and chlorine
+    B) Carbon and oxygen
+    C) Magnesium and sulfur
+    D) Potassium and bromine
 
 ---
 

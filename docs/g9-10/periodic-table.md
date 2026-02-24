@@ -434,46 +434,53 @@ Li → Na → Mg → ... → Cl
 ### Section A: Multiple Choice (Questions 1-7)
 
 **Question 1**: Which of the following elements has the largest atomic radius?
-- A) Fluorine (F)
-- B) Chlorine (Cl)
-- C) Sodium (Na)
-- D) Magnesium (Mg)
+
+A) Fluorine (F)
+B) Chlorine (Cl)
+C) Sodium (Na)
+D) Magnesium (Mg)
 
 **Question 2**: An element is found in Period 3, Group 16. How many valence electrons does this element have?
-- A) 3
-- B) 6
-- C) 16
-- D) 19
+
+A) 3
+B) 6
+C) 16
+D) 19
 
 **Question 3**: Which of the following correctly arranges the elements in order of increasing ionization energy?
-- A) F < O < N < C
-- B) C < N < O < F
-- C) F < C < N < O
-- D) O < F < C < N
+
+A) F < O < N < C
+B) C < N < O < F
+C) F < C < N < O
+D) O < F < C < N
 
 **Question 4**: An element has the electron configuration 2, 8, 7. Which group does this element belong to?
-- A) Group 7
-- B) Group 15
-- C) Group 17
-- D) Period 7
+
+A) Group 7
+B) Group 15
+C) Group 17
+D) Period 7
 
 **Question 5**: Which statement best explains why noble gases are unreactive?
-- A) They have high atomic masses
-- B) They have complete outer electron shells
-- C) They are gases at room temperature
-- D) They have low electronegativity values
+
+A) They have high atomic masses
+B) They have complete outer electron shells
+C) They are gases at room temperature
+D) They have low electronegativity values
 
 **Question 6**: Which element would have chemical properties most similar to magnesium (Mg)?
-- A) Sodium (Na)
-- B) Calcium (Ca)
-- C) Aluminum (Al)
-- D) Sulfur (S)
+
+A) Sodium (Na)
+B) Calcium (Ca)
+C) Aluminum (Al)
+D) Sulfur (S)
 
 **Question 7**: As you move from left to right across Period 3, which property decreases?
-- A) Atomic number
-- B) Number of valence electrons
-- C) Atomic radius
-- D) Electronegativity
+
+A) Atomic number
+B) Number of valence electrons
+C) Atomic radius
+D) Electronegativity
 
 ### Section B: Short Answer with Reasoning (Questions 8-10)
 

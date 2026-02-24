@@ -268,11 +268,11 @@ For heating/cooling calculations:
 ### Problem 1: Particle Motion and Temperature
 **Question**: Which of the following statements best explains why the temperature of water remains constant at 100°C while it is boiling?
 
-A) The water has reached its maximum possible temperature
-B) The heat energy is being used to increase the kinetic energy of the molecules
-C) The heat energy is being used to overcome intermolecular forces
-D) No more heat can be added to the system
-E) The water molecules stop moving at the boiling point
+A\) The water has reached its maximum possible temperature
+B\) The heat energy is being used to increase the kinetic energy of the molecules
+C\) The heat energy is being used to overcome intermolecular forces
+D\) No more heat can be added to the system
+E\) The water molecules stop moving at the boiling point
 
 **Answer**: C
 
@@ -283,11 +283,11 @@ E) The water molecules stop moving at the boiling point
 ### Problem 2: Phase Change Identification
 **Question**: A student observes water droplets forming on the outside of a cold glass on a humid day. Which phase change is occurring?
 
-A) Melting
-B) Freezing
-C) Condensation
-D) Vaporization
-E) Sublimation
+A\) Melting
+B\) Freezing
+C\) Condensation
+D\) Vaporization
+E\) Sublimation
 
 **Answer**: C
 
@@ -298,11 +298,11 @@ E) Sublimation
 ### Problem 3: Energy Calculations
 **Question**: How much energy is required to melt 50.0 g of ice at 0°C? (Heat of fusion of water = 334 J/g)
 
-A) 6.68 J
-B) 334 J
-C) 1,670 J
-D) 16,700 J
-E) 33,400 J
+A\) 6.68 J
+B\) 334 J
+C\) 1,670 J
+D\) 16,700 J
+E\) 33,400 J
 
 **Answer**: D
 
@@ -317,11 +317,11 @@ This energy breaks the hydrogen bonds in the ice crystal structure, allowing wat
 ### Problem 4: Heating Curve Interpretation
 **Question**: On a heating curve for water, which segment represents the phase where water molecules have the highest average kinetic energy?
 
-A) Solid phase (ice) before melting
-B) Melting phase (ice to water)
-C) Liquid phase (water) before boiling
-D) Boiling phase (water to steam)
-E) Gas phase (steam) after boiling
+A\) Solid phase (ice) before melting
+B\) Melting phase (ice to water)
+C\) Liquid phase (water) before boiling
+D\) Boiling phase (water to steam)
+E\) Gas phase (steam) after boiling
 
 **Answer**: E
 
@@ -332,11 +332,11 @@ E) Gas phase (steam) after boiling
 ### Problem 5: Comparing States of Matter
 **Question**: Which property correctly describes gases but NOT solids or liquids?
 
-A) Particles are in constant motion
-B) Particles have mass
-C) The substance is easily compressed
-D) Particles have kinetic energy
-E) Particles experience intermolecular forces
+A\) Particles are in constant motion
+B\) Particles have mass
+C\) The substance is easily compressed
+D\) Particles have kinetic energy
+E\) Particles experience intermolecular forces
 
 **Answer**: C
 
@@ -347,11 +347,11 @@ E) Particles experience intermolecular forces
 ### Problem 6: Endothermic vs. Exothermic
 **Question**: Which of the following processes is exothermic?
 
-A) Ice melting in a warm room
-B) Water evaporating from a puddle
-C) Dry ice subliming to carbon dioxide gas
-D) Dew forming on grass in the morning
-E) Ice absorbing heat from surroundings
+A\) Ice melting in a warm room
+B\) Water evaporating from a puddle
+C\) Dry ice subliming to carbon dioxide gas
+D\) Dew forming on grass in the morning
+E\) Ice absorbing heat from surroundings
 
 **Answer**: D
 
@@ -362,11 +362,11 @@ E) Ice absorbing heat from surroundings
 ### Problem 7: Kinetic Molecular Theory
 **Question**: According to kinetic molecular theory, what happens to the motion of particles in a liquid as it is heated from 20°C to 80°C?
 
-A) Particles stop moving
-B) Particles move more slowly
-C) Particles move faster
-D) Particle motion remains constant
-E) Particles begin to vibrate for the first time
+A\) Particles stop moving
+B\) Particles move more slowly
+C\) Particles move faster
+D\) Particle motion remains constant
+E\) Particles begin to vibrate for the first time
 
 **Answer**: C
 
@@ -377,11 +377,11 @@ E) Particles begin to vibrate for the first time
 ### Problem 8: Phase Diagram Application
 **Question**: At standard atmospheric pressure (1 atm), water boils at 100°C. What happens to the boiling point of water if the external pressure is decreased?
 
-A) Boiling point increases
-B) Boiling point decreases
-C) Boiling point remains at 100°C
-D) Water cannot boil at lower pressures
-E) Water freezes instead of boiling
+A\) Boiling point increases
+B\) Boiling point decreases
+C\) Boiling point remains at 100°C
+D\) Water cannot boil at lower pressures
+E\) Water freezes instead of boiling
 
 **Answer**: B
 
@@ -392,11 +392,11 @@ E) Water freezes instead of boiling
 ### Problem 9: Energy Comparison
 **Question**: Which sample contains the most total energy?
 
-A) 10 g of ice at 0°C
-B) 10 g of water at 0°C
-C) 10 g of water at 50°C
-D) 10 g of water at 100°C
-E) 10 g of steam at 100°C
+A\) 10 g of ice at 0°C
+B\) 10 g of water at 0°C
+C\) 10 g of water at 50°C
+D\) 10 g of water at 100°C
+E\) 10 g of steam at 100°C
 
 **Answer**: E
 
@@ -415,11 +415,11 @@ Since the heat of vaporization (≈2260 J/g) is much larger than the heat of fus
 **Question**: How much total energy is required to convert 25.0 g of ice at 0°C to water at 20°C?
 (Heat of fusion = 334 J/g; specific heat of water = 4.18 J/g°C)
 
-A) 2,090 J
-B) 8,350 J
-C) 10,440 J
-D) 16,700 J
-E) 18,790 J
+A\) 2,090 J
+B\) 8,350 J
+C\) 10,440 J
+D\) 16,700 J
+E\) 18,790 J
 
 **Answer**: C
 

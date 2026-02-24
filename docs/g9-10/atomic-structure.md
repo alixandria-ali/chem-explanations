@@ -367,140 +367,130 @@ Understanding where students typically struggle can help you avoid these pitfall
 
 These problems are designed to mirror SAT Chemistry Subject Test style questions, combining conceptual understanding with calculations.
 
-### Problem 1
-An atom has 26 protons, 30 neutrons, and 23 electrons. Which of the following statements is correct?
+**Problem 1**: An atom has 26 protons, 30 neutrons, and 23 electrons. Which of the following statements is correct?
 
-A) The atom is neutral with a mass number of 56
-B) The atom is an anion with a mass number of 49
-C) The atom is a cation with a mass number of 56
-D) The atom is an isotope of an element with atomic number 23
-E) The atom has the same electron configuration as a neutral atom with 26 electrons
+(A) The atom is neutral with a mass number of 56
+(B) The atom is an anion with a mass number of 49
+(C) The atom is a cation with a mass number of 56
+(D) The atom is an isotope of an element with atomic number 23
+(E) The atom has the same electron configuration as a neutral atom with 26 electrons
 
 **Conceptual focus**: Understanding the relationship between protons, electrons, and ionic charge
 
 ---
 
-### Problem 2
-Which of the following pairs represents isotopes of the same element?
+**Problem 2**: Which of the following pairs represents isotopes of the same element?
 
-A) \(^{16}_8O\) and \(^{16}_7N\)
-B) \(^{35}_{17}Cl\) and \(^{37}_{17}Cl\)
-C) \(^{40}_{20}Ca\) and \(^{40}_{18}Ar\)
-D) \(^{23}_{11}Na\) and \(^{23}_{11}Na^+\)
-E) \(^{14}_6C\) and \(^{14}_7N\)
+(A) \(^{16}_8O\) and \(^{16}_7N\)
+(B) \(^{35}_{17}Cl\) and \(^{37}_{17}Cl\)
+(C) \(^{40}_{20}Ca\) and \(^{40}_{18}Ar\)
+(D) \(^{23}_{11}Na\) and \(^{23}_{11}Na^+\)
+(E) \(^{14}_6C\) and \(^{14}_7N\)
 
 **Conceptual focus**: Identifying isotopes vs. different elements or ions
 
 ---
 
-### Problem 3
-An element has an atomic number of 15 and a mass number of 31. If this atom gains 3 electrons to form an ion, what will be the composition of the ion?
+**Problem 3**: An element has an atomic number of 15 and a mass number of 31. If this atom gains 3 electrons to form an ion, what will be the composition of the ion?
 
-A) 15 protons, 16 neutrons, 18 electrons, charge of -3
-B) 15 protons, 31 neutrons, 18 electrons, charge of -3
-C) 15 protons, 16 neutrons, 12 electrons, charge of +3
-D) 18 protons, 16 neutrons, 18 electrons, charge of 0
-E) 15 protons, 16 neutrons, 18 electrons, charge of +3
+(A) 15 protons, 16 neutrons, 18 electrons, charge of -3
+(B) 15 protons, 31 neutrons, 18 electrons, charge of -3
+(C) 15 protons, 16 neutrons, 12 electrons, charge of +3
+(D) 18 protons, 16 neutrons, 18 electrons, charge of 0
+(E) 15 protons, 16 neutrons, 18 electrons, charge of +3
 
 **Conceptual focus**: Calculating ion composition and understanding charge
 
 ---
 
-### Problem 4
-The electron configuration of a neutral atom is 2, 8, 7. Which of the following statements about this atom is FALSE?
+**Problem 4**: The electron configuration of a neutral atom is 2, 8, 7. Which of the following statements about this atom is FALSE?
 
-A) It has 17 electrons
-B) It has an atomic number of 17
-C) It will likely form a -1 ion to achieve stability
-D) It has 17 neutrons
-E) It is likely to gain one electron to complete its outer shell
+(A) It has 17 electrons
+(B) It has an atomic number of 17
+(C) It will likely form a -1 ion to achieve stability
+(D) It has 17 neutrons
+(E) It is likely to gain one electron to complete its outer shell
 
 **Conceptual focus**: Understanding electron configuration and predicting ion formation
 
 ---
 
-### Problem 5
-Three atoms are represented as follows:
+**Problem 5**: Three atoms are represented as follows:
 - Atom X: 11 protons, 12 neutrons
 - Atom Y: 11 protons, 13 neutrons
 - Atom Z: 12 protons, 12 neutrons
 
 Which statement is correct?
 
-A) X, Y, and Z are all isotopes of the same element
-B) X and Y are isotopes; Z is a different element
-C) X and Z are isotopes; Y is a different element
-D) Y and Z are isotopes; X is a different element
-E) None of the atoms are isotopes of each other
+(A) X, Y, and Z are all isotopes of the same element
+(B) X and Y are isotopes; Z is a different element
+(C) X and Z are isotopes; Y is a different element
+(D) Y and Z are isotopes; X is a different element
+(E) None of the atoms are isotopes of each other
 
 **Conceptual focus**: Identifying isotopes and different elements
 
 ---
 
-### Problem 6
-A magnesium ion (\(Mg^{2+}\)) has the same electron configuration as which of the following?
+**Problem 6**: A magnesium ion (\(Mg^{2+}\)) has the same electron configuration as which of the following?
 
-A) A neutral sodium atom
-B) A neutral neon atom
-C) A neutral magnesium atom
-D) A sodium ion (\(Na^+\))
-E) A fluoride ion (\(F^-\))
+(A) A neutral sodium atom
+(B) A neutral neon atom
+(C) A neutral magnesium atom
+(D) A sodium ion (\(Na^+\))
+(E) A fluoride ion (\(F^-\))
 
 **Conceptual focus**: Understanding isoelectronic species (same electron configuration)
 
 ---
 
-### Problem 7
-An element has three naturally occurring isotopes with mass numbers of 24, 25, and 26. If the element has an atomic number of 12, what do all three isotopes have in common?
+**Problem 7**: An element has three naturally occurring isotopes with mass numbers of 24, 25, and 26. If the element has an atomic number of 12, what do all three isotopes have in common?
 
 I. Number of protons
 II. Number of neutrons
 III. Chemical properties
 
-A) I only
-B) I and II only
-C) I and III only
-D) II and III only
-E) I, II, and III
+(A) I only
+(B) I and II only
+(C) I and III only
+(D) II and III only
+(E) I, II, and III
 
 **Conceptual focus**: Properties shared by isotopes
 
 ---
 
-### Problem 8
-The atomic notation for a sulfur atom is \(^{32}_{16}S\). If this atom gains 2 electrons to form a sulfide ion, what is the ratio of protons to electrons in the ion?
+**Problem 8**: The atomic notation for a sulfur atom is \(^{32}_{16}S\). If this atom gains 2 electrons to form a sulfide ion, what is the ratio of protons to electrons in the ion?
 
-A) 16:14
-B) 16:18
-C) 16:16
-D) 18:16
-E) 8:9
+(A) 16:14
+(B) 16:18
+(C) 16:16
+(D) 18:16
+(E) 8:9
 
 **Conceptual focus**: Calculating particle ratios in ions
 
 ---
 
-### Problem 9
-Which of the following is true about an atom with the electron configuration 2, 8, 8, 2?
+**Problem 9**: Which of the following is true about an atom with the electron configuration 2, 8, 8, 2?
 
-A) It has a mass number of 20
-B) It will likely lose 2 electrons to form a cation
-C) It has 18 protons
-D) It is a noble gas
-E) It will likely gain 6 electrons to complete its outer shell
+(A) It has a mass number of 20
+(B) It will likely lose 2 electrons to form a cation
+(C) It has 18 protons
+(D) It is a noble gas
+(E) It will likely gain 6 electrons to complete its outer shell
 
 **Conceptual focus**: Predicting chemical behavior from electron configuration
 
 ---
 
-### Problem 10
-Two atoms, A and B, both have 17 protons. Atom A has 18 neutrons and 18 electrons. Atom B has 20 neutrons and 17 electrons. Which statement correctly describes the relationship between A and B?
+**Problem 10**: Two atoms, A and B, both have 17 protons. Atom A has 18 neutrons and 18 electrons. Atom B has 20 neutrons and 17 electrons. Which statement correctly describes the relationship between A and B?
 
-A) A is an anion and B is neutral; they are isotopes
-B) A is an anion and B is neutral; they are not isotopes
-C) A is a cation and B is neutral; they are isotopes
-D) A is an anion and B is neutral; they are the same atom
-E) Both are neutral atoms and are isotopes of each other
+(A) A is an anion and B is neutral; they are isotopes
+(B) A is an anion and B is neutral; they are not isotopes
+(C) A is a cation and B is neutral; they are isotopes
+(D) A is an anion and B is neutral; they are the same atom
+(E) Both are neutral atoms and are isotopes of each other
 
 **Conceptual focus**: Distinguishing between ions and isotopes
 

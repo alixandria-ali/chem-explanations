@@ -294,11 +294,11 @@ In theory, chemical reactions should produce a specific amount of product based 
 
 **Problem 1**: A chemist needs to prepare exactly 2.0 moles of water. What mass of hydrogen gas is required to react completely with excess oxygen according to the equation: \(2H_2 + O_2 \rightarrow 2H_2O\)?
 
-(A) 2.0 g
-(B) 4.0 g
-(C) 18.0 g
-(D) 36.0 g
-(E) 72.0 g
+A) 2.0 g
+B) 4.0 g
+C) 18.0 g
+D) 36.0 g
+E) 72.0 g
 
 ---
 
@@ -306,91 +306,91 @@ In theory, chemical reactions should produce a specific amount of product based 
 
 Reaction: \(C_3H_8 + 5O_2 \rightarrow 3CO_2 + 4H_2O\)
 
-(A) 12.0 g
-(B) 18.0 g
-(C) 24.0 g
-(D) 36.0 g
-(E) 44.0 g
+A) 12.0 g
+B) 18.0 g
+C) 24.0 g
+D) 36.0 g
+E) 44.0 g
 
 ---
 
 **Problem 3**: Which of the following statements about limiting reactants is FALSE?
 
-(A) The limiting reactant is completely consumed in the reaction
-(B) The limiting reactant determines the maximum amount of product that can form
-(C) The limiting reactant is always the reactant with the smallest mass
-(D) Excess reactant remains after the reaction is complete
-(E) To identify the limiting reactant, you must consider both the amount present and the stoichiometric ratio
+A) The limiting reactant is completely consumed in the reaction
+B) The limiting reactant determines the maximum amount of product that can form
+C) The limiting reactant is always the reactant with the smallest mass
+D) Excess reactant remains after the reaction is complete
+E) To identify the limiting reactant, you must consider both the amount present and the stoichiometric ratio
 
 ---
 
 **Problem 4**: In the Haber process for ammonia synthesis, nitrogen and hydrogen combine according to: \(N_2 + 3H_2 \rightarrow 2NH_3\). If a reaction vessel contains 2.0 moles of \(N_2\) and 4.0 moles of \(H_2\), what is the maximum number of moles of \(NH_3\) that can be produced?
 
-(A) 2.0 mol
-(B) 2.67 mol
-(C) 4.0 mol
-(D) 6.0 mol
-(E) 8.0 mol
+A) 2.0 mol
+B) 2.67 mol
+C) 4.0 mol
+D) 6.0 mol
+E) 8.0 mol
 
 ---
 
 **Problem 5**: A sample contains \(3.01 \times 10^{23}\) molecules of glucose (\(C_6H_{12}O_6\)). What is the mass of this sample? (Molar mass of glucose = 180.0 g/mol)
 
-(A) 45.0 g
-(B) 90.0 g
-(C) 180.0 g
-(D) 360.0 g
-(E) 540.0 g
+A) 45.0 g
+B) 90.0 g
+C) 180.0 g
+D) 360.0 g
+E) 540.0 g
 
 ---
 
 **Problem 6**: In a laboratory experiment, the theoretical yield of aluminum oxide from the reaction \(4Al + 3O_2 \rightarrow 2Al_2O_3\) was calculated to be 51.0 g. If the actual yield obtained was 43.4 g, what was the percent yield?
 
-(A) 15.2%
-(B) 43.4%
-(C) 51.0%
-(D) 85.1%
-(E) 117.5%
+A) 15.2%
+B) 43.4%
+C) 51.0%
+D) 85.1%
+E) 117.5%
 
 ---
 
 **Problem 7**: Consider the balanced equation: \(2KClO_3 \rightarrow 2KCl + 3O_2\). If 24.5 g of \(KClO_3\) (molar mass = 122.5 g/mol) decomposes completely, what volume of \(O_2\) gas is produced at STP? (At STP, 1 mole of gas = 22.4 L)
 
-(A) 4.48 L
-(B) 6.72 L
-(C) 11.2 L
-(D) 22.4 L
-(E) 33.6 L
+A) 4.48 L
+B) 6.72 L
+C) 11.2 L
+D) 22.4 L
+E) 33.6 L
 
 ---
 
 **Problem 8**: A student combines 14.0 g of nitrogen gas with 6.0 g of hydrogen gas to produce ammonia: \(N_2 + 3H_2 \rightarrow 2NH_3\). Which statement is correct?
 
-(A) Nitrogen is the limiting reactant and 17.0 g of \(NH_3\) can form
-(B) Hydrogen is the limiting reactant and 17.0 g of \(NH_3\) can form
-(C) Nitrogen is the limiting reactant and 34.0 g of \(NH_3\) can form
-(D) Hydrogen is the limiting reactant and 34.0 g of \(NH_3\) can form
-(E) Both reactants are in perfect stoichiometric ratio and 20.0 g of \(NH_3\) can form
+A) Nitrogen is the limiting reactant and 17.0 g of \(NH_3\) can form
+B) Hydrogen is the limiting reactant and 17.0 g of \(NH_3\) can form
+C) Nitrogen is the limiting reactant and 34.0 g of \(NH_3\) can form
+D) Hydrogen is the limiting reactant and 34.0 g of \(NH_3\) can form
+E) Both reactants are in perfect stoichiometric ratio and 20.0 g of \(NH_3\) can form
 
 ---
 
 **Problem 9**: When methane burns in oxygen, the reaction is: \(CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O\). If 16.0 g of methane reacts with 80.0 g of oxygen, how many grams of excess reactant remain after the reaction is complete?
 
-(A) 0 g
-(B) 16.0 g
-(C) 32.0 g
-(D) 48.0 g
-(E) 64.0 g
+A) 0 g
+B) 16.0 g
+C) 32.0 g
+D) 48.0 g
+E) 64.0 g
 
 ---
 
 **Problem 10**: A pharmaceutical company synthesizes aspirin (\(C_9H_8O_4\)) with a typical yield of 78%. If they need to produce 500.0 g of aspirin for distribution, approximately what mass of product should they plan to synthesize (before accounting for losses)?
 
-(A) 390 g
-(B) 500 g
-(C) 578 g
-(D) 641 g
-(E) 750 g
+A) 390 g
+B) 500 g
+C) 578 g
+D) 641 g
+E) 750 g
 
 ---
 
