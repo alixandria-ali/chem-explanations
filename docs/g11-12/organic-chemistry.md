@@ -4,13 +4,33 @@
 
 <div class="video-container" markdown="1">
 
-**Organic Chemistry Introduction & Nomenclature**
+**Introduction to Organic Chemistry**
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/VWq0EKIJZOg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/B_ketdzJtY8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Complete Organic Chemistry Playlist** - Functional groups, reactions, and mechanisms
+**Hydrocarbons - Saturated vs Unsaturated, Aliphatic vs Aromatic**
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PL0o_zxa4K1BV5_xDbjNyPEPh79oRW8e83" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/z5hQ8iZZ8dU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Hybridization of Atomic Orbitals – Sigma & Pi Bonds – Sp, Sp2, Sp3**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/pdJeQUd2g_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**IUPAC Nomenclature of Alkanes – Naming Organic Compounds**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/TYU_JluleME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Functional Groups**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/m9jM8lWxrAE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Polymers – Basic Introduction**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/JknzbSVBuYM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Polymers – Condensation Polymerization**
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/xHpoQjZNN68" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
